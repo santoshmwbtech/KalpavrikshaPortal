@@ -1,0 +1,44 @@
+﻿@model IEnumerable<JBNClassLibrary.DLRoleCreation>
+
+<div class="table-responsive pt-3">
+    <table class="table table-bordered dataGrid">
+        <thead>
+            <tr>
+                <th>
+                    Role Name
+                </th>
+                <th>
+                    Role Description
+                </th>
+                <th class="noExport">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.HiddenFor(Model => item.RoleID)
+                                @item.RoleName
+                            </td>
+                            <td>
+                                @item.RoleDescription
+                            </td>
+                            <td class="noExport">
+                                @Ajax.ActionLink("Edit", "Edit", "Roles", new { RoleID = item.RoleID }, new AjaxOptions { UpdateTargetId = "divCreate", HttpMethod = "get", OnComplete = "Ajax_OnComplete", OnFailure = "Ajax_Edit_Failure", OnSuccess = "onEditSuccess", LoadingElementId = "progress" }, new { @class = "btn btn-danger btn-xs" })
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+

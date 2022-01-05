@@ -1,0 +1,25 @@
+Š	*******************Start**************
+Date & Time : 12/11/2021 19:06:52
+Message : The 'ItemId' property on 'USP_ItemCatRpt_Result' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+Source : EntityFramework
+StackTrace :    at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__64`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at JBNClassLibrary.DLAllCategoryReport.ItemCatReport(CategoryRpt itemCatRpt) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLMainCatRpt.cs:line 368
+*******************End**************
+ty.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass161_0`1.<ExecuteFunction>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass161_0`1.<ExecuteFunction>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at JBNClassLibrary.mwbtDealerEntities.USP_ChildCatRpt(Nullable`1 fromDate, Nullable`1 toDate) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\JBNAPIEntityModel.Context.cs:line 166
+   at JBNClassLibrary.DLAllCategoryReport.ChildCatReport(CategoryRpt childCatRpt) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLMainCatRpt.cs:line 271
+*******************End**************

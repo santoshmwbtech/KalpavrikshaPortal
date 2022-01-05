@@ -1,0 +1,66 @@
+﻿@model IEnumerable<JBNClassLibrary.CityWiseDetailedRpt>
+
+<div class="table-responsive pt-3">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    Dealer Name
+                </th>
+                <th>
+                    Contact Person
+                </th>
+                <th>
+                    Mobile Number1
+                </th>
+                <th>
+                    Mobile Number2
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Type Of Business
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style="display:none">
+                                @Html.HiddenFor(Model => item.CustID)
+                            </td>
+                            <td>
+                                @item.DealerName
+                            </td>
+                            <td>
+                                @item.ContactPersonName
+                            </td>
+                            <td>
+                                @item.Mobile1
+                            </td>
+                            <td>
+                                @item.Mobile2
+                            </td>
+                            <td>
+                                @item.Address
+                            </td>
+                            <td>
+                                @item.TypeOfBusiness
+                            </td>
+                            @*<td>
+                                    @Ajax.ActionLink("Edit", "Edit", "Debtors", new { DebtorID = item.ID }, new AjaxOptions { UpdateTargetId = "divCreate", HttpMethod = "get", OnComplete = "Ajax_OnComplete", OnFailure = "Ajax_Edit_Failure", OnSuccess = "onEditSuccess" }, new { @class = "btn btn-danger btn-xs" })
+                                </td>*@
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
+

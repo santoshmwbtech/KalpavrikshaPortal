@@ -1,0 +1,20 @@
+Timestamp: 05-09-2020 15:41:14Message: user id is:Category: 1Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 15:42:51Message: user id is:Category: 1Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:04:10Message: user id is:Category: 1Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:06:25Message: user id is:Category: 1Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:23:42Message: {"CustID":5,"CityId":2967,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":1},{"BusinessTypeID":2}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"2020-07-01","ToDate":"2020-07-31","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:26:57Message: {"CustID":3,"CityId":0,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":2},{"BusinessTypeID":3}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"","ToDate":"","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:29:08Message: {"CustID":3,"CityId":0,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":2},{"BusinessTypeID":3}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"","ToDate":"","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:34:55Message: {"CustID":3,"CityId":0,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":2},{"BusinessTypeID":3}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"","ToDate":"","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:37:04Message: {"CustID":3,"CityId":0,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":2},{"BusinessTypeID":3}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"","ToDate":"","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 05-09-2020 16:37:33Message: {"CustID":3,"CityId":0,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":2},{"BusinessTypeID":3}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"","ToDate":"","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------

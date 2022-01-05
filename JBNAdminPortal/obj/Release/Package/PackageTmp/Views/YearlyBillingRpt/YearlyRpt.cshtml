@@ -1,0 +1,77 @@
+﻿@model IEnumerable<JBNClassLibrary.BillingRptVM>
+@using JBNWebAPI.Logger
+<style>
+    .dataGrid table thead tbody tfoot, td, th{
+        text-align:center!important;
+    }
+</style>
+<div class="pt-3 table-responsive">
+    <table class="table table-bordered dataGrid">
+        <thead>
+            <tr>
+                <th>
+                    Year
+                </th>
+                <th>
+                    Sales
+                </th>
+                <th>
+                    Tax Amount
+                </th>
+                <th>
+                    Received Amount
+                </th>
+                <th>
+                    Outstanding Amount
+                </th>
+                @*<th class="noExport">
+                        Action
+                    </th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Year
+                            </td>
+                            <td>
+                                @item.Sale
+                            </td>
+                            <td>
+                                @item.TaxAmt
+                            </td>
+                            <td>
+                                @item.ReceivedAmt
+                            </td>
+                            <td>
+                                @item.OutstandingAmt
+                            </td>
+                            @*<td>
+                                    @Html.ActionLink(linkText: "View", actionName: "Index", controllerName: "MonthlyRpt", routeValues: new
+                                    {
+                                        Route = Helper.Encrypt(item.Year, "sblw-3hn8-sqoy19")
+                                    },
+                                    htmlAttributes: new { @class = "btn btn-info btn-xs" })
+                                </td>*@
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>@Model.Sum(i => i.Sale)</th>
+                <th>@Model.Sum(i => i.TaxAmt)</th>
+                <th>@Model.Sum(i => i.ReceivedAmt)</th>
+                <th>@Model.Sum(i => i.OutstandingAmt)</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

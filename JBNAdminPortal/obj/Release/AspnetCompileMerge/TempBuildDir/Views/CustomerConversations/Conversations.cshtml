@@ -1,0 +1,76 @@
+﻿@model IEnumerable<JBNClassLibrary.MessageList>
+    
+<ul class="chat">
+    @if (Model != null)
+    {
+        if (Model.Count() > 0)
+        {
+            foreach (var item in Model)
+            {
+                if (item.IsDealer == 0)
+                {
+                    <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                            <img src='@Url.Content(item.SenderProfileImg)' alt="User Avatar" class="img-circle" height="50" width="50" />
+                            @*<img src="https://placehold.it/50/55C1E7/fff&text=Sender" alt="User Avatar" class="img-circle" />*@
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">@item.CustomerName</strong> <small class="pull-right text-muted">
+                                    <span class="ti ti-timer"></span>@item.CreatedDate
+                                </small>
+                            </div>
+                            <p>
+                                @if (item.Image != null && item.Image != "")
+                                {
+                                    if (item.Image.ToLower().Contains("pdf"))
+                                    {
+                                        <a data-fancybox="gallery" href='@Url.Content(item.Image)'><img src="~/images/pdf-icon-blue.png" height="100" width="100" alt="image"></a>
+                                    }
+                                    else if (item.Image.ToLower().Contains("jpg"))
+                                    {
+                                        <a data-fancybox="gallery" href='@Url.Content(item.Image)'><img src='@Url.Content(item.Image)' height="100" width="100" alt="image"></a>
+                                    }
+                                }
+                            </p>
+                            <p>
+                                @Html.Raw(item.Message)
+                            </p>
+                        </div>
+                    </li>
+                }
+                else
+                {
+                    <li class="right clearfix">
+                        <span class="chat-img pull-right">
+                            <img src='@Url.Content(item.ReceiverProfileImg)' alt="User Avatar" class="img-circle" height="50" width="50" />
+                            @*<img src="https://placehold.it/50/FA6F57/fff&text=Receiver" alt="User Avatar" class="img-circle" />*@
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <small class=" text-muted"><span class="ti ti-timer"></span>@item.CreatedDate</small>
+                                <strong class="pull-right primary-font">@item.CustomerName</strong>
+                            </div>
+                            <p class="pull-right">
+                                @if (item.Image != null && item.Image != "")
+                                {
+                                    if (item.Image.ToLower().Contains("pdf"))
+                                    {
+                                        <a data-fancybox="gallery" href='@Url.Content(item.Image)'><img src="~/images/pdf-icon-blue.png" height="100" width="100" alt="image"></a>
+                                    }
+                                    else if (item.Image.ToLower().Contains("jpg"))
+                                    {
+                                        <a data-fancybox="gallery" href='@Url.Content(item.Image)'><img src='@Url.Content(item.Image)' height="100" width="100" alt="image"></a>
+                                    }
+                                }
+                            </p>
+                            <p class="pull-right">
+                                @item.Message
+                            </p>
+                        </div>
+                    </li>
+                }
+            }
+        }
+    }
+</ul>

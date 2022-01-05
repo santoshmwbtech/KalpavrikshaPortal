@@ -1,0 +1,94 @@
+﻿@model IEnumerable<JBNClassLibrary.BillingRptVM>
+@using JBNWebAPI.Logger
+
+<style>
+    .dataGrid table thead tbody tfoot, td, th {
+        text-align: center !important;
+    }
+</style>
+
+<div class="pt-3 table-responsive">
+    <table class="table table-bordered dataGrid">
+        <thead>
+            <tr>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Firm Name
+                </th>
+                <th>
+                    Advertisement Name
+                </th>
+                <th>
+                    Sales
+                </th>
+                <th>
+                    Tax Amount
+                </th>
+                <th>
+                    Received Amount
+                </th>
+                <th>
+                    Outstanding Amount
+                </th>
+                <th class="noExport">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.HiddenFor(model => item.AdvertisementMainID)
+                                @item.Date.ToString("dd/MM/yyyy")
+                            </td>
+                            <td>
+                                @item.FirmName
+                            </td>
+                            <td>@item.AdvertisementName</td>
+                            <td>
+                                @item.Sale
+                            </td>
+                            <td>
+                                @item.TaxAmt
+                            </td>
+                            <td>
+                                @item.ReceivedAmt
+                            </td>
+                            <td>
+                                @item.OutstandingAmt
+                            </td>
+                            <td>
+                                @Html.ActionLink(linkText: "View Details", actionName: "Index", controllerName: "AdvertisementDetails", routeValues: new
+                                    {
+                                        Route = Helper.Encrypt(item.AdvertisementMainID.ToString(), "sblw-3hn8-sqoy19")
+                                    },
+                                    htmlAttributes: new { @class = "btn btn-info btn-xs" })
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Total</th>
+                <th>@Model.Sum(i => i.Sale)</th>
+                <th>@Model.Sum(i => i.TaxAmt)</th>
+                <th>@Model.Sum(i => i.ReceivedAmt)</th>
+                <th>@Model.Sum(i => i.OutstandingAmt)</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+

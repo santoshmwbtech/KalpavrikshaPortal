@@ -1,0 +1,20 @@
+Š*******************Start**************
+Date & Time : 21/10/2021 12:09:13
+Message : An error occurred while executing the command definition. See the inner exception for details.
+Source : EntityFramework
+InnerException : Invalid column name 'CreatedID'.
+StackTrace :    at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at JBNClassLibrary.DashBoardData.GetCategoriesForApproval(Int32 UserID) in E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\DashBoardData.cs:line 133
+*******************End**************
+rmission.LoadFormPermissionItems(Nullable`1 RoleID) in E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\DLFormPermission.cs:line 179
+*******************End**************

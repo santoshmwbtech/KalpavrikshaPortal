@@ -1,0 +1,4 @@
+Timestamp: 03/16/20 14:51:29Message: {"QueryId":0,"CustIDS":[{"CustID":2},{"CustID":3}],"CustID":1,"CityId":587,"ProductID":1,"BusinessTypeIds":[{"BusinessTypeID":1},{"BusinessTypeID":2}],"BusinessDemand":"Sent to 4 Dealers","TypeOfUse":"Home","Requirements":"4 Dealers","ProductPhoto":"","ProductPhoto2":null}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 03/16/20 15:19:09Message: {"ID":0,"QueryId":3,"CustID":2,"Message":"I have plywoods ","IsDealer":1,"IsCustomer":0,"CreatedDate":null,"CreatedBy":3,"Image":null}Category: GeneralPriority: -1Severity: Information
+----------------------------------

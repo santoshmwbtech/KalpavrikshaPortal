@@ -1,0 +1,8 @@
+¾*******************Start**************
+Date & Time : 29/09/2021 13:50:39
+Message : Unable to cast object of type 'System.Data.Entity.Infrastructure.DbQuery`1[JBNClassLibrary.BusinessTypeWiseRpt]' to type 'System.Collections.Generic.List`1[JBNClassLibrary.BusinessTypeWiseRpt]'.
+Source : JBNClassLibrary
+StackTrace :    at JBNClassLibrary.BusinessTypeWiseDetails.BusinessList(BusinessTypeWiseRpt search)
+*******************End**************
+ibrary\BusinessTypeWiseDetails.cs:line 217
+*******************End**************

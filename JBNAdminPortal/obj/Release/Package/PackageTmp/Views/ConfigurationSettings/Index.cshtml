@@ -1,0 +1,101 @@
+﻿@model JBNClassLibrary.AdminSettings
+
+@{
+    ViewBag.Title = "Configuration Settings";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body" id="divCreate">
+                        @using (Ajax.BeginForm("UpdateSettings", "ConfigurationSettings", null, new AjaxOptions
+                        {
+                            OnSuccess = "onCreateSuccess_Ajax",
+                            OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post"
+
+                        }, new { @class = "form-sample" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <p class="card-description font-weight-bolder">
+                                Configuration Settings
+                            </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Enquiry Expiry After Days</label>
+                                        @Html.HiddenFor(model => model.ID)
+                                        @Html.EditorFor(model => model.AddDaysForSearch, new { htmlAttributes = new { @class = "form-control ", @placeholder = "Enquiry Expiry After Days", @autocomplete = "new-password", @maxlength = "2" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertisement Duration (in Seconds) </label>
+                                        @Html.EditorFor(model => model.AdDurationInSeconds, new { htmlAttributes = new { @class = "form-control ", @placeholder = "Advertisement Duration (in Seconds)", @maxlength = "1", @autocomplete = "new-password" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Maximum Durations Per Hour </label>
+                                        @Html.EditorFor(model => model.MaxDurationsAllowedPerHr, new { htmlAttributes = new { @class = "form-control", @maxlength = "2", @placeholder = "Maximum Durations Per Hour", @autocomplete = "new-password" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Temporary Ad Expiry in Hours</label>
+                                        @Html.EditorFor(model => model.HoursOfExpiry, new { htmlAttributes = new { @class = "form-control", @maxlength = "2", @placeholder = "Temporary Ad Expiry in Hours", @autocomplete = "new-password" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Weekend Matrix</label>
+                                        @Html.EditorFor(model => model.WeekendMatrix, new { htmlAttributes = new { @class = "form-control", @maxlength = "5", @placeholder = "Weekend Matrix", @autocomplete = "new-password" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Festival Matrix Start Before (Days)</label>
+                                        @Html.EditorFor(model => model.FestDays, new { htmlAttributes = new { @class = "form-control", @maxlength = "2", @placeholder = "Festival Matrix Start Before (Days)", @autocomplete = "new-password" } })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary ">Update</button>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+<script>
+    function onCreateSuccess_Ajax(Result) {
+        if (Result == "sessionexpired") {
+            swal({
+                text: "Your session is expired!! Click OK to login again",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Login")';
+            });
+        }
+        swal({
+                text: Result,
+            }).then(function () {
+                
+            });
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+</script>

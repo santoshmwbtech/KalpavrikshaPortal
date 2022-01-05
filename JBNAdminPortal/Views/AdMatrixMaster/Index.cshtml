@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Advertisement Matrix Master";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Advertisement Matrix Master</h4>
+                        <div class="form-sample">
+                            <p class="card-description">
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Select Matrix Type</label>
+                                        <div class="col-sm-9">
+                                            <select id="ddlMatrixType" name="ddlMatrixType" class="form-control dropdowns" onchange="matrixTypeChanged(this)">
+                                                <option value="">Select</option>
+                                                <option value="Advertisement Type">Advertisement Type</option>
+                                                <option value="Advertisement Area">Advertisement Area</option>
+                                                <option value="Advertisement Time Slots">Advertisement Time Slots</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="form-sample">
+                            <p class="card-description">
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12" id="dvList">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function matrixTypeChanged(element) {
+        var matrixType = $(element).val();
+        $("#dvList").empty();
+        if (matrixType != null && matrixType != "") {
+            $("#progress").show();
+            $.ajax({
+                dataType: "HTML",
+                contentType: "application/json; charset=utf-8",
+                type: 'POST',
+                data: "{ 'matrixType': '" + matrixType + "'}",
+                url: '@Url.Action("GetMatrixTypeDetails", "AdMatrixMaster")',
+                success: function (data) {
+                    $("#dvList").html('');
+                    $("#dvList").html(data);
+                    $("#progress").hide();
+                },
+                error: function (response) {
+                    swal(response);
+                    $("#progress").hide();
+                }
+            });
+        }
+    }
+    function matrixChanged(element) {
+
+    }
+    function onSuccess_Ajax(Result) {
+        if (Result == "sessioexpired") {
+            swal({
+                title: "Warning",
+                text: "Your session expired!! please click OK to login again",
+                type: "warning",
+                icon: "warning",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Login")';
+            });
+        }
+        swal({
+            text: Result,
+            }).then(function () {
+            var matrixType = $("ddlMatrixType").val();
+            matrixTypeChanged(matrixType);
+        });
+    }
+</script>

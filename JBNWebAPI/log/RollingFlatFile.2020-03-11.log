@@ -1,0 +1,2 @@
+Timestamp: 03/10/20 18:17:00Message: {"QueryId":0,"CustIDS":[{"CustID":5},{"CustID":6}],"CustID":4,"CityId":587,"ProductID":1,"BusinessTypeIds":[{"BusinessTypeID":1},{"BusinessTypeID":2}],"BusinessDemand":"Business Demand","TypeOfUse":"Reselling","Requirements":"My Requirements","ProductPhoto":""}Category: Priority: -1Severity: Information
+----------------------------------

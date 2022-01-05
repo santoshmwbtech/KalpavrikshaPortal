@@ -1,0 +1,81 @@
+﻿@model JBNClassLibrary.tblStateWithCity
+
+@{
+    ViewBag.Title = "City Wise Detailed Report";
+}
+
+@*@using (Ajax.BeginForm("CityList", "CitywiseRpt", null, new AjaxOptions
+    {
+        UpdateTargetId = "divList",
+        OnBegin = "onBegin_Ajax",
+        //OnComplete = "onSaveCompleteCreate_Ajax",
+        //OnSuccess = "onCreateSuccess_Ajax",
+        //OnFailure = "onFailure_Ajax",
+        HttpMethod = "post"
+    }, new { @class = "form-sample" }))
+    {*@
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">City Wise Detailed Report</h4>
+                        <form class="form-sample">
+                            @*<p class="card-description">
+                                    City Wise Total Registered Dealers
+                                </p>*@
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">City</label>
+                                        <div class="col-md-3">
+                                            @Html.DropDownListFor(model => model.StatewithCityID, (SelectList)ViewBag.CityList, "Select City", new { @class = "form-control dropdowns", @onchange = "ddlCity_changed()" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">From Date</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control ui-datepicker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">To Date</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <button type="submit" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="divList">
+                        @Html.Action("CityDetailedList")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function ddlCity_changed() {
+         $('#divList').load('@Url.Action("CityDetailedList","CityWiseDetailed")');
+        //var ddlParentID = $("#DebtorName option:selected").val();
+        //$('#ParentDebtorID').val(ddlParentID);
+    }
+</script>
+@*}*@
+

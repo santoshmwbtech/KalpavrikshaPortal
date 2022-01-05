@@ -1,0 +1,18 @@
+ò*******************Start**************
+Date & Time : 11/11/2021 16:59:52
+Message : An error occurred while executing the command definition. See the inner exception for details.
+Source : EntityFramework
+InnerException : Invalid column name 'CustID'.
+Invalid column name 'CustID'.
+Invalid column name 'CustID'.
+Invalid column name 'CustID'.
+StackTrace :    at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass161_0`1.<ExecuteFunction>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass161_0`1.<ExecuteFunction>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at JBNClassLibrary.mwbtDealerEntities.USP_MainCatRpt(Nullable`1 fromDate, Nullable`1 toDate) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\JBNAPIEntityModel.Context.cs:line 197
+   at JBNClassLibrary.DLAllCategoryReport.MainCatReport(CategoryRpt mainCatRpt) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLMainCatRpt.cs:line 86
+*******************End**************

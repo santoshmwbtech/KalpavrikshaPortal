@@ -1,0 +1,133 @@
+﻿@model JBNClassLibrary.CategoryWiseRpt
+
+@{
+    ViewBag.Title = "Category Wise Report";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Category Wise Report</h4>
+
+                        <p class="card-description">
+                        </p>
+                        @using (Ajax.BeginForm("Display", "CategoryWiseRpt", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "dvCustomerList",
+                            OnBegin = "onBegin_Ajax",
+                            OnFailure = "onFailure_Ajax",
+                            OnSuccess = "onSearchsuccess",
+                            HttpMethod = "get"
+                        }))
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">From Date</label>
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(a => a.FromDate, null, new { @class = "form-control dated", placeholder = "dd/mm/yyy", @autocomplete = "off", @onchange = "validate_date(this)" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">To Date</label>
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(a => a.ToDate, null, new { @class = "form-control dated", placeholder = "dd/mm/yyy", @autocomplete = "off", @onchange = "validate_date(this)" })
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Category</label>
+                                    <div class="col-sm-9">
+                                        @Html.DropDownListFor(model => model.CategoryProductID, (SelectList)ViewBag.Display, "Select Catgeory", new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" id="btnSearch" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="dvCustomerList">
+                        @Html.Action("Display")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<script type="text/javascript">
+        $(document).ready(function () {
+            $("#FromDate").datepicker({
+                dateFormat: "dd/M/yy",
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "-60:+0"
+            });
+            $(document).ready(function () {
+                $("#ToDate").datepicker({
+                    dateFormat: "dd/M/yy",
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: "-60:+0"
+                });
+
+            })
+        });
+    </script>*@
+<script>
+    function onSearchsuccess() {
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'csv', 'excel', 'pdf'
+            ]
+        });
+    }
+    function OnBeginEdit() {
+
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_OnShareComplete() {
+
+    }
+    function onShareSuccess(data) {
+
+    }
+</script>
+
+@*<script>
+        function SetDropDown() {
+            var Status = $('#CategoryProductID').val();
+            var boolValue = Status.toLowerCase() == 'true' ? true : false;
+            if (boolValue == true) {
+                $('#ddlStatus').val(1);
+            }
+            else {
+                $('#ddlStatus').val(0);
+            }
+        }
+    </script>*@
+
+
+
+
+

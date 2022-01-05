@@ -1,0 +1,4 @@
+Date & Time : 29/11/2021 10:58:02[Request] [ { registration_ids = System.String[], priority = high, Text_available = True, notification = { title = Kalpavriksha, body = Kalpavriksha, image = , categoryname =  } }]
+Date & Time : 29/11/2021 10:58:05[Request] [ {"multicast_id":8294275489410206577,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1638163686105934%1d70b93c1d70b93c"}]}]
+Date & Time : 29/11/2021 11:10:22[Request] [ { registration_ids = System.String[], priority = high, Text_available = True, notification = { title = Kalpavriksha, body = One Business App for All, image = https://wbtechindia.com/apps/kalpavrikshaPortal/notificationImages/processed.jpeg, categoryname =  } }]
+Date & Time : 29/11/2021 11:10:23[Request] [ {"multicast_id":6059282275528811405,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1638164424508188%1d70b93c1d70b93c"}]}]

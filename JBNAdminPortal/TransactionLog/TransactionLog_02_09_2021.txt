@@ -1,0 +1,5 @@
+Date & Time : 02/09/2021 10:40:12[Request] [ {"multicast_id":2160482118810500447,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630559412752513%1d70b93c1d70b93c"}]}]
+Date & Time : 02/09/2021 10:41:44[Request] [ {"multicast_id":9008396031771364843,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630559504952621%1d70b93c1d70b93c"}]}]
+Date & Time : 02/09/2021 10:46:18[Request] [ {"multicast_id":8977725297164058790,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630559778790671%1d70b93c1d70b93c"}]}]
+Date & Time : 02/09/2021 18:45:05[Request] [ {"multicast_id":3713853649456497398,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630588505680879%1d70b93c1d70b93c"}]}]
+Date & Time : 02/09/2021 18:48:45[Request] [ {"multicast_id":5812525387361225106,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630588725374335%1d70b93c1d70b93c"}]}]

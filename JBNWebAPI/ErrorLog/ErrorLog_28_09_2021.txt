@@ -1,0 +1,15 @@
+Þ*******************Start**************
+Date & Time : 28/09/2021 15:58:59
+Message : The operation cannot be completed because the DbContext has been disposed.
+Source : EntityFramework
+StackTrace :    at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at JBNClassLibrary.JBNDBClass.GetDashboardData(Int32 CustID)
+*******************End**************
+ibrary\JBNDBClass.cs:line 4675
+*******************End**************

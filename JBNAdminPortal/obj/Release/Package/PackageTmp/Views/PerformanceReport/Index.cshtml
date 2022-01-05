@@ -1,0 +1,107 @@
+﻿@model JBNClassLibrary.PerformanceReport
+
+@{
+    ViewBag.Title = "Performance Report";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Customer List
+                        </h4>
+
+                        @using (Ajax.BeginForm("Search", "PerformanceReport", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "dvList",
+                            OnSuccess = "onSearchSuccess",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }))
+                        {
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>From Date</label>
+                                        @Html.TextBoxFor(a => a.FromDate, null, new { @class = "form-control mb-2 mr-sm-2 dated", @autocomplete = "off", @onchange = "return validate_date(this)", @required = "required" })
+                                        @Html.ValidationMessageFor(model => model.FromDate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>To Date</label>
+                                        @Html.TextBoxFor(a => a.ToDate, null, new { @class = "form-control mb-2 mr-sm-2 dated", @autocomplete = "off", @onchange = "return validate_date(this)", @required = "required" })
+                                        @Html.ValidationMessageFor(model => model.ToDate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-check" style="margin-top:40px;">
+                                    <label>
+                                        <input type="checkbox" class="mb-2 mr-sm-2" name="chkcompare" id="chkcompare" />Compare
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="compareRow" style="display:none;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>From Date</label>
+                                            @Html.TextBoxFor(a => a.CompareFromDate, null, new { @class = "form-control mb-2 mr-sm-2 dated", @autocomplete = "off", @onchange = "return validate_date(this)" })
+                                            @Html.ValidationMessageFor(model => model.CompareFromDate, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>To Date</label>
+                                            @Html.TextBoxFor(a => a.CompareToDate, null, new { @class = "form-control mb-2 mr-sm-2 dated", @autocomplete = "off", @onchange = "return validate_date(this)" })
+                                            @Html.ValidationMessageFor(model => model.CompareToDate, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" value="Search" id="btnSearch" class="btn btn-primary" />
+                            </div>
+                        }
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="dvList">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onSearchSuccess(data) {
+        loadDataTableWithButtons();
+        //$("#compareRow").show();
+    }
+    function onCompareSuccess() {
+        //$(".dataGrid").dataTable().fnDestroy();
+        $('.dataGrid').DataTable().destroy();
+        loadDataTableWithButtons();
+    }
+    $('#chkcompare').on('change', function () {
+        if (this.checked == true) {
+            $("#compareRow").show();
+        }
+        else {
+            $("#compareRow").hide();
+        }
+    });
+</script>

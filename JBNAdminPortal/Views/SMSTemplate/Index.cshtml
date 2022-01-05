@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "SMS Templates";
+}
+
+@if (Session["MenuMaster"] != null)
+{
+    var MenuMaster = (List<JBNClassLibrary.FormPermissionItem>)Session["MenuMaster"];
+
+    <div class="main-panel" id="mainDiv">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-12 grid-margin">
+                    <div class="card card-outline-primary">
+                        <div class="card-body" id="divCreate">
+                            @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "smstemplates" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                            {
+                                @Html.Action("Create")
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 grid-margin">
+                    <div class="card card-outline-success">
+                        <div class="card-body" id="divList">
+                            @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "smstemplates" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                            {
+                                @Html.Action("TemplateList")
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+
+<script>
+    function onCreateSuccess_Ajax() {
+        swal("Success", "SMS Template Created Successfully", "success");
+        $("#divCreate").load('@Url.Action("Create", "SMSTemplate")');
+        $("#divList").load('@Url.Action("TemplateList", "SMSTemplate")');
+
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            //buttons: [
+            //    'csv', 'excel', 'pdf'
+            //]
+            buttons: [{
+                extend: 'excel',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'csv',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }
+            ]
+        });
+    }
+    function onEditSuccess_Ajax() {
+        swal("Success", "SMS Template Updated Successfully", "success");
+        $("#divCreate").load('@Url.Action("Create", "SMSTemplate")');
+        $("#divList").load('@Url.Action("TemplateList", "SMSTemplate")');
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            //buttons: [
+            //    'csv', 'excel', 'pdf'
+            //]
+            buttons: [{
+                extend: 'pdf',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'excel',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'csv',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }
+            ]
+        });
+    }
+function onEditSuccess() {
+        var elmnt = document.getElementById("mainDiv");
+        elmnt.scrollIntoView();
+
+}
+    function onBegin_Ajax(data) {
+    }
+    function onEditCompleteCreate_Ajax() {
+
+    }
+
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+
+    function Ajax_OnComplete() {
+
+    }
+
+    function onSaveCompleteCreate_Ajax() {
+
+    }
+</script>
+
+<script>
+    function btnCancel_Click() {
+        $("#divCreate").load('@Url.Action("Create", "SMSTemplate")');
+
+    }
+</script>
+
+<script type="text/javascript">
+    $('#RoleName').change(function () {
+            @*$('#TemplateName').html('');
+            var selection = $('#TemplateName').val();
+            if (selection.length > 0) {
+                $.post('@Url.Action("CheckDuplicateRoleName", "SMSTemplate")', { RoleName: selection},
+            function (data) {
+                if (data == 0) {
+                    $("#RoleName").html('<font color="Green">Available !. you can take it.</font>');
+                    $("#RoleName").css("border-color", "Green");
+                }
+                else {
+                    //swal("RoleName Name already taken!... Please Try with the different one");
+                    //swal({
+                    //        title: "Conflict",
+                    //        text: "RoleName Name already taken!... Please Try with the different one",
+                    //        type: "error",
+                    //        icon: "error",
+                    //    }).then(function () {
+                    //        $('#RoleName').val('');
+                    //        $('#RoleName').focus();
+                    //    });
+                    CreateNotification("error", "Error", "Template Name already created..");
+                    $("#RoleName").val('');
+                    $("#RoleName").focus();
+                }
+            })
+        }*@
+    });
+</script>
+

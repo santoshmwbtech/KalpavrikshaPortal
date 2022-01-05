@@ -1,0 +1,97 @@
+﻿@model IEnumerable<JBNClassLibrary.MainCategory>
+
+@{
+    ViewBag.Title = "Main Categories";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row" id="divCreate">
+            @if (Request.QueryString["route"] != null)
+            {
+                if (@Request.QueryString["route"].ToString() != "view")
+                {
+                    @Html.Action("Create_CategoryProduct")
+                }
+            }
+            else
+            {
+                @Html.Action("Create_CategoryProduct")
+            }
+        </div>
+        <div class="row" id="divList">
+            @if (Request.QueryString["route"] != null)
+            {
+                if (@Request.QueryString["route"].ToString() != "create")
+                {
+                    @Html.Action("Product_Details")
+                }
+            }
+            else
+            {
+                @Html.Action("Product_Details")
+            }
+        </div>
+    </div>
+</div>
+
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span></span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onCreateSuccess_Ajax(Result) {
+        swal({
+            text: Result,
+        }).then(function () {
+            $("#divCreate").load("Create_CategoryProduct", "CategoryProducts");
+        });
+    }
+    function onEditSuccess_Ajax(Result) {
+        swal({
+            text: Result,
+        }).then(function () {
+            $("#divCreate").empty();
+        });
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+        $("#MainCategoryName").focus();
+    }
+</script>
+<script>
+    function btnCancel_Click() {
+        @*$('#divCreate').load('@Url.Action("Create_CategoryProduct","CategoryProducts")');*@
+        $('#divCreate').empty();
+        $("#MainCategoryName").focus();
+    }
+    $('#MainCategoryName').change(function () {
+        var MainCategoryName = $('#MainCategoryName').val();
+        if (selection.length > 0) {
+            $.post('@Url.Action("CheckDuplicateName", "CategoryProducts")', { MainCategoryName: MainCategoryName},
+            function (data) {
+                if (data == 0) {
+                    $("#MainCategoryName").html('<font color="Green">Available !. you can take it.</font>');
+                    $("#MainCategoryName").css("border-color", "Green");
+                }
+                else {
+                    CreateNotification("error", "Error", "Category Name already created..");
+                    $("#MainCategoryName").val('');
+                    $("#MainCategoryName").focus();
+                }
+            })
+        }
+    });
+</script>
+

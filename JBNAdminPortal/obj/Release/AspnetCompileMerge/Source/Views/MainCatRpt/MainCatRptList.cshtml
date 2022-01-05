@@ -1,0 +1,348 @@
+﻿@model JBNClassLibrary.ConsolidatedReport
+
+@using JBNWebAPI.Logger
+
+@if (ViewBag.TotalStates != null)
+{
+    <div class="table-responsive pt-3" style="border:1px solid #0094ff;border-radius:10px;">
+        <div class="panel-body">
+            <div class="row" style="margin:10px 0 0 0;padding:10px;">
+                <div class="col-md-3">
+                    <label class="badge badge-info"> Total Categories :   <b style="font-size:17px;">@ViewBag.TotalCategories</b></label>
+                </div>
+                <div class="col-md-3">
+                    <label class="badge badge-success"> Total States :  <b style="font-size:17px;">@ViewBag.TotalStates</b></label>
+                </div>
+                <div class="col-md-3">
+                    <label class="badge badge-danger"> Total Cities : <b style="font-size:17px;">@ViewBag.TotalCities</b></label>
+                </div>
+                <div class="col-md-3">
+                    <label class="badge badge-primary"> Total Customers :  <b style="font-size:17px;">@ViewBag.TotalCustomers</b> </label>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@using (Ajax.BeginForm("Promotion", "MainCatRpt", null, new AjaxOptions
+{
+    OnSuccess = "onPromoSuccess_Ajax",
+    HttpMethod = "post",
+    LoadingElementId = "promoprogress"
+}, new { @class = "form-sample", @id = "frm-example1", @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="table-responsive pt-3">
+        <table class="table table-bordered dataGrid">
+            <thead>
+                <tr>
+                    <th>
+                        Main Category Name
+                    </th>
+                    <th>
+                        State Name
+                    </th>
+                    <th>
+                        Total Cities
+                    </th>
+                    <th>
+                        Sub Categories
+                    </th>
+                    <th>
+                        Total Customers
+                    </th>
+                    <th class="noExport">
+                        Action
+                    </th>
+                    <th class="noExport text-center">
+                        @Html.CheckBox("CheckAll", false, new { id = "select_all" })
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    if (Model.categoryRpts.Count() > 0)
+                    {
+                        int j = 0;
+                        foreach (var item in Model.categoryRpts)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.HiddenFor(a => a.categoryRpts[j].CategoryID)
+                                    @Html.HiddenFor(a => a.categoryRpts[j].StateID)
+                                    @item.CategoryName
+                                </td>
+                                <td>
+                                    @item.StateName
+                                </td>
+                                <td>
+                                    @item.CitiesCount
+                                </td>
+                                <td>
+                                    @item.ChildCategories
+                                </td>
+                                <td class="text-center">
+                                    @item.CustomersCount
+                                </td>
+                                <td class="noExport">
+                                    @Html.ActionLink(linkText: "View", actionName: "Index", controllerName: "MainCatCityWiseRpt", routeValues: new
+                                   {
+                                       EncStateID = Helper.Encrypt(item.StateID.ToString(), "sblw-3hn8-sqoy19"),
+                                       EncPID = Helper.Encrypt(item.CategoryID.ToString(), "sblw-3hn8-sqoy19")
+                                   },
+                                    htmlAttributes: new { @class = "btn btn-info btn-xs" })
+                                </td>
+                                <td class="text-center noExport">
+                                    @Html.CheckBoxFor(a => a.categoryRpts[j].IsChecked, new { @class = "chhselect" })
+                                </td>
+                            </tr>
+                            j++;
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="card-title">Promote</h4>
+    <p class="card-description">
+
+    </p>
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.IsEmail) Email
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.IsSMS) SMS
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.IsNotification) Notification
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.IsWhatsApp) Whatsapp
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+    <div id="SMSRow" style="display:none;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>SMS Template</label>
+                    <div class="input-group">
+                        @Html.DropDownListFor(model => model.SMSTemplateID, (SelectList)ViewBag.SMSTemplates, "Select Template", new { @class = "form-control listbox", @required = "required", @onchange = "SMSTemplateChanged()" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>SMS Body</label>
+                    @Html.TextAreaFor(model => model.SMSBody, new { @class = "form-control input-lg", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.SMSBody, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="EmailRow" style="display:none;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Mail Subject</label>
+                    @Html.TextBoxFor(model => model.MailSubject, new { @class = "form-control", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.MailSubject, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Attachments</label>
+                    <input type="file" id="postedFile" name="postedFile" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Your Message</label>
+                    @Html.TextAreaFor(model => model.MailBody, new { @class = "form-control input-lg textarea-editor", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.MailBody, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NotificationRow" style="display:none;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Notification Title</label>
+                    <div class="input-group">
+                        @Html.TextBoxFor(model => model.Title, new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" id="notificationImage" name="notificationImage" class="form-control" onchange="return check_extension(this.value);" />
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Message</label>
+                    @Html.TextAreaFor(model => model.Body, new { @class = "form-control input-lg", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary" onclick="return onPromoteClick()">Promote</button>
+    </div>
+}
+
+<div id="promoprogress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onPromoteClick() {
+        if (!$('#IsEmail').is(':checked') && !$('#IsSMS').is(':checked') && !$('#IsWhatsApp').is(':checked') && !$('#IsNotification').is(':checked')) {
+            swal("Check atleast one checkbox to promote");
+            return false;
+        }
+        var checked_checkboxes = $(".dataGrid input[type=checkbox]:checked");
+        if (checked_checkboxes.length == 0) {
+            swal("Check atleast one checkbox from the above list to promote");
+            return false;
+        }
+    }
+    $("#IsEmail").click(function () {
+        if (this.checked) {
+            $("#IsSMS").prop('checked', false);
+            $("#IsWhatsApp").prop('checked', false);
+            $("#IsNotification").prop('checked', false);
+            $("#SMSRow").hide();
+            $("#EmailRow").show();
+            $("#NotificationRow").hide();
+            $('.textarea-editor').summernote({
+                height: 100, // set editor height
+                minHeight: null, // set minimum height of editor
+                maxHeight: null, // set maximum height of editor
+                focus: false // set focus to editable area after initializing summernote
+            });
+        }
+        else {
+            $("#EmailRow").hide();
+        }
+    });
+    $("#IsSMS").click(function () {
+        if (this.checked) {
+            $("#IsEmail").prop('checked', false);
+            $("#IsWhatsApp").prop('checked', false);
+            $("#IsNotification").prop('checked', false);
+            $("#SMSRow").show();
+            $("#EmailRow").hide();
+            $("#NotificationRow").hide();
+        }
+        else {
+            $("#SMSRow").hide();
+        }
+    });
+    $("#IsWhatsApp").click(function () {
+        if (this.checked) {
+            $("#IsEmail").prop('checked', false);
+            $("#IsSMS").prop('checked', false);
+            $("#IsNotification").prop('checked', false);
+            $("#SMSRow").hide();
+            $("#EmailRow").hide();
+            $("#NotificationRow").hide();
+        }
+    });
+    $("#IsNotification").click(function () {
+        if (this.checked) {
+            $("#IsEmail").prop('checked', false);
+            $("#IsWhatsApp").prop('checked', false);
+            $("#IsSMS").prop('checked', false);
+            $("#NotificationRow").show();
+            $("#EmailRow").hide();
+            $("#SMSRow").hide();
+        }
+        else {
+            $("#NotificationRow").hide();
+        }
+    });
+    function SMSTemplateChanged() {
+        var TemplateID = $("#SMSTemplateID").val();
+        if (TemplateID != "" && TemplateID != null) {
+            $("#progress").show();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetSMSTemplate", "BusinessTypeWiseRpt")',
+                dataType: "json",
+                data: { TemplateID: TemplateID},
+                success: function (response) {
+                    if (response == "sessionexpired") {
+                        window.location = '@Url.Action("Index", "Login")';
+                    }
+                    $("#SMSBody").val(response.TemplateBody);
+                    $("#progress").hide();
+                },
+                error: function () {
+                    $("#progress").hide();
+                }
+            });
+        }
+    }
+</script>
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+<script>
+    $("#frm-example1").validate();
+</script>
+<script>
+    var hash = {
+        '.png': 1,
+        '.jpg': 1,
+        '.jpeg': 1,
+    };
+
+    function check_extension(filename) {
+        var re = /\..+$/;
+        var ext = filename.match(re);
+        if (hash[ext]) {
+            return true;
+        } else {
+            swal("Error", "Invalid file, please upload image", "error");
+            $("#notificationImage").val('');
+            return false;
+        }
+    }
+</script>

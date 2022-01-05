@@ -1,0 +1,314 @@
+﻿@model JBNAdminPortal.Models.Search
+
+@{ 
+    ViewBag.Title = "App Users List";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Customer List
+                        </h4>
+
+                        @using (Ajax.BeginForm("Search", "AppUsers", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "dvCustomerList",
+                            OnSuccess = "onSuccess_Ajax",
+                            OnBegin = "onBegin_Ajax",
+                            OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }))
+                        {
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>From Date</label>
+                                        @Html.TextBoxFor(a => a.FromDate, null, new { @class = "form-control dated", @autocomplete = "off", @onchange = "return validate_date(this)" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>To Date</label>
+                                        @Html.TextBoxFor(a => a.ToDate, null, new { @class = "form-control dated", @autocomplete = "off", @onchange = "return validate_date(this)" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>From Time</label>
+                                        @Html.TextBoxFor(a => a.FromTime, null, new { @class = "form-control timepicker", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>To Time</label>
+                                        @Html.TextBoxFor(a => a.ToTime, null, new { @class = "form-control timepicker", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        @Html.DropDownListFor(a => a.StateList, (SelectList)ViewBag.StateList, "Select State", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                        @Html.Hidden("hfStateID")
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        @Html.DropDownListFor(a => a.CityList, (SelectList)ViewBag.CityList, "Select City", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Customer</label> <label class="badge badge-info" id="lblCustomers">@ViewBag.TotalCustomers</label>
+                                        @Html.TextBoxFor(a => a.FirmName, null, new { @class = "form-control", @autocomplete = "off" })
+                                        @Html.HiddenFor(a => a.CustID)
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Mobile</label>
+                                        @Html.TextBoxFor(a => a.MobileNumber, null, new { @class = "form-control", @maxlength = "10", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" value="Search" id="btnSearch" class="btn btn-primary" />
+                            </div>
+                        }
+                        <div id="dvCustomerList">
+                            @if (Request.QueryString["route"] != null)
+                            {
+                                @Html.Action("CustomerList", new { id = Request.QueryString["route"].ToString() })
+                            }
+
+                            @if (Request.QueryString["EncCityID"] != null && Request.QueryString["EncPID"] != null && Request.QueryString["CType"] != null)
+                            {
+                                @Html.Action("CatCityWiseCustList", new { CityID = Request.QueryString["EncCityID"].ToString(), PID = Request.QueryString["EncPID"].ToString(), CType = Request.QueryString["CType"].ToString() })
+                            }
+                            @if (Request.QueryString["IDs"] != null && Request.QueryString["EncST"] != null)
+                            {
+                                @Html.Action("GetCityStateWiseCustList", new { ID = Request.QueryString["IDs"].ToString(), Type = Request.QueryString["EncST"].ToString() })
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel"><i class="ti ti-envelope"></i> </h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+            </div><!-- modal-header -->
+            <div class="modal-body" id="modalBody">
+
+            </div><!-- modal-body -->
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+<script>
+    function onSuccess_Ajax() {
+        loadDataTableWithButtons();
+    }
+    function OnBeginEdit() {
+
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_OnShareComplete() {
+
+    }
+    function onShareSuccess(data) {
+
+    }
+    function onBlockActivateSuccess(data) {
+        $("#progress").hide();
+        $('#myModal').modal('toggle');
+        $('#myModal').modal('hide');
+        $('.modal-backdrop').removeClass('modal-backdrop');
+        $('.fade').removeClass('fade');
+        $('.in').removeClass('in');
+        $('html, body').css({
+            'overflow': 'auto',
+            'height': 'auto'
+        });
+        if (data == "success") {
+            swal({
+                title: "Success!",
+                text: "Customer Details Updated Successfully!!",
+                type: "success",
+                icon: "success",
+            }).then(function () {
+                $("#dvCustomerList").load('@Url.Action("CustomerList", "AppUsers", new { id = 0 })');
+                setTimeout(function () {
+                    $(".dataGrid").dataTable().fnDestroy();
+                    loadDataTableWithButtons();
+                }, 1000);
+            });
+            
+        }
+        else {
+            swal({
+                title: "Error",
+                text: "Please try again later..",
+                type: "error",
+                icon: "error",
+            }).then(function () {
+                $("#dvCustomerList").load('@Url.Action("CustomerList", "AppUsers", new { id = 0 })');
+                setTimeout(function () {
+                    $(".dataGrid").dataTable().fnDestroy();
+                    loadDataTableWithButtons();
+                }, 1000);
+            });
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#txtCityName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("AutoComplete", "AppUsers")',
+                    data: "{ 'prefix': '" + request.term + "'}",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                    label: item.VillageLocalityName,
+                                    val: item.StateWithCityID
+                                }
+                        }))
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+            },
+            select: function (e, i) {
+                $("#StatewithCityID").val(i.item.val);
+            },
+            minLength: 1
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#CustomerName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("GetCustomerName", "CustomerReport")',
+                    data: "{ 'prefix': '" + request.term + "'}",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                    label: item.AppUserName,
+                                    val: item.AppUserID
+                                }
+                        }))
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+            },
+            select: function (e, i) {
+                $("#AppUserID").val(i.item.val);
+            },
+            minLength: 1
+        });
+    });
+</script>
+
+<script>
+    function StateChanged() {
+        $('#hfStateID').val($('#StateList').val());
+        var StateList = $('#hfStateID').val();
+        @*$("#CityList").empty();
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetCities", "AppUsers")',
+            dataType: "json",
+            contentType: "application/json",
+            data: '{StateList: ' + JSON.stringify(StateList) + '}',
+            success: function (res) {
+                var s = '<option value="-1">Select City</option>';
+                for (var i = 0; i < res.length; i++) {
+                    s += '<option value="' + res[i].StateWithCityID + '">' + res[i].VillageLocalityname + '</option>';
+                }
+                $("#CityList").html(s);
+            }
+        });*@
+        //$(document).ready(function () {
+        //    $(".dropdowns").select2();
+        //});
+        $('#CityList').select2({
+          ajax: {
+            url: '@Url.Action("GetCities", "AppUsers")',
+            dataType: 'json',
+            data: '{StateList: ' + JSON.stringify(StateList) + '}',
+            type: 'POST',
+            contentType: "application/json",
+            // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
+          }
+        });
+        @*$("#CityList").select2({
+            ajax {
+            type: 'POST',
+            url: '@Url.Action("GetCities", "AppUsers")',
+            dataType: "json",
+            contentType: "application/json",
+            data: '{StateList: ' + JSON.stringify(StateList) + '}',
+                success: function (response) {
+
+                },
+            }
+        });*@
+    }
+</script>
+<script>
+    function ShowPopup(CustID, StatusType) {
+        $.post("@Url.Action("GetCustID", "AppUsers")",
+            {
+                CustID: CustID,
+                StatusType: StatusType
+            },
+        function (data) {
+            $("#modalBody").html(data);
+        });
+    }
+</script>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<JBNClassLibrary.UserHistory>
+
+<div class="table-responsive pt-3">
+    <h2 class="card-title">User History Details</h2>
+    <table class="table table-bordered dataGrid">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Child Category
+                </th>
+                <th>
+                    Sub Category
+                </th>
+                <th>
+                    Main Category
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Activity Type
+                </th>
+                <th>
+                    Activity Page
+                </th>
+                <th>
+                    Activity / Reason
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.Name
+                        </td>
+                        <td>
+                            @item.ChildCategoryName
+                        </td>
+                        <td>
+                            @item.SubCategoryName
+                        </td>
+                        <td>
+                            @item.MainCategoryName
+                        </td>
+                        <td>
+                            @item.CreationDate.Value.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            @item.ActivityType
+                        </td>
+                        <td>
+                            @item.ActivityPage
+                        </td>
+                        <td>
+                            @item.Comments
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

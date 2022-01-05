@@ -1,0 +1,2 @@
+Timestamp: 05-May-20 11:25:09 AMMessage: {"CustID":3,"CityId":2967,"ProductID":1366,"BusinessTypeIds":[{"BusinessTypeID":1},{"BusinessTypeID":2},{"BusinessTypeID":3}],"BusinessDemand":"sample string 2","TypeOfUse":"sample string 3","Requirements":"sample string 4","ProductPhoto":""}Category: Priority: -1Severity: Information
+----------------------------------

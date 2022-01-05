@@ -1,0 +1,1355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="jbnbetaModelStoreContainer" CdmEntityContainer="mwbtDealerEntities">
+    <FunctionImportMapping FunctionImportName="USP_MainCatCityWiseRpt" FunctionName="jbnbetaModel.Store.USP_MainCatCityWiseRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_MainCatCityWiseRpt_Result">
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VillageLocalityname" ColumnName="VillageLocalityname" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="MainCategoryName" ColumnName="MainCategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_SubCatCityWiseRpt" FunctionName="jbnbetaModel.Store.USP_SubCatCityWiseRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_SubCatCityWiseRpt_Result">
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VillageLocalityname" ColumnName="VillageLocalityname" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="subcategoryid" ColumnName="subcategoryid" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_MainCatRpt" FunctionName="jbnbetaModel.Store.USP_MainCatRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_MainCatRpt_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="CityCount" ColumnName="CityCount" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="MainCategoryName" ColumnName="MainCategoryName" />
+          <ScalarProperty Name="SubCategoryCount" ColumnName="SubCategoryCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_SubCatRpt" FunctionName="jbnbetaModel.Store.USP_SubCatRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_SubCatRpt_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="CityCount" ColumnName="CityCount" />
+          <ScalarProperty Name="subcategoryid" ColumnName="subcategoryid" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="subcategoryname" ColumnName="subcategoryname" />
+          <ScalarProperty Name="ChildCategoryCount" ColumnName="ChildCategoryCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllCategories" FunctionName="jbnbetaModel.Store.GetAllCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.GetAllCategories_Result">
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ChildCategoryName" ColumnName="ChildCategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="MainCategoryName" ColumnName="MainCategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tblAdminSettings">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdminSetting">
+        <MappingFragment StoreEntitySet="tblAdminSettings">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SetPaymentDueinHrs" ColumnName="SetPaymentDueinHrs" />
+          <ScalarProperty Name="FestDays" ColumnName="FestDays" />
+          <ScalarProperty Name="WeekendMatrix" ColumnName="WeekendMatrix" />
+          <ScalarProperty Name="HoursOfExpiry" ColumnName="HoursOfExpiry" />
+          <ScalarProperty Name="MaxDurationsAllowedPerHr" ColumnName="MaxDurationsAllowedPerHr" />
+          <ScalarProperty Name="AdDurationInSeconds" ColumnName="AdDurationInSeconds" />
+          <ScalarProperty Name="AddDaysForSearch" ColumnName="AddDaysForSearch" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisements">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisement">
+        <MappingFragment StoreEntitySet="tblAdvertisement">
+          <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsCancelled" ColumnName="IsCancelled" />
+          <ScalarProperty Name="TemporaryBooked" ColumnName="TemporaryBooked" />
+          <ScalarProperty Name="IntervalsPerHour" ColumnName="IntervalsPerHour" />
+          <ScalarProperty Name="AdvertisementAreaID" ColumnName="AdvertisementAreaID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CompletedIntervals" ColumnName="CompletedIntervals" />
+          <ScalarProperty Name="IntervalsPerDay" ColumnName="IntervalsPerDay" />
+          <ScalarProperty Name="NextAdTime" ColumnName="NextAdTime" />
+          <ScalarProperty Name="CurrentAdTime" ColumnName="CurrentAdTime" />
+          <ScalarProperty Name="AdStartTime" ColumnName="AdStartTime" />
+          <ScalarProperty Name="DaysCount" ColumnName="DaysCount" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="AdTimeSlotID" ColumnName="AdTimeSlotID" />
+          <ScalarProperty Name="TypeOfAdvertisementID" ColumnName="TypeOfAdvertisementID" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="AdvertisementName" ColumnName="AdvertisementName" />
+          <ScalarProperty Name="AdvertisementMainID" ColumnName="AdvertisementMainID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementAreas">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementArea">
+        <MappingFragment StoreEntitySet="tblAdvertisementArea">
+          <ScalarProperty Name="OldMatrix" ColumnName="OldMatrix" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="AdvertisementPrice" ColumnName="AdvertisementPrice" />
+          <ScalarProperty Name="AdAreaMatrix" ColumnName="AdAreaMatrix" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AdvertisementAreaName" ColumnName="AdvertisementAreaName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementCities">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementCity">
+        <MappingFragment StoreEntitySet="tblAdvertisementCity">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VillageLocalityName" ColumnName="VillageLocalityName" />
+          <ScalarProperty Name="TairTypeOfCity" ColumnName="TairTypeOfCity" />
+          <ScalarProperty Name="TairTypeOfCityID" ColumnName="TairTypeOfCityID" />
+          <ScalarProperty Name="StateWithCityID" ColumnName="StateWithCityID" />
+          <ScalarProperty Name="AdvertisementMainID" ColumnName="AdvertisementMainID" />
+          <ScalarProperty Name="AdvertisementID" ColumnName="AdvertisementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementDistricts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementDistrict">
+        <MappingFragment StoreEntitySet="tblAdvertisementDistrict">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="TairTypeOfDistrict" ColumnName="TairTypeOfDistrict" />
+          <ScalarProperty Name="TairTypeOfDistrictID" ColumnName="TairTypeOfDistrictID" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="AdvertisementMainID" ColumnName="AdvertisementMainID" />
+          <ScalarProperty Name="AdvertisementID" ColumnName="AdvertisementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementHolidays">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementHoliday">
+        <MappingFragment StoreEntitySet="tblAdvertisementHolidays">
+          <ScalarProperty Name="HolidayDefinition" ColumnName="HolidayDefinition" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="HolidayMatrix" ColumnName="HolidayMatrix" />
+          <ScalarProperty Name="HolidayType" ColumnName="HolidayType" />
+          <ScalarProperty Name="HolidayDate" ColumnName="HolidayDate" />
+          <ScalarProperty Name="HolidayName" ColumnName="HolidayName" />
+          <ScalarProperty Name="HolidayYear" ColumnName="HolidayYear" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementMains">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementMain">
+        <MappingFragment StoreEntitySet="tblAdvertisementMain">
+          <ScalarProperty Name="TotalCities" ColumnName="TotalCities" />
+          <ScalarProperty Name="TotalDistricts" ColumnName="TotalDistricts" />
+          <ScalarProperty Name="TotalStates" ColumnName="TotalStates" />
+          <ScalarProperty Name="TotalRotations" ColumnName="TotalRotations" />
+          <ScalarProperty Name="PaymentApprovedDate" ColumnName="PaymentApprovedDate" />
+          <ScalarProperty Name="ContentApprovedDate" ColumnName="ContentApprovedDate" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="WeekendMatrix" ColumnName="WeekendMatrix" />
+          <ScalarProperty Name="FestivalMatrix" ColumnName="FestivalMatrix" />
+          <ScalarProperty Name="PublicHolidayMatrix" ColumnName="PublicHolidayMatrix" />
+          <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
+          <ScalarProperty Name="AdvertisementAreaID" ColumnName="AdvertisementAreaID" />
+          <ScalarProperty Name="AdText" ColumnName="AdText" />
+          <ScalarProperty Name="IGSTPer" ColumnName="IGSTPer" />
+          <ScalarProperty Name="SGSTPer" ColumnName="SGSTPer" />
+          <ScalarProperty Name="CGSTPer" ColumnName="CGSTPer" />
+          <ScalarProperty Name="IGSTAmount" ColumnName="IGSTAmount" />
+          <ScalarProperty Name="SGSTAmount" ColumnName="SGSTAmount" />
+          <ScalarProperty Name="CGSTAmount" ColumnName="CGSTAmount" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AdImageURL" ColumnName="AdImageURL" />
+          <ScalarProperty Name="TaxValue" ColumnName="TaxValue" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="DiscountPer" ColumnName="DiscountPer" />
+          <ScalarProperty Name="ProformaInvoiceNumber" ColumnName="ProformaInvoiceNumber" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="BookingExpiryDate" ColumnName="BookingExpiryDate" />
+          <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsCancelled" ColumnName="IsCancelled" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="TemporaryBooked" ColumnName="TemporaryBooked" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+          <ScalarProperty Name="FinalPrice" ColumnName="FinalPrice" />
+          <ScalarProperty Name="AdTotalPrice" ColumnName="AdTotalPrice" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TypeOfAdvertisementID" ColumnName="TypeOfAdvertisementID" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="AdvertisementName" ColumnName="AdvertisementName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbladvertisementPayments">
+      <EntityTypeMapping TypeName="jbnbetaModel.tbladvertisementPayment">
+        <MappingFragment StoreEntitySet="tbladvertisementPayment">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="AdvertisementMainID" ColumnName="AdvertisementMainID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementStates">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementState">
+        <MappingFragment StoreEntitySet="tblAdvertisementState">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="TairTypeOfState" ColumnName="TairTypeOfState" />
+          <ScalarProperty Name="TairTypeOfStateID" ColumnName="TairTypeOfStateID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="AdvertisementMainID" ColumnName="AdvertisementMainID" />
+          <ScalarProperty Name="AdvertisementID" ColumnName="AdvertisementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementTimeSlots">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementTimeSlot">
+        <MappingFragment StoreEntitySet="tblAdvertisementTimeSlot">
+          <ScalarProperty Name="OldMatrix" ColumnName="OldMatrix" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TimeSlotMatrix" ColumnName="TimeSlotMatrix" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="TimeSlotName" ColumnName="TimeSlotName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementTypes">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementType">
+        <MappingFragment StoreEntitySet="tblAdvertisementType">
+          <ScalarProperty Name="OldMatrix" ColumnName="OldMatrix" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AdTypeMatrix" ColumnName="AdTypeMatrix" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAspNetUsers">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAspNetUser">
+        <MappingFragment StoreEntitySet="tblAspNetUsers">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBrands">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblBrand">
+        <MappingFragment StoreEntitySet="tblBrand">
+          <ScalarProperty Name="OrgID" ColumnName="OrgID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SourceOfUpdate" ColumnName="SourceOfUpdate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsTrademarkRegistered" ColumnName="IsTrademarkRegistered" />
+          <ScalarProperty Name="ItemCompanyID" ColumnName="ItemCompanyID" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBusinessDemands">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblBusinessDemand">
+        <MappingFragment StoreEntitySet="tblBusinessDemand">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Demand" ColumnName="Demand" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBusinessTypes">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblBusinessType">
+        <MappingFragment StoreEntitySet="tblBusinessType">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBusinessTypewithCusts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblBusinessTypewithCust">
+        <MappingFragment StoreEntitySet="tblBusinessTypewithCust">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategoryHistories">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblCategoryHistory">
+        <MappingFragment StoreEntitySet="tblCategoryHistory">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OldChildCategory" ColumnName="OldChildCategory" />
+          <ScalarProperty Name="OldSubCategory" ColumnName="OldSubCategory" />
+          <ScalarProperty Name="OldMainCategory" ColumnName="OldMainCategory" />
+          <ScalarProperty Name="OldProductName" ColumnName="OldProductName" />
+          <ScalarProperty Name="ChildCategory" ColumnName="ChildCategory" />
+          <ScalarProperty Name="SubCategory" ColumnName="SubCategory" />
+          <ScalarProperty Name="MainCategory" ColumnName="MainCategory" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategoryProducts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblCategoryProduct">
+        <MappingFragment StoreEntitySet="tblCategoryProduct">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsMasterProduct" ColumnName="IsMasterProduct" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="RefferedByOrReason" ColumnName="RefferedByOrReason" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="MainCategoryName" ColumnName="MainCategoryName" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategoryProductWithCusts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblCategoryProductWithCust">
+        <MappingFragment StoreEntitySet="tblCategoryProductWithCust">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChildCategories">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblChildCategory">
+        <MappingFragment StoreEntitySet="tblChildCategory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
+          <ScalarProperty Name="IsMasterProduct" ColumnName="IsMasterProduct" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="RefferedByOrReason" ColumnName="RefferedByOrReason" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="ChildCategoryName" ColumnName="ChildCategoryName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChildCategoryProductWithCusts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblChildCategoryProductWithCust">
+        <MappingFragment StoreEntitySet="tblChildCategoryProductWithCust">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ChildCategoryId" ColumnName="ChildCategoryId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCompanies">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblCompany">
+        <MappingFragment StoreEntitySet="tblCompany">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="CompanyState" ColumnName="CompanyState" />
+          <ScalarProperty Name="CompanyCity" ColumnName="CompanyCity" />
+          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCustomerDetails">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblCustomerDetail">
+        <MappingFragment StoreEntitySet="tblCustomerDetails">
+          <ScalarProperty Name="InterstDistrict" ColumnName="InterstDistrict" />
+          <ScalarProperty Name="BusinessDemandID" ColumnName="BusinessDemandID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="TAndCVersion" ColumnName="TAndCVersion" />
+          <ScalarProperty Name="IsTAndCAgreed" ColumnName="IsTAndCAgreed" />
+          <ScalarProperty Name="UserPhoto" ColumnName="UserPhoto" />
+          <ScalarProperty Name="BlockedDate" ColumnName="BlockedDate" />
+          <ScalarProperty Name="IsBlocked" ColumnName="IsBlocked" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="IsBGSMember" ColumnName="IsBGSMember" />
+          <ScalarProperty Name="ReasonForDeactivate" ColumnName="ReasonForDeactivate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="AnswerForQuestion" ColumnName="AnswerForQuestion" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="QuestionAnswered" ColumnName="QuestionAnswered" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="IsOTPVerified" ColumnName="IsOTPVerified" />
+          <ScalarProperty Name="SMSOTP" ColumnName="SMSOTP" />
+          <ScalarProperty Name="AdditionalPersonName" ColumnName="AdditionalPersonName" />
+          <ScalarProperty Name="UpdatedByDate" ColumnName="UpdatedByDate" />
+          <ScalarProperty Name="UpdatedByID" ColumnName="UpdatedByID" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SalesmanID" ColumnName="SalesmanID" />
+          <ScalarProperty Name="BankCity" ColumnName="BankCity" />
+          <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+          <ScalarProperty Name="Accountnumber" ColumnName="Accountnumber" />
+          <ScalarProperty Name="BankBranchName" ColumnName="BankBranchName" />
+          <ScalarProperty Name="Bankname" ColumnName="Bankname" />
+          <ScalarProperty Name="PanNumber" ColumnName="PanNumber" />
+          <ScalarProperty Name="TinNumber" ColumnName="TinNumber" />
+          <ScalarProperty Name="RegistrationType" ColumnName="RegistrationType" />
+          <ScalarProperty Name="InterstCountry" ColumnName="InterstCountry" />
+          <ScalarProperty Name="InterstState" ColumnName="InterstState" />
+          <ScalarProperty Name="InterstCity" ColumnName="InterstCity" />
+          <ScalarProperty Name="Langitude" ColumnName="Langitude" />
+          <ScalarProperty Name="Lattitude" ColumnName="Lattitude" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+          <ScalarProperty Name="ShopImage" ColumnName="ShopImage" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="MobileNumber2" ColumnName="MobileNumber2" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="CustName" ColumnName="CustName" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCustomerStatusHistories">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblCustomerStatusHistory">
+        <MappingFragment StoreEntitySet="tblCustomerStatusHistory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CustomerStatus" ColumnName="CustomerStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDeleteChats">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblDeleteChat">
+        <MappingFragment StoreEntitySet="tblDeleteChat">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ChatID" ColumnName="ChatID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDeleteConversations">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblDeleteConversation">
+        <MappingFragment StoreEntitySet="tblDeleteConversation">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDeleteEnquiries">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblDeleteEnquiry">
+        <MappingFragment StoreEntitySet="tblDeleteEnquiry">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDistricts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblDistrict">
+        <MappingFragment StoreEntitySet="tblDistrict">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="TairTypeOfDistrict" ColumnName="TairTypeOfDistrict" />
+          <ScalarProperty Name="TairTypeOfDistrictID" ColumnName="TairTypeOfDistrictID" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmailFooters">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblEmailFooter">
+        <MappingFragment StoreEntitySet="tblEmailFooter">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FooterBody" ColumnName="FooterBody" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFavoriteConversations">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblFavoriteConversation">
+        <MappingFragment StoreEntitySet="tblFavoriteConversation">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFormPermissions">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblFormPermission">
+        <MappingFragment StoreEntitySet="tblFormPermission">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFormPermissionItems">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblFormPermissionItem">
+        <MappingFragment StoreEntitySet="tblFormPermissionItem">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="IsEdit" ColumnName="IsEdit" />
+          <ScalarProperty Name="IsView" ColumnName="IsView" />
+          <ScalarProperty Name="IsCreate" ColumnName="IsCreate" />
+          <ScalarProperty Name="MainMenuID" ColumnName="MainMenuID" />
+          <ScalarProperty Name="SubMenuID" ColumnName="SubMenuID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="FormPermissionID" ColumnName="FormPermissionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHistories">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblHistory">
+        <MappingFragment StoreEntitySet="tblHistory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ActivityPage" ColumnName="ActivityPage" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemCategories">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblItemCategory">
+        <MappingFragment StoreEntitySet="tblItemCategory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ItemMatrix" ColumnName="ItemMatrix" />
+          <ScalarProperty Name="ItemImage2" ColumnName="ItemImage2" />
+          <ScalarProperty Name="ItemImage1" ColumnName="ItemImage1" />
+          <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
+          <ScalarProperty Name="IsMasterProduct" ColumnName="IsMasterProduct" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="RefferedByOrReason" ColumnName="RefferedByOrReason" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ChildCategoryID" ColumnName="ChildCategoryID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayments">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblPayment">
+        <MappingFragment StoreEntitySet="tblPayment">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="txnReferenceID" ColumnName="txnReferenceID" />
+          <ScalarProperty Name="txnTime" ColumnName="txnTime" />
+          <ScalarProperty Name="txnType" ColumnName="txnType" />
+          <ScalarProperty Name="txnSignature" ColumnName="txnSignature" />
+          <ScalarProperty Name="txnPaymentMode" ColumnName="txnPaymentMode" />
+          <ScalarProperty Name="PreAuthID" ColumnName="PreAuthID" />
+          <ScalarProperty Name="TxnStatus" ColumnName="TxnStatus" />
+          <ScalarProperty Name="TxnStatusMessage" ColumnName="TxnStatusMessage" />
+          <ScalarProperty Name="OrderAmount" ColumnName="OrderAmount" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="TxnStatusCode" ColumnName="TxnStatusCode" />
+          <ScalarProperty Name="TxnID" ColumnName="TxnID" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="AdvertisementMainID" ColumnName="AdvertisementMainID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProfessionalRequirements">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblProfessionalRequirement">
+        <MappingFragment StoreEntitySet="tblProfessionalRequirements">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RequirementName" ColumnName="RequirementName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPromoes">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblPromo">
+        <MappingFragment StoreEntitySet="tblPromo">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PromoText" ColumnName="PromoText" />
+          <ScalarProperty Name="PromoType" ColumnName="PromoType" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPushNotifications">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblPushNotification">
+        <MappingFragment StoreEntitySet="tblPushNotifications">
+          <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
+          <ScalarProperty Name="QueryID" ColumnName="QueryID" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PushNotification" ColumnName="PushNotification" />
+          <ScalarProperty Name="NotificationDate" ColumnName="NotificationDate" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuestions">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblQuestion">
+        <MappingFragment StoreEntitySet="tblQuestions">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OptionDHindi" ColumnName="OptionDHindi" />
+          <ScalarProperty Name="OptionCHindi" ColumnName="OptionCHindi" />
+          <ScalarProperty Name="OptionBHindi" ColumnName="OptionBHindi" />
+          <ScalarProperty Name="OptionAHindi" ColumnName="OptionAHindi" />
+          <ScalarProperty Name="QuestionNameHindi" ColumnName="QuestionNameHindi" />
+          <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+          <ScalarProperty Name="OptionD" ColumnName="OptionD" />
+          <ScalarProperty Name="OptionC" ColumnName="OptionC" />
+          <ScalarProperty Name="OptionB" ColumnName="OptionB" />
+          <ScalarProperty Name="OptionA" ColumnName="OptionA" />
+          <ScalarProperty Name="QuestionName" ColumnName="QuestionName" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblselectedDealers">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblselectedDealer">
+        <MappingFragment StoreEntitySet="tblselectedDealer">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="EnquiryType" ColumnName="EnquiryType" />
+          <ScalarProperty Name="IsAdEnquiry" ColumnName="IsAdEnquiry" />
+          <ScalarProperty Name="ProfessionalRequirementID" ColumnName="ProfessionalRequirementID" />
+          <ScalarProperty Name="BusinessDemandID" ColumnName="BusinessDemandID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="LastUpdatedMsgDate" ColumnName="LastUpdatedMsgDate" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="replayText" ColumnName="replayText" />
+          <ScalarProperty Name="OpenText" ColumnName="OpenText" />
+          <ScalarProperty Name="PurposeBusiness" ColumnName="PurposeBusiness" />
+          <ScalarProperty Name="BusinessDemand" ColumnName="BusinessDemand" />
+          <ScalarProperty Name="MNumber" ColumnName="MNumber" />
+          <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSelectedDealerBusinessTypes">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSelectedDealerBusinessType">
+        <MappingFragment StoreEntitySet="tblSelectedDealerBusinessTypes">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="QueryID" ColumnName="QueryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblselectedDealerDetails">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblselectedDealerDetail">
+        <MappingFragment StoreEntitySet="tblselectedDealerDetails">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SenderRead" ColumnName="SenderRead" />
+          <ScalarProperty Name="DeletedCustID" ColumnName="DeletedCustID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="FavoriteCustID" ColumnName="FavoriteCustID" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="LastUpdatedMsgDate" ColumnName="LastUpdatedMsgDate" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSMSTemplates">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSMSTemplate">
+        <MappingFragment StoreEntitySet="tblSMSTemplate">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SMSTemplateType" ColumnName="SMSTemplateType" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TemplateBody" ColumnName="TemplateBody" />
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStates">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblState">
+        <MappingFragment StoreEntitySet="tblState">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="TairType" ColumnName="TairType" />
+          <ScalarProperty Name="TairTypeID" ColumnName="TairTypeID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStateWithCities">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblStateWithCity">
+        <MappingFragment StoreEntitySet="tblStateWithCity">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="TairTypeOfCity" ColumnName="TairTypeOfCity" />
+          <ScalarProperty Name="TairTypeOfCityID" ColumnName="TairTypeOfCityID" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="VillageLocalityName" ColumnName="VillageLocalityName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StatewithCityID" ColumnName="StatewithCityID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSubCategories">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSubCategory">
+        <MappingFragment StoreEntitySet="tblSubCategory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
+          <ScalarProperty Name="IsMasterProduct" ColumnName="IsMasterProduct" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="RefferedByOrReason" ColumnName="RefferedByOrReason" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSubCategoryProductWithCusts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSubCategoryProductWithCust">
+        <MappingFragment StoreEntitySet="tblSubCategoryProductWithCust">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSysMainMenus">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSysMainMenu">
+        <MappingFragment StoreEntitySet="tblSysMainMenu">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SourceOfUpdate" ColumnName="SourceOfUpdate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="MainMenuName" ColumnName="MainMenuName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSysRoles">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSysRole">
+        <MappingFragment StoreEntitySet="tblSysRole">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SourceOfUpdate" ColumnName="SourceOfUpdate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSysSubMenus">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblSysSubMenu">
+        <MappingFragment StoreEntitySet="tblSysSubMenu">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SourceOfUpdate" ColumnName="SourceOfUpdate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="SubMenuName" ColumnName="SubMenuName" />
+          <ScalarProperty Name="MainMenuID" ColumnName="MainMenuID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTairTypeOfCities">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblTairTypeOfCity">
+        <MappingFragment StoreEntitySet="tblTairTypeOfCity">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TairTypeOfCityMatrix" ColumnName="TairTypeOfCityMatrix" />
+          <ScalarProperty Name="TairTypeOfCity" ColumnName="TairTypeOfCity" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTairTypeOfDistricts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblTairTypeOfDistrict">
+        <MappingFragment StoreEntitySet="tblTairTypeOfDistrict">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TairTypeOfDistrictMatrix" ColumnName="TairTypeOfDistrictMatrix" />
+          <ScalarProperty Name="TairTypeOfDistrict" ColumnName="TairTypeOfDistrict" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTairTypeOfStates">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblTairTypeOfState">
+        <MappingFragment StoreEntitySet="tblTairTypeOfState">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TairTypeOfStateMatrix" ColumnName="TairTypeOfStateMatrix" />
+          <ScalarProperty Name="TairTypeOfState" ColumnName="TairTypeOfState" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTAndCs">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblTAndC">
+        <MappingFragment StoreEntitySet="tblTAndC">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+          <ScalarProperty Name="TAndCVersion" ColumnName="TAndCVersion" />
+          <ScalarProperty Name="TAndC" ColumnName="TAndC" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="MNumber" ColumnName="MNumber" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserConversations">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblUserConversation">
+        <MappingFragment StoreEntitySet="tblUserConversations">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="IsArchived" ColumnName="IsArchived" />
+          <ScalarProperty Name="DeletedCustID" ColumnName="DeletedCustID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IsCustomer" ColumnName="IsCustomer" />
+          <ScalarProperty Name="IsDealer" ColumnName="IsDealer" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVideos">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblVideo">
+        <MappingFragment StoreEntitySet="tblVideos">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VideoURL" ColumnName="VideoURL" />
+          <ScalarProperty Name="VideoName" ColumnName="VideoName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTaxSlabs">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblTaxSlab">
+        <MappingFragment StoreEntitySet="tblTaxSlab">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TaxSlabValue" ColumnName="TaxSlabValue" />
+          <ScalarProperty Name="TaxSlabName" ColumnName="TaxSlabName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductsViews">
+      <EntityTypeMapping TypeName="jbnbetaModel.ProductsView">
+        <MappingFragment StoreEntitySet="ProductsView">
+          <ScalarProperty Name="ChildCategoryName" ColumnName="ChildCategoryName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="MainCategoryName" ColumnName="MainCategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="SubCategoryID" ColumnName="SubCategoryID" />
+          <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
+          <ScalarProperty Name="ChildCategoryID" ColumnName="ChildCategoryID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="USP_ChildCatRpt" FunctionName="jbnbetaModel.Store.USP_ChildCatRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_ChildCatRpt_Result">
+          <ScalarProperty Name="childcategoryid" ColumnName="childcategoryid" />
+          <ScalarProperty Name="childcategoryname" ColumnName="childcategoryname" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="CityCount" ColumnName="CityCount" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CityViews">
+      <EntityTypeMapping TypeName="jbnbetaModel.CityView">
+        <MappingFragment StoreEntitySet="CityView">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="VillageLocalityName" ColumnName="VillageLocalityName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StateWithCityID" ColumnName="StateWithCityID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="USP_ChildCatCityWiseRpt" FunctionName="jbnbetaModel.Store.USP_ChildCatCityWiseRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_ChildCatCityWiseRpt_Result">
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="VillageLocalityname" ColumnName="VillageLocalityname" />
+          <ScalarProperty Name="childcategoryid" ColumnName="childcategoryid" />
+          <ScalarProperty Name="childcategoryname" ColumnName="childcategoryname" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_ItemCatCityWiseRpt" FunctionName="jbnbetaModel.Store.USP_ItemCatCityWiseRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_ItemCatCityWiseRpt_Result">
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="VillageLocalityname" ColumnName="VillageLocalityname" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_ItemCatRpt" FunctionName="jbnbetaModel.Store.USP_ItemCatRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="jbnbetaModel.USP_ItemCatRpt_Result">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="itemname" ColumnName="itemname" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="CityCount" ColumnName="CityCount" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tblAdTimeSlots">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdTimeSlot">
+        <MappingFragment StoreEntitySet="tblAdTimeSlots">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="TimeSlotName" ColumnName="TimeSlotName" />
+          <ScalarProperty Name="TimeSlotID" ColumnName="TimeSlotID" />
+          <ScalarProperty Name="AdvertisementID" ColumnName="AdvertisementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementCitySlots">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementCitySlot">
+        <MappingFragment StoreEntitySet="tblAdvertisementCitySlot">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TimeSlotId" ColumnName="TimeSlotId" />
+          <ScalarProperty Name="AdvertisementAreaID" ColumnName="AdvertisementAreaID" />
+          <ScalarProperty Name="TypeOfAdvertisementID" ColumnName="TypeOfAdvertisementID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Slots" ColumnName="Slots" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementDistrictSlots">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementDistrictSlot">
+        <MappingFragment StoreEntitySet="tblAdvertisementDistrictSlot">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TimeSlotId" ColumnName="TimeSlotId" />
+          <ScalarProperty Name="AdvertisementAreaID" ColumnName="AdvertisementAreaID" />
+          <ScalarProperty Name="TypeOfAdvertisementID" ColumnName="TypeOfAdvertisementID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Slots" ColumnName="Slots" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementNationSlots">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementNationSlot">
+        <MappingFragment StoreEntitySet="tblAdvertisementNationSlot">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TimeSlotId" ColumnName="TimeSlotId" />
+          <ScalarProperty Name="AdvertisementAreaID" ColumnName="AdvertisementAreaID" />
+          <ScalarProperty Name="TypeOfAdvertisementID" ColumnName="TypeOfAdvertisementID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Slots" ColumnName="Slots" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementStateSlots">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementStateSlot">
+        <MappingFragment StoreEntitySet="tblAdvertisementStateSlot">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TimeSlotId" ColumnName="TimeSlotId" />
+          <ScalarProperty Name="AdvertisementAreaID" ColumnName="AdvertisementAreaID" />
+          <ScalarProperty Name="TypeOfAdvertisementID" ColumnName="TypeOfAdvertisementID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Slots" ColumnName="Slots" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBusinessDemandwithCusts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblBusinessDemandwithCust">
+        <MappingFragment StoreEntitySet="tblBusinessDemandwithCust">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="BusinessDemandID" ColumnName="BusinessDemandID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPurposeOfBusinesses">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblPurposeOfBusiness">
+        <MappingFragment StoreEntitySet="tblPurposeOfBusiness">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdvertisementDiscounts">
+      <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementDiscount">
+        <MappingFragment StoreEntitySet="tblAdvertisementDiscount">
+          <ScalarProperty Name="DiscountPer" ColumnName="DiscountPer" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="ToAmount" ColumnName="ToAmount" />
+          <ScalarProperty Name="FromAmount" ColumnName="FromAmount" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="PricingSlabName" ColumnName="PricingSlabName" />
+          <ScalarProperty Name="PricingSlabID" ColumnName="PricingSlabID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

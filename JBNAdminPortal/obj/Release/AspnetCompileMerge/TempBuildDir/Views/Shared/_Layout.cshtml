@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title - JBN Admin Portal</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/vendors/base/vendor.bundle.base.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="~/vendors/SmartPhoto-master/SmartPhoto-master/css/smartphoto.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css" />
+    <!-- inject:css -->
+
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="~/Content/sweetalert/sweet-alert.css">
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script type="text/javascript" src="~/vendors/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/vendors/DataTables-1.10.21/css/jquery.dataTables.min.css" />
+    <link href="~/vendors/MultiSelect/MultiSelect.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+    <link href="~/vendors/select2/dist/css/select2.css" rel="stylesheet" />
+    <script src="~/vendors/select2/dist/js/select2.js"></script>
+    <script src="~/Scripts/Custom.js"></script>
+    <!-- endinject -->
+    @Scripts.Render("~/bundles/modernizr")
+    @*Notifications*@
+    <link href="~/vendors/styled-notifications-master/dist/notifications.css" rel="stylesheet" />
+    <script src="~/vendors/styled-notifications-master/dist/notifications.js"></script>
+
+    @*Animate*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    @*Time Picker*@
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="~/vendors/SmartPhoto-master/SmartPhoto-master/css/smartphoto.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="~/vendors/MultiSelect/MultiSelect.js"></script>
+    <style type="text/css">
+        .listbox .multiselect-container > li > a > label.checkbox {
+            width: 220px;
+        }
+
+        .listbox .btn-group > .btn:first-child {
+            width: 220px;
+        }
+
+        #app {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 4;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 15px;
+        }
+
+            #app img {
+                width: 100%;
+            }
+    </style>
+</head>
+<body>
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="~/images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <div class="container-scroller">
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href='@Url.Action("Index", "Dashboard")'><img src="~/images/Full logo.png" class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href='@Url.Action("Index", "Dashboard")'><img src="~/images/Logo.png" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="ti-view-list"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                            <b>Welcome</b>, @HttpContext.Current.Session["FullName"] &nbsp;&nbsp;  <img src="~/images/admin.png" alt="profile" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                            <a class="dropdown-item" href='@Url.Action("Index", "ChangePassword")'>
+                                <i class="ti-settings text-primary"></i>
+                                Change Password
+                            </a>
+                            <a class="dropdown-item" href='@Url.Action("Index", "Logout")'>
+                                <i class="ti-power-off text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="ti-view-list"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            @Html.Partial("_MainMenu")
+            <!-- partial -->
+            <!-- main-panel ends -->
+            @RenderBody()
+        </div>
+    </div>
+    <!-- plugins:js -->
+    <script src="~/vendors/base/vendor.bundle.base.js"></script>
+
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <script src="~/vendors/chart.js/Chart.min.js"></script>
+    <script src="~/vendors/SmartPhoto-master/SmartPhoto-master/js/smartphoto.js?v=1"></script>
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="~/Scripts/off-canvas.js"></script>
+    <script src="~/Scripts/hoverable-collapse.js"></script>
+    <script src="~/Scripts/template.js"></script>
+    <script src="~/Scripts/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="~/Scripts/dashboard.js"></script>
+    <script src="~/Scripts/chart.js"></script>
+    <script src="~/vendors/SmartPhoto-master/SmartPhoto-master/js/smartphoto.js?v=1"></script>
+    
+    <script>
+        $.noConflict();
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            //buttons: [
+            //    'csv', 'excel', 'pdf'
+            //]
+            buttons: [{
+                extend: 'excelHtml5',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'csvHtml5',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'pdfHtml5',
+                orientation: 'landscape',
+                pageSize: 'LEGAL',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }
+            ]
+        });
+        $(function () {
+            $(".dated").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'dd/mm/yy',
+                maxDate: new Date()
+            });
+            $(".dates").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'dd/mm/yy',
+            });
+            $('.timepicker').timepicker();
+        });
+        $(document).ready(function () {
+            $(".dropdowns").select2();
+        });
+        function multiSelect() {
+            $('.listbox').multiselect({
+                includeSelectAllOption: true,
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true,
+                maxHeight: 450,
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sm = new SmartPhoto(".js-img-viwer", {
+                showAnimation: false
+            });
+            // sm.destroy();
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

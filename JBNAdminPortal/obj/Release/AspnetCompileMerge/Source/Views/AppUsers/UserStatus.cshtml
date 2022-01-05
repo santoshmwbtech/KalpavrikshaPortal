@@ -1,0 +1,46 @@
+﻿@model JBNClassLibrary.UserStatus
+
+@using (Ajax.BeginForm("ActivateDeactivateUser", "AppUsers", null, new AjaxOptions
+{
+    OnSuccess = "onBlockActivateSuccess",
+    HttpMethod = "post",
+    LoadingElementId = "progress",
+}, new { @class = "form-sample" }))
+{
+    @Html.AntiForgeryToken()
+    <p class="card-description">
+
+    </p>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group row">
+                <label class="col-md-3">Comments</label>
+                @Html.HiddenFor(model => model.CustID)
+                @Html.HiddenFor(model => model.StatusType)
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off" } })
+                    @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit </button>
+    </div>
+}
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+
+<script>
+    $(function () {
+        if ($("#StatusType").val() == "0") {
+            $("#myModalLabel").html("Block User")
+        }
+        else {
+            $("#myModalLabel").html("Activate User")
+        }
+    });
+</script>

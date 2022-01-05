@@ -1,0 +1,716 @@
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\ErrorLog.txt
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\JBNAdminPortal.dll.config
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\JBNAdminPortal.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\JBNAdminPortal.pdb
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\csc.exe
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\csc.exe.config
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\csc.rsp
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\csi.exe
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\csi.exe.config
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\csi.rsp
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.AppContext.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Collections.Immutable.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Console.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Globalization.Calendars.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.IO.Compression.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Net.Http.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Net.Sockets.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Reflection.Metadata.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.ValueTuple.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Xml.XPath.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\vbc.exe
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\vbc.exe.config
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\vbc.rsp
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe.config
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Antlr3.Runtime.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\ChoETL.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\ChoETL.JSON.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\CsvHelper.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\EntityFramework.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\EntityFramework.SqlServer.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\EPPlus.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\JBNClassLibrary.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\MoreLinq.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Newtonsoft.Json.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Buffers.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.CodeDom.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.ComponentModel.Annotations.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Configuration.ConfigurationManager.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Data.SqlClient.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Linq.Dynamic.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Memory.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Numerics.Vectors.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.ValueTuple.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Helpers.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Mvc.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Optimization.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Razor.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.WebPages.Deployment.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.WebPages.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.WebPages.Razor.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\WebGrease.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\JBNClassLibrary.pdb
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\JBNClassLibrary.dll.config
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\CsvHelper.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\EntityFramework.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\EntityFramework.SqlServer.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\EPPlus.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\MoreLinq.pdb
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\MoreLinq.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Buffers.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Memory.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Numerics.Vectors.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.ValueTuple.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Helpers.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Mvc.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Optimization.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.Razor.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.WebPages.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.WebPages.Deployment.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\System.Web.WebPages.Razor.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Newtonsoft.Json.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Antlr3.Runtime.pdb
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\obj\Debug\JBNAdminPortal.csprojAssemblyReference.cache
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CopyComplete
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\NewSVNFolder\jbcnotification\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\ErrorLog.txt
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\JBNAdminPortal.dll.config
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\JBNAdminPortal.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\JBNAdminPortal.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\csc.exe
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\csc.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\csc.rsp
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\csi.exe
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\csi.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\csi.rsp
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.AppContext.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Collections.Immutable.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Console.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Globalization.Calendars.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.Compression.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Net.Http.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Net.Sockets.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Reflection.Metadata.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.ValueTuple.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.XPath.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\vbc.exe
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\vbc.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\vbc.rsp
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Antlr3.Runtime.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\ChoETL.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\ChoETL.JSON.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\CsvHelper.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.SqlServer.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\EPPlus.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\JBNClassLibrary.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\MoreLinq.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Newtonsoft.Json.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Buffers.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.CodeDom.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.ComponentModel.Annotations.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Configuration.ConfigurationManager.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Data.SqlClient.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Linq.Dynamic.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Memory.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Numerics.Vectors.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.ValueTuple.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Helpers.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Mvc.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Optimization.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Razor.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Deployment.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Razor.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\WebGrease.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\JBNClassLibrary.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\JBNClassLibrary.dll.config
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\CsvHelper.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.SqlServer.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\EPPlus.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\MoreLinq.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\MoreLinq.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Buffers.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Memory.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Numerics.Vectors.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.ValueTuple.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Helpers.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Mvc.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Optimization.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.Razor.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Deployment.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Razor.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Newtonsoft.Json.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Antlr3.Runtime.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.csprojAssemblyReference.cache
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CopyComplete
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\NewSVNFolder\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\ErrorLog.txt
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\JBNAdminPortal.dll.config
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\JBNAdminPortal.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\JBNAdminPortal.pdb
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\csc.exe
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\csc.exe.config
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\csc.rsp
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\csi.exe
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\csi.exe.config
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\csi.rsp
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.AppContext.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Collections.Immutable.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Console.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Globalization.Calendars.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.Compression.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Net.Http.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Net.Sockets.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Reflection.Metadata.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.ValueTuple.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.XPath.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\vbc.exe
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\vbc.exe.config
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\vbc.rsp
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe.config
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Antlr3.Runtime.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\ChoETL.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\ChoETL.JSON.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\CsvHelper.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.SqlServer.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\EPPlus.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\JBNClassLibrary.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\MoreLinq.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Newtonsoft.Json.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Buffers.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.CodeDom.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.ComponentModel.Annotations.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Configuration.ConfigurationManager.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Data.SqlClient.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Linq.Dynamic.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Memory.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Numerics.Vectors.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.ValueTuple.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Helpers.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Mvc.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Optimization.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Razor.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Deployment.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Razor.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\WebGrease.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\JBNClassLibrary.pdb
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\JBNClassLibrary.dll.config
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\CsvHelper.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\EntityFramework.SqlServer.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\EPPlus.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\MoreLinq.pdb
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\MoreLinq.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Buffers.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Memory.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Numerics.Vectors.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.ValueTuple.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Helpers.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Mvc.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Optimization.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.Razor.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Deployment.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\System.Web.WebPages.Razor.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Newtonsoft.Json.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Antlr3.Runtime.pdb
+E:\Santosh\MWB Bazaar\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Santosh\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.csprojAssemblyReference.cache
+E:\Santosh\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CoreCompileInputs.cache
+E:\Santosh\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CopyComplete
+E:\Santosh\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\Santosh\MWB Bazaar\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\ErrorLog.txt
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\JBNAdminPortal.dll.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\JBNAdminPortal.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\JBNAdminPortal.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\csc.exe
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\csc.exe.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\csc.rsp
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\csi.exe
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\csi.exe.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\csi.rsp
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.AppContext.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Collections.Immutable.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Console.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Globalization.Calendars.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.IO.Compression.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Net.Http.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Net.Sockets.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Reflection.Metadata.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.ValueTuple.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Xml.XPath.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\vbc.exe
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\vbc.exe.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\vbc.rsp
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Antlr3.Runtime.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\ChoETL.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\ChoETL.JSON.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\CsvHelper.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\EntityFramework.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\EntityFramework.SqlServer.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\EPPlus.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\JBNClassLibrary.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\MoreLinq.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Newtonsoft.Json.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Buffers.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.CodeDom.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.ComponentModel.Annotations.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Configuration.ConfigurationManager.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Data.SqlClient.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Linq.Dynamic.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Memory.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Numerics.Vectors.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.ValueTuple.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Helpers.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Mvc.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Optimization.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Razor.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.WebPages.Deployment.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.WebPages.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.WebPages.Razor.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\WebGrease.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\JBNClassLibrary.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\JBNClassLibrary.dll.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\CsvHelper.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\EntityFramework.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\EntityFramework.SqlServer.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\EPPlus.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\MoreLinq.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\MoreLinq.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Buffers.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Memory.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Numerics.Vectors.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.ValueTuple.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Helpers.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Mvc.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Optimization.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.Razor.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.WebPages.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.WebPages.Deployment.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\System.Web.WebPages.Razor.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Newtonsoft.Json.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Antlr3.Runtime.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.AssemblyReference.cache
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CoreCompileInputs.cache
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CopyComplete
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.AssemblyReference.cache
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CoreCompileInputs.cache
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\ErrorLog.txt
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\JBNAdminPortal.dll.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\JBNAdminPortal.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\JBNAdminPortal.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\csc.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\csc.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\csc.rsp
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\csi.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\csi.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\csi.rsp
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.AppContext.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Collections.Immutable.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Console.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Globalization.Calendars.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.IO.Compression.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Net.Http.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Net.Sockets.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Reflection.Metadata.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.ValueTuple.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Xml.XPath.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\vbc.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\vbc.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\vbc.rsp
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Antlr3.Runtime.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\ChoETL.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\ChoETL.JSON.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\CsvHelper.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\EntityFramework.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\EntityFramework.SqlServer.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\EPPlus.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\JBNClassLibrary.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\MoreLinq.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Newtonsoft.Json.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Buffers.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.CodeDom.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.ComponentModel.Annotations.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Configuration.ConfigurationManager.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Data.SqlClient.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Linq.Dynamic.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Memory.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Numerics.Vectors.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.ValueTuple.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Helpers.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Mvc.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Optimization.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Razor.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.WebPages.Deployment.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.WebPages.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.WebPages.Razor.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\WebGrease.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\JBNClassLibrary.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\JBNClassLibrary.dll.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\CsvHelper.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\EntityFramework.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\EntityFramework.SqlServer.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\EPPlus.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\MoreLinq.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\MoreLinq.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Buffers.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Memory.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Numerics.Vectors.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.ValueTuple.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Helpers.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Mvc.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Optimization.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.Razor.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.WebPages.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.WebPages.Deployment.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\System.Web.WebPages.Razor.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Newtonsoft.Json.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Antlr3.Runtime.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.AssemblyReference.cache
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CoreCompileInputs.cache
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.AssemblyReference.cache
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CoreCompileInputs.cache
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\ErrorLog.txt
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\JBNAdminPortal.dll.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\JBNAdminPortal.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\JBNAdminPortal.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\csc.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\csc.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\csc.rsp
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\csi.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\csi.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\csi.rsp
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.AppContext.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Collections.Immutable.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Console.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Globalization.Calendars.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.IO.Compression.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Net.Http.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Net.Sockets.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Reflection.Metadata.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.ValueTuple.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Xml.XPath.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\vbc.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\vbc.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\vbc.rsp
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\roslyn\VBCSCompiler.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Antlr3.Runtime.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\ChoETL.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\ChoETL.JSON.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\CsvHelper.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\EntityFramework.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\EntityFramework.SqlServer.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\EPPlus.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\JBNClassLibrary.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\MoreLinq.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Newtonsoft.Json.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Buffers.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.CodeDom.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.ComponentModel.Annotations.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Configuration.ConfigurationManager.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Data.SqlClient.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Linq.Dynamic.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Memory.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Numerics.Vectors.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.ValueTuple.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Helpers.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Mvc.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Optimization.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Razor.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.WebPages.Deployment.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.WebPages.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.WebPages.Razor.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\WebGrease.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\JBNClassLibrary.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\JBNClassLibrary.dll.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\CsvHelper.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\EntityFramework.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\EntityFramework.SqlServer.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\EPPlus.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.Bcl.HashCode.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\MoreLinq.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\MoreLinq.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Buffers.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Memory.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Numerics.Vectors.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Threading.Tasks.Extensions.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.ValueTuple.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Helpers.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Mvc.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Optimization.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.Razor.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.WebPages.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.WebPages.Deployment.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\System.Web.WebPages.Razor.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Newtonsoft.Json.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Antlr3.Runtime.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.csproj.CopyComplete
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\obj\Debug\JBNAdminPortal.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNAdminPortal\bin\Rotativa.dll

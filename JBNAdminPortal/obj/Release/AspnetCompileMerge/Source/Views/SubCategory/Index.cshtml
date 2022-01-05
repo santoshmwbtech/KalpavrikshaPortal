@@ -1,0 +1,106 @@
+﻿@model IEnumerable<JBNClassLibrary.SubCat>
+
+@{
+    ViewBag.Title = "Sub Categories";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="row" id="divCreate">
+            @if (Request.QueryString["route"] != null)
+            {
+                if (@Request.QueryString["route"].ToString() != "view")
+                {
+                    @Html.Action("Create")
+                }
+            }
+            else
+            {
+                @Html.Action("Create")
+            }
+        </div>
+        <div class="row" id="divList">
+            @if (Request.QueryString["route"] != null)
+            {
+                if (@Request.QueryString["route"].ToString() != "create")
+                {
+                    @Html.Action("Details")
+                }
+            }
+            else
+            {
+                @Html.Action("Details")
+            }
+
+        </div>
+    </div>
+</div>
+
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onCreateSuccess_Ajax() {
+        swal({
+                title: "Success!",
+                text: "SubCategory Saved Successfully and Waiting for Approval",
+                type: "success",
+                icon: "success",
+            }).then(function () {
+                $('#divCreate').load('@Url.Action("Create","SubCategory")');
+                setTimeout(function(){ $(".dropdowns").select2(); }, 1000);
+            });
+    }
+    function onEditSuccess_Ajax() {
+        swal({
+                title: "Success!",
+                text: "SubCategory Updated Successfully",
+                type: "success",
+                icon: "success",
+            }).then(function () {
+                $('#divCreate').empty();
+            });
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax(data) {
+        swal("Error", data, "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+        $("#SubCategoryName").focus();
+        $(".dropdowns").select2();
+    }
+</script>
+<script>
+    function btnCancel_Click() {
+        @*$('#divCreate').load('@Url.Action("Create","SubCategory")');*@
+        $('#divCreate').empty();
+    }
+    $('#SubCategoryName').change(function () {
+            var selection = $('#SubCategoryName').val();
+            if (selection.length > 0) {
+                $.post('@Url.Action("CheckDuplicateName", "SubCategory")', { SubCategoryName: selection},
+            function (data) {
+                if (data == 0) {
+                    $("#SubCategoryName").html('<font color="Green">Available !. you can take it.</font>');
+                    $("#SubCategoryName").css("border-color", "Green");
+                }
+                else {
+                    CreateNotification("error", "Error", "Category Name already created..");
+                    $("#SubCategoryName").val('');
+                    $("#SubCategoryName").focus();
+                }
+            })
+        }
+    });
+</script>
+

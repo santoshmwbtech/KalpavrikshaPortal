@@ -1,0 +1,168 @@
+﻿@model JBNClassLibrary.DLEnquiries.CustomerEnquiries
+
+@{
+    ViewBag.Title = "Replied Customers List";
+}
+
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Replied Customers List</h4>
+                        <p class="card-description">
+
+                        </p>
+                        @using (Ajax.BeginForm("SearchByDate", "EnquiryView", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "divList",
+                            OnBegin = "onBegin_Ajax",
+                            OnComplete = "onSearchCompleteCreate_Ajax",
+                            OnSuccess = "onSearchSuccess_Ajax",
+                            //OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }, new { @class = "form-sample" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-3" style="display:none">
+                                    <div class="form-group">
+                                        <label>Business Type</label>
+                                        @Html.HiddenFor(a => a.EnquiryType)
+                                        @Html.DropDownListFor(a => a.BusinessTypeList, (SelectList)ViewBag.BusinessType, "Select Business Type", new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Enquiry State</label>
+                                        @Html.DropDownListFor(a => a.EnquiryStateList, (SelectList)ViewBag.EnquiryStates, "Select Enquiry State", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Enquiry City</label>
+                                        @Html.DropDownListFor(a => a.EnquiryCityList, (SelectList)ViewBag.EnquiryCities, "Select Enquiry City", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Sender State</label>
+                                        @Html.DropDownListFor(a => a.SenderStateList, (SelectList)ViewBag.EnquiryStates, "Select Customer State", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Sender City</label>
+                                        @Html.DropDownListFor(a => a.SenderCityList, (SelectList)ViewBag.EnquiryCities, "Select Customer City", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Business Demand</label>
+                                        @Html.DropDownListFor(a => a.BusinessDemandID, (SelectList)ViewBag.BusinessDemands, "Select Business Demand", new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Purpose of Business</label>
+                                        @Html.DropDownListFor(a => a.PurposeBusiness, new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Select Purpose Of Business", Value = "" },
+                                            new SelectListItem{ Text="Home", Value = "home" },
+                                            new SelectListItem{ Text="Business", Value = "business" },
+                                            new SelectListItem{ Text="Reselling", Value = "reselling" },
+                                         }, new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <button type="submit" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="divList">
+                        @if (Request.QueryString["Route"] != null && Request.QueryString["CustID"] != null && Request.QueryString["EnquiryType"] != null)
+                        {
+                            @Html.Action("EnquiryList", new { Route = Request.QueryString["Route"].ToString(), CustID = Request.QueryString["CustID"].ToString(), EnquiryType = Request.QueryString["EnquiryType"].ToString() })
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+<script>
+    function onSearchCompleteCreate_Ajax() {
+
+    }
+    function onSearchSuccess_Ajax() {
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'csv', 'excel', 'pdf'
+            ]
+        });
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+    }
+    function onShareSuccess(data) {
+        if (data == "Mail Sent") {
+            swal("Success", data, "success");
+        }
+        else {
+            swal("Error", data, "error");
+        }
+    }
+</script>
+<script>
+    function StateChanged(element) {
+        var StateID = $(element).val();
+        $("#progress").show();
+        $("#progress p span").text("Loading Cities.. Please Wait..");
+        $.ajax({
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            data: "{ 'StateID': '" + StateID + "'}",
+            url: '@Url.Action("GetCitiesofState", "BusinessTypeWiseRpt")',
+            success: function (data) {
+                //$("#StateWithCityID").append('<option value="0">Select City</option>');
+                $.each(data, function (index, value) {
+                    $("#StateWithCityID").append('<option value="' + value.StatewithCityID + '">' + value.VillageLocalityName + '</option>');
+                });
+                $("#progress").hide();
+                $("#progress p span").text("Loading.. Please Wait..");
+                $("#StateWithCityID").focus();
+            },
+            error: function (response) {
+                alert(response.error);
+            }
+        });
+    }
+</script>
+
+
+

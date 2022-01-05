@@ -1,0 +1,2 @@
+Date & Time : 01/09/2021 18:24:58[Request] [ {"multicast_id":348465766377828370,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630500899353080%1d70b93c1d70b93c"}]}]
+Date & Time : 01/09/2021 18:32:16[Request] [ {"multicast_id":6721051512514262214,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1630501337325783%1d70b93c1d70b93c"}]}]

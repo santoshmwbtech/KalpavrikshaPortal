@@ -1,0 +1,12 @@
+‡*******************Start**************
+Date & Time : 18/11/2021 09:37:33
+Message : The cast to value type 'System.Int32' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.
+Source : EntityFramework
+StackTrace :    at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at JBNClassLibrary.DLStateCityReport.GetStateReport(StateCityRpt stateCityRpt) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLStateCityReport.cs:line 104
+*******************End**************

@@ -1,0 +1,206 @@
+﻿@model JBNAdminPortal.Models.Search
+
+@{
+    ViewBag.Title = "ItemCategoryWise Customer Report";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Item CategoryWise Customers Report</h4>
+                        <p class="card-description">
+
+                        </p>
+
+                        @using (Ajax.BeginForm("SearchReport", "ItemCatRpt", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "divList",
+                            OnSuccess = "onSearchSuccess_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }, new { @class = "form-sample" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>From Date</label>
+                                        @Html.TextBoxFor(a => a.FromDate, null, new { @class = "form-control dated", @autocomplete = "off", @onchange = "return validate_date(this)", @required = "required" })
+                                        @Html.ValidationMessageFor(a => a.FromDate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>To Date</label>
+                                        @Html.TextBoxFor(a => a.ToDate, null, new { @class = "form-control dated", @autocomplete = "off", @onchange = "return validate_date(this)", @required = "required" })
+                                        @Html.ValidationMessageFor(a => a.ToDate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Filter By Category</label>
+                                        @Html.DropDownListFor(a => a.ItemCategoryList, Enumerable.Empty<SelectListItem>(), "Select Category", new { @class = "form-control", @multiple = "multiple", @id = "ddlItems", @required = "required" })
+                                        @Html.ValidationMessageFor(a => a.ItemCategoryList, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Filter By State</label>
+                                        @Html.DropDownListFor(a => a.StateList, (SelectList)ViewBag.StateList, "Select State", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <button type="submit" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body">
+                        <div id="divList">
+                            @*@Html.Action("ItemCatRptList")*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onSearchSuccess_Ajax() {
+        loadDataTableWithButtons();
+        LoadTable();
+    }
+    function onPromoSuccess_Ajax(result) {
+        if (result == "sessionexpired") {
+            swal({
+                text: "Your Session Expired!! Please login again",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Login")';
+            });
+        }
+        else {
+            swal({
+                text: result,
+            }).then(function () {
+                window.location = '@Url.Action("Index", "ItemCatRpt")';
+            });
+        }
+    }
+    $(document).ready(function () {
+        LoadTable();
+    });
+    function LoadTable() {
+        $(".dataGrid").dataTable().fnDestroy();
+        var table = $('.dataGrid').DataTable({
+            dom: 'Bfrtip',
+            pageLength: 5,
+            buttons: [{
+                extend: 'excel',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'csv',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }, {
+                extend: 'pdfHtml5',
+                orientation: 'landscape',
+                pageSize: 'LEGAL',
+                exportOptions: {
+                    columns: "thead th:not(.noExport)"
+                }
+            }
+            ]
+        });
+
+        $('#select_all').click(function () {
+            //var c = this.checked;
+            //$('.chhselect').prop('checked', c)
+            $(':checkbox', table.rows().nodes()).prop('checked', this.checked);
+        });
+
+        $(".chhselect").click(function () {
+            if (!this.checked) {
+                $("#select_all").prop('checked', false);
+            }
+            else if ($(".chhselect").length == $(".chhselect:checked").length) {
+                $("#select_all").prop('checked', true);
+            }
+        });
+
+        // Handle form submission event
+        $('#frm-example1').on('submit', function (e) {
+            var form = this;
+
+            // Encode a set of form elements from all pages as an array of names and values
+            var params = table.$('input,select,textarea').serializeArray();
+
+            // Iterate over all form elements
+            $.each(params, function () {
+                // If element doesn't exist in DOM
+                if (!$.contains(document, form[this.name])) {
+                    // Create a hidden element
+                    $(form).append(
+                        $('<input>')
+                            .attr('type', 'hidden')
+                            .attr('name', this.name)
+                            .val(this.value)
+                    );
+                }
+            });
+        });
+    }
+</script>
+<script type="text/javascript">
+   $(document).ready(function () {
+       var pageSize = 20;
+       var optionListUrl = '@Url.Action("GetItemCategories", "ItemCatRpt")';
+//Method which is to be called for populating options in dropdown //dynamically
+       $('#ddlItems').select2(
+       {
+           ajax: {
+               delay: 150,
+               url: optionListUrl,
+               dataType: 'json',
+               data: function (params) {
+                   params.page = params.page || 1;
+                   return {
+                       searchTerm: params.term,
+                       pageSize: pageSize,
+                       pageNumber: params.page
+                   };
+               },
+               processResults: function (data, params) {
+                   params.page = params.page || 1;
+                  return {
+                       results: data.Results,
+                       pagination: {
+                           more: (params.page * pageSize) < data.Total
+                       }
+                   };
+               }
+           },
+           placeholder: "-- Select --",
+           minimumInputLength: 0,
+           allowClear: true,
+   });
+});
+</script>

@@ -1,0 +1,4 @@
+Date & Time : 29/09/2021 13:18:23[Request] [ { registration_ids = System.String[], priority = high, Text_available = True, notification = { title = Test Notification, body = Testing, image = https://wbtechindia.com/apps/kalpavriksha/notificationImages/notebook.png } }]
+Date & Time : 29/09/2021 13:18:23[Request] [ {"multicast_id":6951818586004335803,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1632901703461140%1d70b93c1d70b93c"}]}]
+Date & Time : 29/09/2021 13:25:47[Request] [ { registration_ids = System.String[], priority = high, Text_available = True, notification = { title = Test Notification, body = Testing, image = https://wbtechindia.com/apps/kalpavriksha/notificationImages/dashboard.png } }]
+Date & Time : 29/09/2021 13:26:04[Request] [ {"multicast_id":5120088917306981674,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1632902153883747%1d70b93c1d70b93c"}]}]

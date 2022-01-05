@@ -1,0 +1,9 @@
+â*******************Start**************
+Date & Time : 28/09/2021 16:36:01
+Message : Value cannot be null.
+Parameter name: source
+Source : System.Core
+StackTrace :    at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at JBNWebAPI.Logger.Helper.ContainsUnicodeCharacter(String input) in E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\Helper.cs:line 763
+   at JBNClassLibrary.DLEnquiries.GetConversations(Int32 CustID, Int32 QueryId, Int32 SenderID, String EnquiryType) in E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\DLEnquiries.cs:line 768
+*******************End**************

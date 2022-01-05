@@ -1,0 +1,46 @@
+﻿@model JBNClassLibrary.AdvertisementMain
+
+@using (Ajax.BeginForm("ApproveAd", "Advertisements", null, new AjaxOptions
+{
+    OnSuccess = "onApproveSuccess",
+    HttpMethod = "post",
+    LoadingElementId = "progress",
+}, new { @class = "form-sample" }))
+{
+    @Html.AntiForgeryToken()
+    <p class="card-description">
+
+    </p>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Advertisement Name</label>
+                    @Html.HiddenFor(model => model.AdvertisementMainID)
+                    @Html.EditorFor(model => model.AdvertisementName, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off" } })
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Advertisement Type</label>
+                    @Html.EditorFor(model => model.AdvertisementType, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off" } })
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Advertisement Area</label>
+                    @Html.EditorFor(model => model.AdvertisementArea, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off" } })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="javascript:void(0)" onclick="return rejectAdvertisement(@Model.AdvertisementMainID)" class="btn btn-danger">Reject</a>
+    </div>
+}
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>

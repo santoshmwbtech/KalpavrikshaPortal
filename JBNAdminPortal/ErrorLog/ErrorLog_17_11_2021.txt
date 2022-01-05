@@ -1,0 +1,10 @@
+¥*******************Start**************
+Date & Time : 17/11/2021 18:34:16
+Message : Object reference not set to an instance of an object.
+Source : JBNClassLibrary
+StackTrace :    at JBNClassLibrary.DashBoardData.GetCategoriesForApproval(Int32 UserID)
+*******************End**************
+l\JBNClassLibrary\DashBoardData.cs:line 133
+*******************End**************
+ at JBNClassLibrary.AdminUserCreation.AddWebUsers(UserCreation udetails, String UserID) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\UserCreation.cs:line 188
+*******************End**************

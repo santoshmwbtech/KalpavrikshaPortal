@@ -1,0 +1,41 @@
+﻿@model JBNClassLibrary.EmailFooter
+
+    <div class="col-12 grid-margin">
+        <div class="card card-outline-primary">
+            <div class="card-body">
+                <h4 class="card-title">Update Email Footer</h4>
+                @using (Ajax.BeginForm("Update", "EmailFooter", null, new AjaxOptions
+                {
+                    UpdateTargetId = "divList",
+                    OnSuccess = "onEditSuccess_Ajax",
+                    HttpMethod = "post",
+                    LoadingElementId = "progress"
+
+                }, new { @class = "form-sample" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Email Footer</label>
+                                @Html.HiddenFor(model => model.ID)
+                                @Html.TextAreaFor(model => model.FooterBody, new { @class = "form-control input-lg textarea-editor", @required = "required" })
+                                @Html.ValidationMessageFor(model => model.FooterBody, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Update</button>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+

@@ -1,0 +1,21 @@
+º*******************Start**************
+Date & Time : 25/09/2021 16:35:31
+Message : Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+Source : .Net SqlClient Data Provider
+InnerException : The wait operation timed out
+StackTrace :    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryCloseInternal(Boolean closeReader)
+   at System.Data.SqlClient.SqlDataReader.Close()
+   at System.Data.Common.DbDataReader.Dispose(Boolean disposing)
+   at System.Data.Common.DbDataReader.Dispose()
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.Finally()
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.ObjectQueryNestedEnumerator.Dispose()
+   at System.Data.Entity.Internal.LazyEnumerator`1.Dispose()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.Dispose()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at JBNClassLibrary.BusinessTypeWiseDetails.BusinessList(BusinessTypeWiseRpt search) in E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\BusinessTypeWiseDetails.cs:line 158
+*******************End**************

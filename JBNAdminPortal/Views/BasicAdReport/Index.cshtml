@@ -1,0 +1,403 @@
+﻿@model JBNClassLibrary.AdSearchOptions
+
+@{
+    ViewBag.Title = "AdDetailed Report";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        @using (Ajax.BeginForm("Promotion", "BasicAdReport", null, new AjaxOptions
+                        {
+                            OnSuccess = "onPromoSuccess_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }, new { @class = "form-sample frm-example1", @enctype = "multipart/form-data" }))
+                        {
+                            <h4 class="card-title">
+                                Advertisement Report
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>From Date</label>
+                                        @Html.TextBoxFor(a => a.FromDate, null, new { @class = "form-control dates", @autocomplete = "off", @onchange = "return validate_date(this)" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>To Date</label>
+                                        @Html.TextBoxFor(a => a.ToDate, null, new { @class = "form-control dates", @autocomplete = "off", @onchange = "return validate_date(this)" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Customer</label>
+                                        @Html.TextBoxFor(a => a.FirmName, null, new { @class = "form-control", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Advertisement Type</label>
+                                        @Html.DropDownListFor(a => a.AdvertisementType, (SelectList)ViewBag.AdTypes, "Select Type", new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Advertisement Area</label>
+                                        @Html.DropDownListFor(a => a.AdvertisementArea, (SelectList)ViewBag.AdAreas, "Select Area", new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Product</label>
+                                        @Html.DropDownListFor(a => a.ProductName, (SelectList)ViewBag.Products, "Select Product", new { @class = "form-control dropdowns" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:void(0)" id="btnSearch" class="btn btn-primary">Search</a>
+                            </div>
+                            <div id="dvList">
+                                <div class="pt-3 table-responsive">
+                                    <table id="adsTable" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Advertisement Name</th>
+                                                <th>User</th>
+                                                <th>Product Name</th>
+                                                <th>From Date</th>
+                                                <th>To Date</th>
+                                                <th>Advertisement Type</th>
+                                                <th>Advertisement Area</th>
+                                                <th>Approval Status</th>
+                                                <th>Payment Status</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                            <h4 class="card-title">Promote</h4>
+                            <p class="card-description">
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(m => m.IsEmail) Email
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(m => m.IsSMS) SMS
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(m => m.IsNotification) Notification
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(m => m.IsWhatsApp) Whatsapp
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+
+                                </div>
+                            </div>
+                            <div id="SMSRow" style="display:none;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>SMS Template</label>
+                                            <div class="input-group">
+                                                @Html.DropDownListFor(model => model.SMSTemplateID, (SelectList)ViewBag.SMSTemplates, "Select Template", new { @class = "form-control listbox", @required = "required", @onchange = "SMSTemplateChanged()" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>SMS Body</label>
+                                            @Html.TextAreaFor(model => model.SMSBody, new { @class = "form-control input-lg", @required = "required" })
+                                            @Html.ValidationMessageFor(model => model.SMSBody, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="EmailRow" style="display:none;">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Mail Subject</label>
+                                            @Html.TextBoxFor(model => model.MailSubject, new { @class = "form-control", @required = "required" })
+                                            @Html.ValidationMessageFor(model => model.MailSubject, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Attachments</label>
+                                            <input type="file" id="postedFile" name="postedFile" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Your Message</label>
+                                            @Html.TextAreaFor(model => model.MailBody, new { @class = "form-control input-lg textarea-editor", @required = "required" })
+                                            @Html.ValidationMessageFor(model => model.MailBody, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="NotificationRow" style="display:none;">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Notification Title</label>
+                                            <div class="input-group">
+                                                @Html.TextBoxFor(model => model.Title, new { @class = "form-control", @required = "required" })
+                                                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file" id="notificationImage" name="notificationImage" class="form-control" onchange="return check_extension(this.value);" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Message</label>
+                                            @Html.TextAreaFor(model => model.Body, new { @class = "form-control input-lg", @required = "required" })
+                                            @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="text-center">
+                                <input type="submit" value="Promote" id="btnPromote" class="btn btn-primary" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#adsTable').DataTable({
+            "processing": true, // for show processing bar
+            "serverSide": true, // for process on server side
+            "orderMulti": false, // for disable multi column order
+            "dom": '<"top"i>rt<"bottom"lp><"clear">', // for hide default global search box // little confusion? don't worry I explained in the tutorial website
+            "ajax": {
+                "url": '@Url.Action("LoadData", "BasicAdReport")',
+                "type": "POST",
+                "datatype": "json",
+                },
+            "columns": [
+                { "data": "AdvertisementName", "name": "AdvertisementName", "autoWidth": true }, //index 0
+                { "data": "FirmName", "name": "FirmName", "autoWidth": true }, //index 1
+                { "data": "ProductName", "name": "ProductName", "autoWidth": true },   //index 6
+                { "data": "FromDateStr", "name": "FromDate", "autoWidth": true },             //index 2
+                { "data": "ToDateStr", "name": "To Date", "autoWidth": true },         //index 3
+                { "data": "AdvertisementType", "name": "AdvertisementType", "autoWidth": true },               //index 4
+                { "data": "AdvertisementArea", "name": "AdvertisementArea", "autoWidth": true },   //index 5
+                { "data": "ApprovalStatus", "name": "ApprovalStatus", "autoWidth": true },   //index 6
+                { "data": "PaymentStatus", "name": "PaymentStatus", "autoWidth": true },   //index 7
+
+            ]
+        });
+
+        //Apply Custom search on jQuery DataTables here
+        oTable = $('#adsTable').DataTable();
+        $('#btnSearch').click(function () {
+            oTable.columns(1).search($('#FirmName').val().trim());
+            oTable.columns(2).search($('#ProductName').val().trim());
+            oTable.columns(3).search($('#FromDate').val().trim());
+            oTable.columns(4).search($('#ToDate').val().trim());
+            oTable.columns(5).search($('#AdvertisementType').val().trim());
+            oTable.columns(6).search($('#AdvertisementArea').val().trim());
+            oTable.draw();
+        });
+    });
+    $(function () {
+        $("#FirmName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("Autocomplete", "BasicAdReport")',
+                    data: "{ 'prefix': '" + request.term + "'}",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                    label: item.FirmName,
+                                    val: item.CustID
+                                }
+                        }))
+                    },
+                    error: function (response) {
+                        swal(response.responseText);
+                    },
+                    failure: function (response) {
+                        swal(response.responseText);
+                    }
+                });
+            },
+            select: function (e, i) {
+                $("#FirmName").val(i.item.val);
+            },
+            minLength: 1
+        });
+    });
+</script>
+<script>
+    var hash = {
+        '.png': 1,
+        '.jpg': 1,
+        '.jpeg': 1,
+    };
+
+    function check_extension(filename) {
+        var re = /\..+$/;
+        var ext = filename.match(re);
+        if (hash[ext]) {
+            return true;
+        } else {
+            swal("Error", "Invalid file, please upload image", "error");
+            $("#notificationImage").val('');
+            return false;
+        }
+    }
+</script>
+<script>
+    function onPromoteClick() {
+        
+    }
+    $("#IsEmail").click(function () {
+        if (this.checked) {
+            $("#IsSMS").prop('checked', false);
+            $("#IsWhatsApp").prop('checked', false);
+            $("#IsNotification").prop('checked', false);
+            $("#SMSRow").hide();
+            $("#EmailRow").show();
+            $("#NotificationRow").hide();
+            $('.textarea-editor').summernote({
+                height: 100, // set editor height
+                minHeight: null, // set minimum height of editor
+                maxHeight: null, // set maximum height of editor
+                focus: false // set focus to editable area after initializing summernote
+            });
+        }
+        else {
+            $("#EmailRow").hide();
+        }
+    });
+    $("#IsSMS").click(function () {
+        if (this.checked) {
+            $("#IsEmail").prop('checked', false);
+            $("#IsWhatsApp").prop('checked', false);
+            $("#IsNotification").prop('checked', false);
+            $("#SMSRow").show();
+            $("#EmailRow").hide();
+            $("#NotificationRow").hide();
+        }
+        else {
+            $("#SMSRow").hide();
+        }
+    });
+    $("#IsWhatsApp").click(function () {
+        if (this.checked) {
+            $("#IsEmail").prop('checked', false);
+            $("#IsSMS").prop('checked', false);
+            $("#IsNotification").prop('checked', false);
+            $("#SMSRow").hide();
+            $("#EmailRow").hide();
+            $("#NotificationRow").hide();
+        }
+    });
+    $("#IsNotification").click(function () {
+        if (this.checked) {
+            $("#IsEmail").prop('checked', false);
+            $("#IsWhatsApp").prop('checked', false);
+            $("#IsSMS").prop('checked', false);
+            $("#NotificationRow").show();
+            $("#EmailRow").hide();
+            $("#SMSRow").hide();
+        }
+        else {
+            $("#NotificationRow").hide();
+        }
+    });
+    function SMSTemplateChanged() {
+        var TemplateID = $("#SMSTemplateID").val();
+        if (TemplateID != "" && TemplateID != null) {
+            $("#progress").show();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetSMSTemplate", "BusinessTypeWiseRpt")',
+                dataType: "json",
+                data: { TemplateID: TemplateID},
+                success: function (response) {
+                    if (response == "sessionexpired") {
+                        window.location = '@Url.Action("Index", "Login")';
+                    }
+                    $("#SMSBody").val(response.TemplateBody);
+                    $("#progress").hide();
+                },
+                error: function () {
+                    $("#progress").hide();
+                }
+            });
+        }
+    }
+    function onPromoSuccess_Ajax(Data) {
+        if (Data == "sessionexpired") {
+            swal({
+                text: "Your Session Expired!! Please login again",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Login")';
+            });
+        }
+        else {
+            window.location = '@Url.Action("DownloadResponseData", "BasicAdReport")?fileGuid=' + Data.FileGuid + '&filename=' + Data.FileName;
+            swal({
+                text: "Promotion Activity Done!! Please click Ok to download details",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "BasicAdReport")';
+            });
+        }
+    }
+</script>
+

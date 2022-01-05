@@ -1,0 +1,139 @@
+﻿@model JBNClassLibrary.ChangePassword
+
+@{
+    ViewBag.Title = "Change password";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body" id="divCreate">
+                        @using (Ajax.BeginForm("UpdatePassword", "ChangePassword", null, new AjaxOptions
+                        {
+                            OnBegin = "onBegin_Ajax",
+                            OnSuccess = "onCreateSuccess_Ajax",
+                            OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post"
+
+                        }, new { @class = "form-sample" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <p class="card-description font-weight-bolder ">
+                                Change Password
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>User Name</label>
+                                        @Html.HiddenFor(model => model.UserID)
+                                        <label class="form-control">@ViewBag.UserName</label>
+                                        @*<input type="text" class="form-control" readonly="readonly" value='@ViewBag.UserName' />*@
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Old Password </label>
+                                        @Html.EditorFor(model => model.OldPassword, new { htmlAttributes = new { @class = "form-control ", @placeholder = "Old password", @maxlength = "50", @autocomplete = "new-password", @onchange = "validatePassword(this)", @type = "password" } })
+                                        @Html.ValidationMessageFor(model => model.OldPassword, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>New Password </label>
+                                        @Html.EditorFor(model => model.NewPassword, new { htmlAttributes = new { @class = "form-control", @maxlength = "128", @placeholder = "New Password", @autocomplete = "new-password", @type = "password" } })
+                                        @Html.ValidationMessageFor(model => model.NewPassword, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Confirm Password  </label>
+                                        @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", @maxlength = "128", @placeholder = "Confirm Password", @autocomplete = "new-password", @type = "password" } })
+                                        @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary ">Submit</button>
+                                <button id="btnCancel" type="submit" class="btn btn-primary " onclick="btnCancel_Click()">Cancel</button>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function onCreateSuccess_Ajax(Result) {
+        //swal("Success", "Your password updated Successfully", "success");
+        swal({
+                text: Result,
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Dashboard")';
+            });
+    }
+    function onComplete_Ajax() {
+    }
+    function onEditSuccess_Ajax() {
+
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+</script>
+<script>
+    function btnCancel_Click() {
+        $('#OldPassword').val('');
+        $('#NewPassword').val('');
+        $('#ConfirmPassword').val('');
+        $('#OldPassword').focus();
+    }
+    function validatePassword(element) {
+        var oldPassword = $(element).val();
+        $.ajax({
+                url: '@Url.Action("ValidatePassword", "ChangePassword")',
+                data: "{ 'oldPassword': '" + oldPassword + "'}",
+                dataType: "json",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data == "sessionexpired") {
+                        window.location = '@Url.Action("Index", "Login")';
+                    }
+                    else {
+                        if (data == "0") {
+                            window.createNotification({
+                                closeOnClick: true,
+                                displayCloseButton: true,
+                                positionClass: "nfc-top-right",
+                                showDuration: "6000",
+                                theme: "error"
+                            })({
+                                title: "Error",
+                                message: "Invalid old password"
+                            });
+                            $('#OldPassword').val('');
+                            $('#OldPassword').focus();
+                        }
+                    }
+                },
+                error: function (response) {
+                    swal(response.responseText);
+                },
+                failure: function (response) {
+                    swal(response.responseText);
+                }
+            });
+    }
+</script>
+
+

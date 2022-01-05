@@ -1,0 +1,267 @@
+﻿@model JBNAdminPortal.Models.Search
+
+@{
+    ViewBag.Title = "Business Type / Category Wise Report / Promotion";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Business Type / Category Wise Report / Promotion</h4>
+                        <p class="card-description">
+
+                        </p>
+
+                        @using (Ajax.BeginForm("SearchByDate", "BusinessTypeWiseRpt", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "divList",
+                            OnBegin = "onBegin_Ajax",
+                            OnComplete = "onSearchCompleteCreate_Ajax",
+                            OnSuccess = "onSearchSuccess_Ajax",
+                            //OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }, new { @class = "form-sample frm-example1" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>From Date</label>
+                                        @Html.EditorFor(a => a.FromDate, new { htmlAttributes = new { @class = "form-control dated", @placeholder = "From Date", @autocomplete = "off" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>To Date</label>
+                                        @Html.EditorFor(a => a.ToDate, new { htmlAttributes = new { @class = "form-control dated", @placeholder = "To Date", @autocomplete = "off" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Main Category</label>
+                                        @Html.DropDownListFor(a => a.MainCategoryList, (SelectList)ViewBag.MainCategory, new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Sub Category</label>
+                                        @Html.DropDownListFor(a => a.SubCategoryList, (SelectList)ViewBag.SubCategory, new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Child Category</label>
+                                        @Html.DropDownListFor(a => a.ChildCategoryList, (SelectList)ViewBag.ChildCategory, new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Item Category</label>
+                                        @Html.DropDownListFor(a => a.ItemCategoryList, Enumerable.Empty<SelectListItem>(), new { @class = "form-control dropdowns", @multiple = "multiple", @id = "ddlItems" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Business Type</label>
+                                        @Html.DropDownListFor(a => a.BusinessTypeIDStrList, (SelectList)ViewBag.BusinessType, "Select Business Type", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Customer</label>
+                                        @*@Html.DropDownListFor(a => a.CustID, (SelectList)ViewBag.CustomerList, "Select Customer", new { @class = "form-control dropdowns", @multiple = "multiple" })*@
+                                        @Html.EditorFor(a => a.FirmName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Customer Name", @autocomplete = "off" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        @Html.DropDownListFor(a => a.StateList, (SelectList)ViewBag.StateList, "Select State", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        @Html.DropDownListFor(a => a.CityList, (SelectList)ViewBag.CityList, "Select City", new { @class = "form-control dropdowns", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="divList">
+                        @Html.Action("CustomerList")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onSearchCompleteCreate_Ajax() {
+
+    }
+    function onSearchSuccess_Ajax() {
+        loadTable();
+        var elmnt = document.getElementById("divList");
+        elmnt.scrollIntoView();
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+    }
+    function onPromoSuccess_Ajax(Data) {
+        if (Data == "sessionexpired") {
+            swal({
+                text: "Your Session Expired!! Please login again",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Login")';
+            });
+        }
+        else {
+            window.location = '@Url.Action("DownloadResponseData", "BusinessTypeWiseRpt")?fileGuid=' + Data.FileGuid + '&filename=' + Data.FileName;
+            swal({
+                text: "Promotion Activity Done!! Please click Ok to download details",
+            }).then(function () {
+                @*window.location = '@Url.Action("DownloadResponseData", "BusinessTypeWiseRpt")?fileGuid=' + Data.FileGuid + '&filename=' + Data.FileName;*@
+                window.location = '@Url.Action("Index", "BusinessTypeWiseRpt")';
+            });
+        }
+    }
+</script>
+<script>
+    function StateChanged(element) {
+        var StateID = $(element).val();
+        $("#progress").show();
+        $.ajax({
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            data: "{ 'StateID': '" + StateID + "'}",
+            url: '@Url.Action("GetCitiesofState", "BusinessTypeWiseRpt")',
+            success: function (data) {
+                //$("#StateWithCityID").append('<option value="0">Select City</option>');
+                $.each(data, function (index, value) {
+                    $("#StateWithCityID").append('<option value="' + value.StatewithCityID + '">' + value.VillageLocalityName + '</option>');
+                });
+                $("#progress").hide();
+            },
+            error: function (response) {
+                swal(response.error);
+            }
+        });
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $(".dataGrid").dataTable().fnDestroy();
+        loadTable();
+    });
+    function loadTable() {
+        var table = $('.dataGrid').DataTable({
+            pageLength: 4,
+            columnDefs: [
+                { "type": "html-input", "targets": [1, 2, 3, 4, 5, 6] }
+            ]
+        });
+
+        $('#select_all').click(function () {
+            //var c = this.checked;
+            //$('.chhselect').prop('checked', c)
+            $(':checkbox', table.rows().nodes()).prop('checked', this.checked);
+        });
+
+        $(".chhselect").click(function () {
+            if (!this.checked) {
+                $("#select_all").prop('checked', false);
+            }
+            else if ($(".chhselect").length == $(".chhselect:checked").length) {
+                $("#select_all").prop('checked', true);
+            }
+        });
+
+        // Handle form submission event
+        $('#frm-promote').on('submit', function (e) {
+            var form = this;
+
+            // Encode a set of form elements from all pages as an array of names and values
+            var params = table.$('input,select,textarea').serializeArray();
+
+            // Iterate over all form elements
+            $.each(params, function () {
+                // If element doesn't exist in DOM
+                if (!$.contains(document, form[this.name])) {
+                    // Create a hidden element
+                    $(form).append(
+                        $('<input>')
+                            .attr('type', 'hidden')
+                            .attr('name', this.name)
+                            .val(this.value)
+                    );
+                }
+            });
+        });
+    }
+</script>
+<script type="text/javascript">
+   $(document).ready(function () {
+       var pageSize = 20;
+       var optionListUrl = '@Url.Action("GetItemCategories", "ItemCatRpt")';
+//Method which is to be called for populating options in dropdown //dynamically
+       $('#ddlItems').select2(
+       {
+           ajax: {
+               delay: 150,
+               url: optionListUrl,
+               dataType: 'json',
+               data: function (params) {
+                   params.page = params.page || 1;
+                   return {
+                       searchTerm: params.term,
+                       pageSize: pageSize,
+                       pageNumber: params.page
+                   };
+               },
+               processResults: function (data, params) {
+                   params.page = params.page || 1;
+                  return {
+                       results: data.Results,
+                       pagination: {
+                           more: (params.page * pageSize) < data.Total
+                       }
+                   };
+               }
+           },
+           placeholder: "-- Select --",
+           minimumInputLength: 0,
+           allowClear: true,
+   });
+});
+</script>

@@ -1,0 +1,14 @@
+†*******************Start**************
+Date & Time : 16/09/2021 16:41:37
+Message : Object reference not set to an instance of an object.
+Source : JBNWebAPI
+StackTrace :    at JBNWebAPI.Controllers.AccountController.RegisterUser(CustomerDetails RegistrationDetails) in E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\Controllers\AccountController.cs:line 142
+*******************End**************
+JBNClassLibrary\JBNDBClass.cs:line 5753
+   at System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   at JBNClassLibrary.JBNDBClass.GetPushNotifications(Int32 CustID) in E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\JBNDBClass.cs:line 5753
+*******************End**************
+
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at JBNClassLibrary.JBNDBClass.SavePushNotificationsList(String[] RegistrationIDs, DateTime NotificationDate, String PushNotification, Int32 UserID) in E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\JBNDBClass.cs:line 5720
+*******************End**************

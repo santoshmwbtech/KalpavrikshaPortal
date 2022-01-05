@@ -1,0 +1,6 @@
+†*******************Start**************
+Date & Time : 22/12/2021 11:05:51
+Message : Object reference not set to an instance of an object.
+Source : JBNClassLibrary
+StackTrace :    at JBNClassLibrary.DLAdvertisements.GenerateProformaInvoice(Advertisement Result) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLAdvertisements.cs:line 1461
+*******************End**************

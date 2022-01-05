@@ -1,0 +1,55 @@
+﻿@model JBNClassLibrary.DLRoleCreation
+
+<h4 class="card-title">Update Role Details</h4>
+@using (Ajax.BeginForm("Update", "Roles", null, new AjaxOptions
+{
+    UpdateTargetId = "divList",
+    OnBegin = "onBegin_Ajax",
+    OnComplete = "onEditCompleteCreate_Ajax",
+    OnSuccess = "onEditSuccess_Ajax",
+    OnFailure = "onFailure_Ajax",
+    HttpMethod = "post",
+    LoadingElementId = "progress"
+}, new { @class = "form-sample" }))
+{
+    @Html.AntiForgeryToken()
+    <div id="maindiv">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Role Name :</label>
+                    @Html.EditorFor(model => model.RoleName, new { htmlAttributes = new { @class = "form-control ", @placeholder = "Role Name", @maxlength = "50", @autocomplete = "off", @onkeypress = "return isCharacter(event)" } })
+                    @Html.ValidationMessageFor(model => model.RoleName, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.RoleID)
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Role Description : </label>
+                    @Html.EditorFor(model => model.RoleDescription, new { htmlAttributes = new { @class = "form-control", @placeholder = "Role Description", @maxlength = "128", @autocomplete = "off", @onkeypress = "return isCharacter(event)" } })
+                    @Html.ValidationMessageFor(model => model.RoleDescription, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="text-center">
+        @if (Session["MenuMaster"] != null)
+        {
+            var MenuMaster = (List<JBNClassLibrary.FormPermissionItem>)Session["MenuMaster"];
+            if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "roles" && m.IsEdit == true) || Session["RoleID"].ToString() == "1")
+            {
+                <button type="submit" class="btn btn-primary ">Update</button>
+            }
+        }
+        <a href="javascript:void(0)" onclick="btnCancel_Click()" class="btn btn-danger">Cancel</a>
+    </div>
+}
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+
+
+
+

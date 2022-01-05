@@ -1,0 +1,306 @@
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\ErrorLog.txt
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll.config
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\JBNClassLibrary.pdb
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\EntityFramework.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Buffers.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Linq.Dynamic.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Memory.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.Helpers.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.Mvc.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.Razor.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.WebPages.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\EntityFramework.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Buffers.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Memory.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.Helpers.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.Mvc.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.Razor.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.WebPages.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\obj\Debug\JBNClassLibrary.csprojAssemblyReference.cache
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CopyComplete
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\NewSVNFolder\jbcnotification\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.csprojAssemblyReference.cache
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\ErrorLog.txt
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll.config
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\JBNClassLibrary.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Buffers.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Linq.Dynamic.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Memory.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Helpers.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Mvc.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Razor.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Buffers.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Memory.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Helpers.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Mvc.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Razor.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\NewSVNFolder\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CopyComplete
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\ErrorLog.txt
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll.config
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\JBNClassLibrary.pdb
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Buffers.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Linq.Dynamic.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Memory.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Helpers.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Mvc.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Razor.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Buffers.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Memory.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Helpers.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Mvc.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.Razor.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Santosh\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.csprojAssemblyReference.cache
+E:\Santosh\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CoreCompileInputs.cache
+E:\Santosh\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CopyComplete
+E:\Santosh\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\Santosh\MWB Bazaar\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\ErrorLog.txt
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll.config
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\JBNClassLibrary.pdb
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\EntityFramework.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Buffers.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Linq.Dynamic.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Memory.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.Helpers.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.Mvc.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.Razor.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.WebPages.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\EntityFramework.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Buffers.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Memory.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.Helpers.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.Mvc.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.Razor.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.WebPages.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.AssemblyReference.cache
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CoreCompileInputs.cache
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\SVNFolderOct\MWBKalpavriksha\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.AssemblyReference.cache
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CoreCompileInputs.cache
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CoreCompileInputs.cache
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\ErrorLog.txt
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\JBNClassLibrary.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\EntityFramework.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Buffers.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Linq.Dynamic.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Memory.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.Helpers.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.Mvc.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.Razor.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\EntityFramework.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Buffers.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Memory.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.Helpers.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.Mvc.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.Razor.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.AssemblyReference.cache
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CoreCompileInputs.cache
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.AssemblyReference.cache
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\ErrorLog.txt
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\JBNClassLibrary.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\JBNClassLibrary.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\EntityFramework.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Buffers.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Linq.Dynamic.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Memory.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.Helpers.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.Mvc.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.Razor.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\EntityFramework.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Db.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Korzh.EasyQuery.Linq.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Options.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Buffers.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Memory.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Numerics.Vectors.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.Helpers.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.Mvc.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.Razor.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.csproj.CopyComplete
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\obj\Debug\JBNClassLibrary.pdb

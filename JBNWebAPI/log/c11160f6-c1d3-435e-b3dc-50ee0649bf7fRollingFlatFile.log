@@ -1,0 +1,2 @@
+Timestamp: 09-09-2020 16:44:08Message: {"CustID":5,"CityId":2967,"CityIdList":[{"StatewithCityID":2967,"VillageLocalityname":""}],"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":1},{"BusinessTypeID":2}],"BusinessDemand":[{"BusinessDemand":"","BusinessDemandID":1},{"BusinessDemand":"","BusinessDemandID":2}],"TypeOfUse":null,"Requirements":null,"ProductPhoto":null,"IsFavorite":0,"FromDate":"","ToDate":"","IsSentEnquiry":0,"IsReceivedEnquiry":0}Category: Priority: -1Severity: Information
+----------------------------------

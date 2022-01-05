@@ -1,0 +1,383 @@
+﻿@model JBNClassLibrary.AdvertisementMain
+@{
+    ViewBag.Title = "Advertisement Details";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Advertisements Details
+                        </h4>
+
+                        @using (Ajax.BeginForm("SaveAdvertisement", "AdvertisementDetails", null, new AjaxOptions
+                        {
+                            OnSuccess = "onApproveSuccess",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress",
+                        }, new { @class = "form-sample" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <p class="card-description">
+                                @Html.HiddenFor(a => a.AdImageURL)
+                                @Html.HiddenFor(a => a.AdText)
+                            </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertisement Name</label>
+                                        @Html.HiddenFor(model => model.AdvertisementMainID)
+                                        @Html.HiddenFor(model => model.CustID)
+                                        @Html.HiddenFor(model => model.IsApproved)
+                                        @Html.EditorFor(model => model.AdvertisementName, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertiser</label>
+                                        @Html.EditorFor(model => model.customerInfo.FirmName, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertiser City</label>
+                                        @Html.EditorFor(model => model.customerInfo.CityName, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertiser State</label>
+                                        @Html.EditorFor(model => model.customerInfo.StateName, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertisement Type</label>
+                                        @Html.EditorFor(model => model.AdvertisementType, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Advertisement Area</label>
+                                        @Html.EditorFor(model => model.AdvertisementArea, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Start Date</label>
+                                        @Html.EditorFor(model => model.FromDateStr, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>End Date</label>
+                                        @Html.EditorFor(model => model.ToDateStr, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                                @{
+                                    if (Model.AdvertisementType.ToLower().Contains("textad"))
+                                    {
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Advertisement Text</label>
+                                                @Html.TextAreaFor(model => model.AdText, new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        if (!string.IsNullOrEmpty(Model.AdImageURL))
+                                        {
+                                            if (Model.AdImageURL.ToLower().Contains(".png") || Model.AdImageURL.ToLower().Contains(".jpg") || Model.AdImageURL.ToLower().Contains(".jpeg"))
+                                            {
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Image</label><br />
+                                                        <a data-fancybox="gallery" href='@Url.Content(Model.AdImageURL)'><img src='@Url.Content(Model.AdImageURL)' height="100" width="100" alt="image"></a>
+                                                    </div>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Image</label><br />
+                                                        <a data-fancybox="gallery" href='@Url.Content("~/images/No_picture_available.png")'><img src='@Url.Content("~/images/No_picture_available.png")' height="100" width="100" alt="image"></a>
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Image</label><br />
+                                                    <a data-fancybox="gallery" href='@Url.Content("~/images/No_picture_available.png")'><img src='@Url.Content("~/images/No_picture_available.png")' height="100" width="100" alt="image"></a>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                }
+                                <div class="col-md-4" style="margin-top:40px;display:none;">
+                                    <div class="form-group">
+
+                                        @Html.CheckBoxFor(model => model.IsRejected, new { @class = "form-check-input" })
+                                        Rejected
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        @Html.DropDownListFor(a => a.StatusType, (SelectList)ViewBag.StatusTypes, "Select Status", new { @class = "form-control dropdowns", @required = "required", @onchange = "return ddlStatusChanged(this)" })
+                                        @Html.ValidationMessageFor(model => model.StatusType, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="display:block;" id="reasonRow">
+                                    <div class="form-group">
+                                        <label>Reason for Reject</label>
+                                        @Html.EditorFor(model => model.Remarks, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @placeholder = "Reason for rejecting" } })
+                                        @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="display:block;" id="reasonRow">
+                                    <div class="form-group">
+                                        <label>Current Status</label>
+                                        <ul class="list-ticked">
+
+                                            @{
+                                                if (Model.IsApproved == false && Model.IsRejected == false)
+                                                {
+                                                    <li>
+                                                        Pending
+                                                    </li>
+                                                }
+                                                else if (Model.IsApproved == false && Model.IsRejected == true)
+                                                {
+                                                    <li>
+                                                        Content Rejected
+                                                    </li>
+                                                }
+                                                else if (Model.IsApproved == true && Model.IsRejected == true)
+                                                {
+                                                    <li>
+                                                        Payment Rejected
+                                                    </li>
+                                                }
+                                                else if (Model.IsApproved == true && Model.IsPaymentPaid == true)
+                                                {
+                                                    <li>
+                                                        Content and Payment Approved
+                                                    </li>
+                                                }
+                                                else if (Model.IsApproved == true && Model.IsPaymentPaid == false && Model.IsRejected == false)
+                                                {
+
+                                                    <li>Content Approved</li>
+                                                }
+                                                else if (Model.IsApproved == false && Model.IsPaymentPaid == false && Model.IsRejected == true)
+                                                {
+                                                    <li>Content Approved</li>
+                                                }
+                                                else if (Model.IsApproved == true && Model.IsPaymentPaid == false && Model.IsRejected == true)
+                                                {
+                                                    <li>Payment Approved</li>
+                                                }
+                                                else if (Model.IsApproved == true && Model.IsPaymentPaid == true && Model.IsRejected == true)
+                                                {
+                                                    <li>Advertisement Stopped</li>
+                                                }
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                @{
+                                    if (Model.IsApproved == true)
+                                    {
+                                        <div class="pt-3 table-responsive">
+                                            <table class="table table-bordered dataGrid">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Order ID
+                                                        </th>
+                                                        <th>
+                                                            Transaction ID
+                                                        </th>
+                                                        <th>
+                                                            Status
+                                                        </th>
+                                                        <th>
+                                                            Message
+                                                        </th>
+                                                        <th>
+                                                            Date
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @if (Model != null)
+                                                    {
+                                                        if (Model.paymentDetails != null && Model.paymentDetails.Count() > 0)
+                                                        {
+                                                            foreach (var item in Model.paymentDetails)
+                                                            {
+                                                                <tr>
+                                                                    <td>
+                                                                        @Html.HiddenFor(modelItem => item.AdvertisementMainID)
+                                                                        @item.OrderID
+                                                                    </td>
+                                                                    <td>
+                                                                        @item.txnReferenceID
+                                                                    </td>
+                                                                    <td>
+                                                                        @item.TxnStatus
+                                                                    </td>
+                                                                    <td>
+                                                                        @item.TxnStatusMessage
+                                                                    </td>
+                                                                    <td>
+                                                                        @item.CreatedDate.Value.ToString("dd/MM/yyyy")
+                                                                    </td>
+                                                                </tr>
+                                                            }
+                                                        }
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary" onclick="return btnSubmitClicked()">Save</button>
+                                <a href='@Url.Action("Index","Advertisements")' class="btn btn-danger">Back</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#IsRejected').click(function () {
+            if (!$(this).is(':checked')) {
+                $("#reasonRow").hide();
+            }
+            else {
+                $("#reasonRow").show();
+            }
+        });
+    });
+    function onApproveSuccess(data) {
+        swal({
+                text: data,
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Advertisements")';
+            });
+    }
+    function rejectAd() {
+        var Reason = $("#Remarks").val();
+        swal(Reason);
+        if (Reason == null || Reason == "") {
+            swal({
+                text: "Please enter reason to reject",
+            }).then(function () {
+                $("#Remarks").focus();
+                return false;
+            });
+        }
+        else {
+            swal({
+          title: "Are you sure?",
+          text: "The advertisement will be rejected",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willReject) => {
+            if (willReject) {
+                var AdvertisementMainID = $("#AdvertisementMainID").val();
+
+                var CustID = $("#CustID").val();
+                if (AdvertisementMainID != null && AdvertisementMainID != "") {
+                    $("#progress").show();
+                        $.ajax({
+                            type: 'POST',
+                            url: '@Url.Action("RejectAdvertisement", "AdvertisementDetails")',
+                            dataType: "json",
+                            data: { AdvertisementMainID: AdvertisementMainID, Reason: Reason, CustID: CustID},
+                            success: function (response) {
+                                if (response == "sessionexpired") {
+                                    window.location = '@Url.Action("Index", "Login")';
+                                }
+                                $("#progress").hide();
+                                swal({
+                                    text: response,
+                                }).then(function () {
+                                    window.location = '@Url.Action("Index", "Advertisements")';
+                                });
+                            },
+                            error: function () {
+                                $("#progress").hide();
+                            }
+                        });
+                }
+                //swal("Poof! Your imaginary file has been deleted!", {
+                //  icon: "success",
+                //});
+          } else {
+            //swal("Your imaginary file is safe!");
+          }
+        });
+        }
+    }
+    function ddlStatusChanged(element) {
+        var status = $(element).val();
+        if(status === "Content Rejected" || status === "Payment Rejected" || status === "Stop Advertisement"){
+            //$("#Remarks").attr("required", "true");
+        }
+        else {
+            //$("#Remarks").attr("required", "false");
+        }
+    }
+    function btnSubmitClicked() {
+        var adText = $("#AdText").val();
+        var adImage = $("#AdImageURL").val();
+        var status = $("#StatusType").val();
+        if (status == null || status == "") {
+            swal("Please select the status");
+            return false;
+        }
+        if ((adText == "" || adText == null) && (adImage == "" || adImage == null)) {
+            swal("Can not approve / reject advertisement without content");
+            return false;
+        }
+        var Remarks = $("#Remarks").val();
+        if(status === "Content Rejected" || status === "Payment Rejected" || status === "Stop Advertisement"){
+            if (Remarks == null || Remarks == "") {
+                swal({
+                    text: "Please enter the reason",
+                }).then(function () {
+                    $("#Remarks").focus();
+                });
+                return false;
+                //swal("Please enter the reason");
+            }
+        }
+    }
+</script>

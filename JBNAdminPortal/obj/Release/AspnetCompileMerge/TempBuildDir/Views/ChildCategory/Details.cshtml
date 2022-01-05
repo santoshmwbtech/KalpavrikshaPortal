@@ -1,0 +1,37 @@
+﻿@model JBNClassLibrary.childcategory
+<h4 class="card-title">View Child Category</h4>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Main Category Name</label>
+            <div class="col-sm-9">
+                @Html.DropDownListFor(a => a.CategoryProductID, ViewBag.CategoryProduct as IEnumerable<SelectListItem>,
+               "Select Main Category", new { @id = "CategoryProductID", @class = "form-control dropdowns" })
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Sub Category Name</label>
+            <div class="col-sm-9">
+                @Html.DropDownListFor(a => a.SubCategoryId, ViewBag.SubCategory as IEnumerable<SelectListItem>,
+               "Select Sub Category", new { @id = "SubCategoryID", @class = "form-control dropdowns" })
+            </div>
+        </div>
+    </div>
+</div>
+<div style="text-align:center">
+    @using (Ajax.BeginForm("CategoryList", "ChildCategory", null, new AjaxOptions
+    {
+        UpdateTargetId = "dvList",
+        OnBegin = "onBegin_Ajax",
+        OnComplete = "onSaveCompleteCreate_Ajax",
+        OnSuccess = "onCreateSuccess_Ajax",
+        OnFailure = "onFailure_Ajax",
+        HttpMethod = "post"
+    }, new { @class = "form-sample" }))
+    {
+        <button type="submit" class="btn btn-primary mr-2">Search</button>
+    }
+</div>

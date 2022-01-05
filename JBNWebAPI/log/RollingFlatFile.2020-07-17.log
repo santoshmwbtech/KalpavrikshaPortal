@@ -1,0 +1,12 @@
+Timestamp: 10-07-2020 11:20:44Message: user id is:Category: 18Priority: -1Severity: Information
+----------------------------------
+Timestamp: 10-07-2020 11:24:42Message: user id is:Category: 18Priority: -1Severity: Information
+----------------------------------
+Timestamp: 10-07-2020 11:28:32Message: user id is:Category: 18Priority: -1Severity: Information
+----------------------------------
+Timestamp: 10-07-2020 11:30:23Message: user id is:Category: 18Priority: -1Severity: Information
+----------------------------------
+Timestamp: 10-07-2020 11:57:40Message: {"CustID":18,"CityId":0,"ProductID":null,"BusinessTypeIds":[{"BusinessTypeID":1}],"BusinessDemand":"","TypeOfUse":null,"Requirements":null,"ProductPhoto":null}Category: Priority: -1Severity: Information
+----------------------------------
+Timestamp: 10-07-2020 12:01:02Message: {"CustID":18,"CityId":2967,"ProductID":0,"BusinessTypeIds":[{"BusinessTypeID":1}],"BusinessDemand":"Above 5 Lakh","TypeOfUse":null,"Requirements":null,"ProductPhoto":null}Category: Priority: -1Severity: Information
+----------------------------------

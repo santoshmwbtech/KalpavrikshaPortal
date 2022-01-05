@@ -1,0 +1,11 @@
+·*******************Start**************
+Date & Time : 15/09/2021 18:20:40
+Message : Invalid length for a Base-64 char array or string.
+Source : mscorlib
+StackTrace :    at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at JBNWebAPI.Logger.Helper.SetDecrypt(String cipherText, String EncryptionKey)
+   at JBNWebAPI.Logger.Helper.Decrypt(String cipherText)
+   at JBNClassLibrary.JBNDBClass.ValidateCredentials(String MobileNo, String Password, String DeviceID)
+*******************End**************

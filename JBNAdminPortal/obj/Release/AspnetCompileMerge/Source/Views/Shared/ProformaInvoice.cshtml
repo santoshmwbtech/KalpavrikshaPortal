@@ -1,0 +1,357 @@
+﻿@model JBNClassLibrary.ProformaInvoice
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Proforma Invoice</title>
+    <meta charset="utf-8" />
+    <style>
+        .invoice-title h2, .invoice-title h3 {
+            display: inline-block;
+        }
+
+        .table > tbody > tr > .no-line {
+            border-top: none;
+        }
+
+        .table > thead > tr > .no-line {
+            border-bottom: none;
+        }
+
+        .table > tbody > tr > .thick-line {
+            border-top: 2px solid;
+        }
+
+        table {
+            font-size: 16px !important;
+        }
+    </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div class="container" style="font-size:16px;">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="invoice-title">
+                    <h2>Proforma Invoice</h2><h3 class="pull-right"> # @Model.main.ProformaInvoiceNumber</h3>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-xs-6">
+                        <address>
+                            <strong>From :</strong><br />
+                            @Model.company.CompanyName<br />
+                            @Model.company.CompanyAddress<br />
+                            @Model.company.CompanyCity<br />
+                            @Model.company.CompanyState - @Model.company.PinCode
+                        </address>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <address>
+                            <strong>To :</strong><br />
+                            @Model.customer.FirmName<br />
+                            @Model.customer.BillingAddress<br />
+                            @Model.customer.city.VillageLocalityName<br />
+                            @Model.customer.state.StateName - @Model.customer.Pincode
+                        </address>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <address>
+                            <strong>Order Date:</strong><br />
+                            @Model.main.CreatedDate<br /><br />
+                        </address>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <address>
+                            <strong>Due Date:</strong><br />
+                            @Model.main.BookingExpiryDate<br /><br />
+                        </address>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <address>
+                            <strong>From Date:</strong><br />
+                            @{
+                                if (Model.main.FromDate != null)
+                                {
+                                    @Model.main.FromDate.Value.ToString("dd/MM/yyyy")
+                                }
+                            }
+                            <br /><br />
+                        </address>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <address>
+                            <strong>To Date:</strong><br />
+                            @{
+                                if (Model.main.FromDate != null)
+                                {
+                                    @Model.main.ToDate.Value.ToString("dd/MM/yyyy")
+                                }
+                            }
+                            <br /><br />
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Order summary</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table">
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <td><strong>Item</strong></td>
+                                        <td class="text-center"><strong>Description</strong></td>
+                                        <td class="text-right"><strong>Price</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td class="text-center">@Model.ProductName</td>
+                                        <td class="text-right">@Model.CategoryMatrix</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Advertisement Area</td>
+                                        <td class="text-center">@Model.AdvertisementAreaName</td>
+                                        <td class="text-right">@Model.AdAreaMatrix</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Advertisement Type</td>
+                                        <td class="text-center">@Model.AdvertisementType</td>
+                                        <td class="text-right">@Model.AdTypeMatrix</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Days</td>
+                                        <td class="text-center">@Model.main.TotalDays</td>
+                                        <td class="text-right">@Model.main.TotalDays</td>
+                                    </tr>
+
+                                    @{
+                                        if (Model.main.TotalStates != 0)
+                                        {
+                                            <tr>
+                                                <td>Total States</td>
+                                                <td class="text-center">@Model.TotalStates</td>
+                                                <td class="text-right">@Model.TotalStates</td>
+                                            </tr>
+                                        }
+                                        if (Model.TotalDistricts != 0)
+                                        {
+                                            <tr>
+                                                <td>Total Districts</td>
+                                                <td class="text-center">@Model.TotalDistricts</td>
+                                                <td class="text-right">@Model.TotalDistricts</td>
+                                            </tr>
+                                        }
+                                        if (Model.main.TotalCities != 0)
+                                        {
+                                            <tr>
+                                                <td>Total Cities</td>
+                                                <td class="text-center">@Model.TotalCities</td>
+                                                <td class="text-right">@Model.TotalCities</td>
+                                            </tr>
+                                        }
+                                        if (Model.AdvertisementType.ToLower() != "fullpagead")
+                                        {
+                                            <tr>
+                                                <td>Total Rotations</td>
+                                                <td class="text-center">@Model.main.TotalIntervals</td>
+                                                <td class="text-right">@Model.main.TotalIntervals</td>
+                                            </tr>
+                                        }
+                                    }
+                                    @{
+                                        if (Model.TimeSlots != null)
+                                        {
+                                            foreach (var item in Model.TimeSlots)
+                                            {
+                                                <tr>
+                                                    <td>Time Slot</td>
+                                                    <td class="text-center">
+                                                        @item.TimeSlotName
+                                                    </td>
+                                                    <td class="text-right">
+                                                        @item.TimeSlotMatrix
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                    }
+                                    <tr>
+                                        <td class="thick-line"></td>
+                                        <td class="thick-line text-center"><strong>Subtotal</strong></td>
+                                        <td class="thick-line text-right">@Model.main.AdTotalPrice</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no-line"></td>
+                                        <td class="no-line text-center"><strong>Discount Amount</strong></td>
+                                        <td class="no-line text-right">@Model.main.TotalDiscount</td>
+                                    </tr>
+                                    @{
+                                        if (Model.main.IGSTPer != 0)
+                                        {
+                                            <tr>
+                                                <td class="no-line"></td>
+                                                <td class="no-line text-center"><strong>IGST</strong>(@Model.main.IGSTPer)</td>
+                                                <td class="no-line text-right">@Model.main.IGSTAmount</td>
+                                            </tr>
+                                        }
+                                        if (Model.main.CGSTPer != 0)
+                                        {
+                                            <tr>
+                                                <td class="no-line"></td>
+                                                <td class="no-line text-center"><strong>CGST</strong>(@Model.main.CGSTPer)</td>
+                                                <td class="no-line text-right">@Model.main.CGSTAmount</td>
+                                            </tr>
+                                        }
+                                        if (Model.main.SGSTPer != 0)
+                                        {
+                                            <tr>
+                                                <td class="no-line"></td>
+                                                <td class="no-line text-center"><strong>SGST</strong>(@Model.main.SGSTPer)</td>
+                                                <td class="no-line text-right">@Model.main.SGSTAmount</td>
+                                            </tr>
+                                        }
+                                    }
+                                    <tr>
+                                        <td class="no-line"></td>
+                                        <td class="no-line text-center"><strong>Grand Total</strong></td>
+                                        <td class="no-line text-right">@Model.main.FinalPrice</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @{
+            if ((Model.advertisementStates != null && Model.advertisementStates.Count() > 0) || (Model.advertisementDistricts != null && Model.advertisementDistricts.Count() > 0) || (Model.advertisementCities != null && Model.advertisementCities.Count() > 0))
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><strong>Order Full Details</strong></h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table">
+                                    @if (Model.advertisementStates != null && Model.advertisementStates.Count() > 0)
+                                    {
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <td><strong>State Name</strong></td>
+                                                    <td class="text-right"><strong>Price</strong></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @{
+                                                    if (Model.advertisementStates != null && Model.advertisementStates.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.advertisementStates)
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                    @item.StateName
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    @item.TairTypeOfStateMatrix
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                </div>
+                                <div class="table">
+                                    @if (Model.advertisementDistricts != null && Model.advertisementDistricts.Count() > 0)
+                                    {
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <td><strong>District Name</strong></td>
+                                                    <td class="text-right"><strong>Price</strong></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @{
+                                                    if (Model.advertisementDistricts != null && Model.advertisementDistricts.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.advertisementDistricts)
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                    @item.DistrictName
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    @item.TairTypeOfDistrictMatrix
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                </div>
+                                <div class="table">
+                                    @if (Model.advertisementCities != null && Model.advertisementCities.Count() > 0)
+                                    {
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <td><strong>City Name</strong></td>
+                                                    <td class="text-right"><strong>Price</strong></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @{
+                                                    if (Model.advertisementCities != null && Model.advertisementCities.Count() > 0)
+                                                    {
+                                                        foreach (var item in Model.advertisementCities)
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                    @item.VillageLocalityName
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    @item.TairTypeOfCityMatrix
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

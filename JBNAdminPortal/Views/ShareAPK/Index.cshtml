@@ -1,0 +1,83 @@
+﻿<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Share APK Link</h4>
+                        <p class="card-description">
+                            
+                        </p>
+
+                        @using (Ajax.BeginForm("ShareAPKLink", "ShareAPK", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "divList",
+                            OnBegin = "onBegin_Ajax",
+                            OnComplete = "onSearchCompleteCreate_Ajax",
+                            OnSuccess = "onSearchSuccess_Ajax",
+                            //OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post"
+                        }, new { @class = "form-sample" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">From Date</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(a => a.FromDate, new { htmlAttributes = new { @class = "form-control dated", @placeholder = "From Date", @autocomplete = "off" } })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">To Date</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(a => a.ToDate, new { htmlAttributes = new { @class = "form-control dated", @placeholder = "To Date", @autocomplete = "off" } })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <button type="submit" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="divList">
+                        @Html.Action("CityList")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*}*@
+
+<script>
+    function onSearchCompleteCreate_Ajax() {
+
+    }
+    function onSearchSuccess_Ajax() {
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+    }
+</script>

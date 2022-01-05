@@ -1,0 +1,143 @@
+﻿@model IEnumerable<JBNClassLibrary.ItemCategory>
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row" id="divCreate">
+
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="dvList">
+                        <div class="table-responsive pt-3">
+                            <table class="table table-bordered dataGrid">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Item Category Name
+                                        </th>
+                                        <th>
+                                            Created Date
+                                        </th>
+                                        <th>
+                                            Reason / Reffered By
+                                        </th>
+                                        <th>
+                                            Approved By
+                                        </th>
+                                        <th>
+                                            Action
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        if (Model.Count() > 0)
+                                        {
+                                            foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.HiddenFor(Model => item.ItemId)
+                                                        @item.ItemName
+                                                    </td>
+                                                    <td>
+                                                        @item.CreatedDate
+                                                    </td>
+                                                    <td>
+                                                        @item.ItemRefferedByOrReason
+                                                    </td>
+                                                    <td>
+                                                        @item.ItemApprovedBy
+                                                    </td>
+                                                    <td>
+                                                        @Ajax.ActionLink("Edit", "Edit", "ViewChildCat", new { ItemID = item.ItemId }, new AjaxOptions { UpdateTargetId = "divCreate", HttpMethod = "get", OnComplete = "Ajax_OnComplete", OnFailure = "Ajax_Edit_Failure", OnSuccess = "onEditSuccess", LoadingElementId = "progress" }, new { @class = "btn btn-danger btn-xs" })
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onCreateSuccess_Ajax() {
+        swal("Success", "ChildCategory Saved Successfully", "success");
+        $("#divCreate").load('@Url.Action("Create", "ChildCategory")');
+    }
+    function onEditSuccess_Ajax() {
+        swal("Success", "ChildCategory Updated Successfully", "success");
+        $("#divCreate").load('@Url.Action("Create", "ChildCategory")');
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+        $("#ChildCategoryName").focus();
+        $(".dropdowns").select2();
+    }
+</script>
+<script>
+    function btnCancel_Click() {
+        $('#divCreate').empty();
+    }
+    function ddlChildCategoryChanged() {
+        var ChildCategoryID = $("#ChildCategoryId option:selected").val();
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            data: '{ChildCategoryID: ' + ChildCategoryID + '}',
+            contentType: 'application/json',
+            url: '@Url.Action("GetParentCategories", "ViewChildCat")',
+            success: function (data) {
+                $("#MainCategoryName").val(data);
+            },
+
+            error: function () {
+                alert("Error loading data! Please try again.");
+            }
+        });
+    }
+    $(document).ready(function () {
+        $(".dataGrid").dataTable().fnDestroy();
+        $(".dataGrid").DataTable({
+            "processing": true, // for show progress bar
+            "serverSide": true, // for process server side
+            "filter": false, // this is for disable filter (search box)
+            "orderMulti": false, // for disable multiple column at once
+            "ajax": {
+                "url": "ViewChildCat/ItemCategoryListJson",
+                "type": "POST",
+                "datatype": "json"
+            },
+            "columns": [
+                    { "data": "ItemID", "name": "ItemID", "autoWidth": true },
+                    { "data": "ItemName", "name": "Item Category Name", "autoWidth": true },
+                    { "data": "CreatedDate", "name": "Created Date", "autoWidth": true },
+                    { "data": "ItemRefferedByOrReason", "name": "Reason / Reffered By", "autoWidth": true },
+                    { "data": "ItemApprovedBy", "name": "Approved By", "autoWidth": true },
+            ]
+        });
+    });
+</script>

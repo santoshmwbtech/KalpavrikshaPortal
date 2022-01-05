@@ -1,0 +1,1135 @@
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\ErrorLog.txt
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\JBNWebAPI.dll.config
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\JBNWebAPI.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\JBNWebAPI.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\csc.exe
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\csc.exe.config
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\csc.rsp
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\csi.exe
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\csi.exe.config
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\csi.rsp
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.AppContext.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Console.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.IO.Compression.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.IO.Pipes.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.Claims.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.ValueTuple.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\vbc.exe
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\vbc.exe.config
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\vbc.rsp
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\AngleSharp.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Antlr3.Runtime.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\BouncyCastle.Crypto.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\ChoETL.Core.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\ChoETL.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\ChoETL.JSON.Core.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\ChoETL.JSON.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Common.Logging.Core.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Common.Logging.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\EntityFramework.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\EntityFramework.SqlServer.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\FirebaseAdmin.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Api.Gax.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Api.Gax.Rest.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Auth.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Auth.PlatformServices.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Core.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.PlatformServices.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\HtmlRenderer.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\itextsharp.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\itextsharp.xmlworker.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\JBNClassLibrary.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Cors.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Security.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Newtonsoft.Json.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\nunit.framework.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Owin.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\PaytmChecksum.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\protobuf-net.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Rotativa.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\RotativaHQ.Core.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\RotativaHQ.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\RotativaHQ.MVC5.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.Compression.Base.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.Licensing.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.Pdf.Base.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Buffers.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.CodeDom.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Collections.Immutable.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.ComponentModel.Annotations.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Configuration.ConfigurationManager.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Data.SqlClient.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Memory.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Net.Http.Formatting.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Numerics.Vectors.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Threading.Tasks.Extensions.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Cors.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Helpers.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Http.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Http.WebHost.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Mvc.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Optimization.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Razor.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.WebPages.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\WebGrease.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Linq.Dynamic.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.mshtml.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\JBNClassLibrary.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\JBNClassLibrary.dll.config
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\AngleSharp.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\BouncyCastle.Crypto.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Common.Logging.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Common.Logging.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Common.Logging.Core.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Common.Logging.Core.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\EntityFramework.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\EntityFramework.SqlServer.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\FirebaseAdmin.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Api.Gax.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Api.Gax.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Api.Gax.Rest.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Api.Gax.Rest.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Auth.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Auth.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Core.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Google.Apis.Core.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\HtmlRenderer.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\itextsharp.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Cors.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Security.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Newtonsoft.Json.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\nunit.framework.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\nunit.framework.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\protobuf-net.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\protobuf-net.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.Compression.Base.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Syncfusion.Pdf.Base.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Buffers.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Collections.Immutable.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Memory.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Net.Http.Formatting.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Numerics.Vectors.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Threading.Tasks.Extensions.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Http.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Http.WebHost.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Helpers.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Mvc.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Optimization.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.Razor.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.WebPages.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Antlr3.Runtime.pdb
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\obj\Debug\JBNWebAPI.csprojAssemblyReference.cache
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CopyComplete
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\obj\Debug\JBNWebAPI.dll
+E:\NewSVNFolder\jbcnotification\JBNWebAPI\obj\Debug\JBNWebAPI.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\ErrorLog.txt
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\JBNWebAPI.dll.config
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\JBNWebAPI.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\JBNWebAPI.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\csc.exe
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\csc.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\csc.rsp
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\csi.exe
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\csi.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\csi.rsp
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.AppContext.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Console.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.Compression.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.Pipes.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Claims.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.ValueTuple.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\vbc.exe
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\vbc.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\vbc.rsp
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\AngleSharp.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Antlr3.Runtime.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\BouncyCastle.Crypto.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\ChoETL.Core.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\ChoETL.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\ChoETL.JSON.Core.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\ChoETL.JSON.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Common.Logging.Core.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Common.Logging.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\EntityFramework.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\EntityFramework.SqlServer.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\FirebaseAdmin.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.Rest.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.PlatformServices.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Core.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.PlatformServices.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\HtmlRenderer.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\itextsharp.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\itextsharp.xmlworker.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\JBNClassLibrary.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Cors.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Newtonsoft.Json.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\nunit.framework.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Owin.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\PaytmChecksum.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\protobuf-net.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Rotativa.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\RotativaHQ.Core.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\RotativaHQ.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\RotativaHQ.MVC5.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Compression.Base.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Licensing.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Pdf.Base.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Buffers.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.CodeDom.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Collections.Immutable.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.ComponentModel.Annotations.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Configuration.ConfigurationManager.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Data.SqlClient.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Memory.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Net.Http.Formatting.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Numerics.Vectors.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Threading.Tasks.Extensions.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Cors.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Helpers.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.WebHost.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Mvc.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Optimization.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Razor.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\WebGrease.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Linq.Dynamic.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.mshtml.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\JBNClassLibrary.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\JBNClassLibrary.dll.config
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\AngleSharp.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\BouncyCastle.Crypto.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Common.Logging.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Common.Logging.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Common.Logging.Core.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Common.Logging.Core.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\EntityFramework.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\EntityFramework.SqlServer.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\FirebaseAdmin.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.Rest.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.Rest.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Core.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Core.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\HtmlRenderer.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\itextsharp.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Cors.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Newtonsoft.Json.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\nunit.framework.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\nunit.framework.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\protobuf-net.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\protobuf-net.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Compression.Base.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Pdf.Base.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Buffers.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Collections.Immutable.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Memory.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Net.Http.Formatting.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Numerics.Vectors.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Threading.Tasks.Extensions.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.WebHost.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Helpers.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Mvc.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Optimization.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.Razor.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Antlr3.Runtime.pdb
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.csprojAssemblyReference.cache
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CopyComplete
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.dll
+E:\NewSVNFolder\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\ErrorLog.txt
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\JBNWebAPI.dll.config
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\JBNWebAPI.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\JBNWebAPI.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\csc.exe
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\csc.exe.config
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\csc.rsp
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\csi.exe
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\csi.exe.config
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\csi.rsp
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.AppContext.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Console.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.Compression.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.IO.Pipes.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Claims.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.ValueTuple.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\vbc.exe
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\vbc.exe.config
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\vbc.rsp
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\AngleSharp.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Antlr3.Runtime.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\BouncyCastle.Crypto.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\ChoETL.Core.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\ChoETL.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\ChoETL.JSON.Core.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\ChoETL.JSON.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Common.Logging.Core.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Common.Logging.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\EntityFramework.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\EntityFramework.SqlServer.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\FirebaseAdmin.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.Rest.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.PlatformServices.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Core.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.PlatformServices.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\HtmlRenderer.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\itextsharp.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\itextsharp.xmlworker.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\JBNClassLibrary.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Cors.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Newtonsoft.Json.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\nunit.framework.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Owin.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\PaytmChecksum.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\protobuf-net.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Rotativa.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\RotativaHQ.Core.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\RotativaHQ.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\RotativaHQ.MVC5.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Compression.Base.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Licensing.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Pdf.Base.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Buffers.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.CodeDom.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Collections.Immutable.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.ComponentModel.Annotations.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Configuration.ConfigurationManager.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Data.SqlClient.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Memory.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Net.Http.Formatting.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Numerics.Vectors.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Threading.Tasks.Extensions.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Cors.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Helpers.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.WebHost.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Mvc.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Optimization.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Razor.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\WebGrease.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Linq.Dynamic.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.mshtml.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\JBNClassLibrary.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\JBNClassLibrary.dll.config
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\AngleSharp.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\BouncyCastle.Crypto.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Common.Logging.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Common.Logging.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Common.Logging.Core.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Common.Logging.Core.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\EntityFramework.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\EntityFramework.SqlServer.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\FirebaseAdmin.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.Rest.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Api.Gax.Rest.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Auth.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Core.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Google.Apis.Core.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\HtmlRenderer.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\itextsharp.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Cors.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Newtonsoft.Json.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\nunit.framework.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\nunit.framework.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\protobuf-net.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\protobuf-net.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Compression.Base.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Syncfusion.Pdf.Base.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Buffers.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Collections.Immutable.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Memory.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Net.Http.Formatting.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Numerics.Vectors.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Threading.Tasks.Extensions.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Http.WebHost.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Helpers.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Mvc.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Optimization.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.Razor.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Antlr3.Runtime.pdb
+E:\Santosh\MWB Bazaar\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Santosh\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.csprojAssemblyReference.cache
+E:\Santosh\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CoreCompileInputs.cache
+E:\Santosh\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CopyComplete
+E:\Santosh\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.dll
+E:\Santosh\MWB Bazaar\JBNWebAPI\obj\Debug\JBNWebAPI.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\ErrorLog.txt
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNWebAPI.dll.config
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNWebAPI.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNWebAPI.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csc.exe
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csc.exe.config
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csc.rsp
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csi.exe
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csi.exe.config
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csi.rsp
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.AppContext.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Console.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.Compression.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.Pipes.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Claims.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.ValueTuple.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\vbc.exe
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\vbc.exe.config
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\vbc.rsp
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\AngleSharp.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Antlr3.Runtime.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\BouncyCastle.Crypto.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.Core.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.JSON.Core.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.JSON.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.Core.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.SqlServer.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\FirebaseAdmin.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.PlatformServices.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Core.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.PlatformServices.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\HtmlRenderer.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\itextsharp.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\itextsharp.xmlworker.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNClassLibrary.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Cors.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Newtonsoft.Json.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\nunit.framework.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Owin.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\PaytmChecksum.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\protobuf-net.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Rotativa.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\RotativaHQ.Core.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\RotativaHQ.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\RotativaHQ.MVC5.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Compression.Base.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Licensing.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Pdf.Base.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Buffers.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.CodeDom.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Collections.Immutable.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.ComponentModel.Annotations.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Configuration.ConfigurationManager.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Data.SqlClient.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Memory.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Net.Http.Formatting.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Numerics.Vectors.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Threading.Tasks.Extensions.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Cors.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Helpers.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.WebHost.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Mvc.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Optimization.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Razor.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\WebGrease.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Linq.Dynamic.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.mshtml.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNClassLibrary.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNClassLibrary.dll.config
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\AngleSharp.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\BouncyCastle.Crypto.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.Core.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.Core.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.SqlServer.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\FirebaseAdmin.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Core.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Core.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\HtmlRenderer.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\itextsharp.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Cors.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Newtonsoft.Json.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\nunit.framework.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\nunit.framework.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\protobuf-net.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\protobuf-net.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Compression.Base.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Pdf.Base.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Buffers.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Collections.Immutable.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Memory.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Net.Http.Formatting.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Numerics.Vectors.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Threading.Tasks.Extensions.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.WebHost.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Helpers.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Mvc.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Optimization.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Razor.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Antlr3.Runtime.pdb
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.AssemblyReference.cache
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CoreCompileInputs.cache
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CopyComplete
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.dll
+E:\SantoshNewSVN\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\ErrorLog.txt
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\JBNWebAPI.dll.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\JBNWebAPI.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\JBNWebAPI.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\csc.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\csc.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\csc.rsp
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\csi.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\csi.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\csi.rsp
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.AppContext.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Console.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.IO.Compression.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.IO.Pipes.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.Claims.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.ValueTuple.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\vbc.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\vbc.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\vbc.rsp
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\AngleSharp.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Antlr3.Runtime.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\BouncyCastle.Crypto.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\ChoETL.Core.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\ChoETL.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\ChoETL.JSON.Core.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\ChoETL.JSON.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Common.Logging.Core.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Common.Logging.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\EntityFramework.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\EntityFramework.SqlServer.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\FirebaseAdmin.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Api.Gax.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Auth.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Auth.PlatformServices.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Core.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.PlatformServices.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\HtmlRenderer.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\itextsharp.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\itextsharp.xmlworker.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\JBNClassLibrary.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Cors.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Security.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Newtonsoft.Json.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\nunit.framework.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Owin.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\PaytmChecksum.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\protobuf-net.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Rotativa.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\RotativaHQ.Core.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\RotativaHQ.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\RotativaHQ.MVC5.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.Compression.Base.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.Licensing.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.Pdf.Base.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Buffers.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.CodeDom.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Collections.Immutable.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.ComponentModel.Annotations.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Configuration.ConfigurationManager.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Data.SqlClient.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Memory.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Net.Http.Formatting.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Numerics.Vectors.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Threading.Tasks.Extensions.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Cors.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Helpers.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Http.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Http.WebHost.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Mvc.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Optimization.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Razor.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.WebPages.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\WebGrease.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Linq.Dynamic.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.mshtml.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\JBNClassLibrary.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\JBNClassLibrary.dll.config
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\AngleSharp.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\BouncyCastle.Crypto.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Common.Logging.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Common.Logging.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Common.Logging.Core.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Common.Logging.Core.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\EntityFramework.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\EntityFramework.SqlServer.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\FirebaseAdmin.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Api.Gax.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Api.Gax.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Auth.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Auth.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Core.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Google.Apis.Core.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\HtmlRenderer.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\itextsharp.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Cors.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Security.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Newtonsoft.Json.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\nunit.framework.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\nunit.framework.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\protobuf-net.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\protobuf-net.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.Compression.Base.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Syncfusion.Pdf.Base.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Buffers.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Collections.Immutable.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Memory.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Net.Http.Formatting.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Numerics.Vectors.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Threading.Tasks.Extensions.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Http.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Http.WebHost.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Helpers.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Mvc.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Optimization.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.Razor.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.WebPages.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Antlr3.Runtime.pdb
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.AssemblyReference.cache
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CoreCompileInputs.cache
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CopyComplete
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\obj\Debug\JBNWebAPI.dll
+E:\SVN_Codes\KalpvrikshaAdminPortal\JBNWebAPI\obj\Debug\JBNWebAPI.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.AssemblyReference.cache
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CoreCompileInputs.cache
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\ErrorLog.txt
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNWebAPI.dll.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNWebAPI.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNWebAPI.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csc.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csc.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csc.rsp
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csi.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csi.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\csi.rsp
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.AppContext.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Console.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.Compression.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.IO.Pipes.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Claims.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.ValueTuple.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\vbc.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\vbc.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\vbc.rsp
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\AngleSharp.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Antlr3.Runtime.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\BouncyCastle.Crypto.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.Core.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.JSON.Core.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\ChoETL.JSON.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.Core.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.SqlServer.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\FirebaseAdmin.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.PlatformServices.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Core.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.PlatformServices.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\HtmlRenderer.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\itextsharp.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\itextsharp.xmlworker.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNClassLibrary.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Cors.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Newtonsoft.Json.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\nunit.framework.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Owin.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\PaytmChecksum.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\protobuf-net.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Rotativa.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\RotativaHQ.Core.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\RotativaHQ.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\RotativaHQ.MVC5.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Compression.Base.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Licensing.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Pdf.Base.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Buffers.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.CodeDom.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Collections.Immutable.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.ComponentModel.Annotations.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Configuration.ConfigurationManager.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Data.SqlClient.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Memory.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Net.Http.Formatting.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Numerics.Vectors.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Threading.Tasks.Extensions.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Cors.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Helpers.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.WebHost.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Mvc.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Optimization.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Razor.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\WebGrease.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Linq.Dynamic.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.mshtml.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNClassLibrary.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\JBNClassLibrary.dll.config
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\AngleSharp.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\BouncyCastle.Crypto.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.Core.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Common.Logging.Core.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\EntityFramework.SqlServer.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\FirebaseAdmin.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Api.Gax.Rest.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Auth.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Core.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Google.Apis.Core.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\HtmlRenderer.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\itextsharp.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Cors.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Newtonsoft.Json.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\nunit.framework.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\nunit.framework.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\protobuf-net.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\protobuf-net.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Compression.Base.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.HtmlConverter.Base.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Syncfusion.Pdf.Base.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Buffers.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Collections.Immutable.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Memory.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Net.Http.Formatting.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Numerics.Vectors.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Threading.Tasks.Extensions.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Http.WebHost.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Helpers.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Mvc.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Optimization.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.Razor.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Antlr3.Runtime.pdb
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.csproj.CopyComplete
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.dll
+E:\SVNFolderOct\KalpavrikshaWebPortal\JBNWebAPI\obj\Debug\JBNWebAPI.pdb

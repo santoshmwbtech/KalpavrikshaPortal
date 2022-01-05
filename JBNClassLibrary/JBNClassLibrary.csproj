@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBBAB624-B9C3-47F6-B4F7-6BBD36B82E03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JBNClassLibrary</RootNamespace>
+    <AssemblyName>JBNClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Korzh.EasyQuery, Version=5.4.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Korzh.EasyQuery.5.4.0\lib\netstandard2.0\Korzh.EasyQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Korzh.EasyQuery.Db, Version=5.4.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Korzh.EasyQuery.Db.5.4.0\lib\netstandard2.0\Korzh.EasyQuery.Db.dll</HintPath>
+    </Reference>
+    <Reference Include="Korzh.EasyQuery.Linq, Version=5.4.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Korzh.EasyQuery.Linq.5.4.0\lib\netstandard2.0\Korzh.EasyQuery.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.8\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessTypeWiseDetails.cs" />
+    <Compile Include="CategoryProduct.cs" />
+    <Compile Include="CategoryWiseRpt.cs" />
+    <Compile Include="ChildCategory.cs" />
+    <Compile Include="CityView.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CityWiseDetails.cs" />
+    <Compile Include="CustDetails.cs" />
+    <Compile Include="CustomerDetails.cs" />
+    <Compile Include="Dashboard.cs" />
+    <Compile Include="DashBoardData.cs" />
+    <Compile Include="dataTableClasses.cs" />
+    <Compile Include="Datum.cs" />
+    <Compile Include="DLActivityReport.cs" />
+    <Compile Include="DLAdMatrixMaster.cs" />
+    <Compile Include="DLAdminSettings.cs" />
+    <Compile Include="DLAdsReport.cs" />
+    <Compile Include="DLAdvertisements.cs" />
+    <Compile Include="DLApproveCategories.cs" />
+    <Compile Include="DLCategories.cs" />
+    <Compile Include="DLChangePassword.cs" />
+    <Compile Include="DLCustomerIncompleteRpt.cs" />
+    <Compile Include="DLEmailFooter.cs" />
+    <Compile Include="DLEnquiries.cs" />
+    <Compile Include="DLFormPermission.cs" />
+    <Compile Include="DLItemCategory.cs" />
+    <Compile Include="DLMainCatRpt.cs" />
+    <Compile Include="DLPerformanceReport.cs" />
+    <Compile Include="DLProformaInvoice.cs" />
+    <Compile Include="DLPromo.cs" />
+    <Compile Include="DLRoleCreation.cs" />
+    <Compile Include="DLStateCityReport.cs" />
+    <Compile Include="DLTemplates.cs" />
+    <Compile Include="DLUserHistoryReport.cs" />
+    <Compile Include="Enquiries.cs" />
+    <Compile Include="GetAllCategories_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="JBNAPIEntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JBNAPIEntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JBNAPIEntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JBNAPIEntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JBNAPIEntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="JBNDBClass.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="LoginValidation.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="PayTM.cs" />
+    <Compile Include="ProductPhoto.cs" />
+    <Compile Include="ProductsView.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchParameters.cs" />
+    <Compile Include="SearchResults.cs" />
+    <Compile Include="Select2Model.cs" />
+    <Compile Include="SendMailParameters.cs" />
+    <Compile Include="SendMessageParameters.cs" />
+    <Compile Include="SubCategory.cs" />
+    <Compile Include="SubCategoryWiseRpt.cs" />
+    <Compile Include="tblAdminSetting.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdTimeSlot.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisement.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementArea.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementCity.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementCitySlot.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementDiscount.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementDistrict.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementDistrictSlot.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementHoliday.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementMain.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementNationSlot.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbladvertisementPayment.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementState.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementStateSlot.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementTimeSlot.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdvertisementType.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAspNetUser.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBrand.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBusinessDemand.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBusinessDemandwithCust.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBusinessType.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBusinessTypewithCust.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCategoryHistory.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCategoryProduct.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCategoryProductWithCust.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblChildCategory.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblChildCategoryProductWithCust.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCompany.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomerDetail.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomerStatusHistory.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDeleteChat.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDeleteConversation.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDeleteEnquiry.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDistrict.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailFooter.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFavoriteConversation.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFormPermission.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFormPermissionItem.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblHistory.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblItemCategory.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPayment.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProfessionalRequirement.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPromo.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPurposeOfBusiness.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPushNotification.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuestion.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblselectedDealer.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSelectedDealerBusinessType.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblselectedDealerDetail.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSMSTemplate.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblState.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblStateWithCity.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubCategory.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubCategoryProductWithCust.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysMainMenu.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysRole.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysSubMenu.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTairTypeOfCity.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTairTypeOfDistrict.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTairTypeOfState.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTAndC.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaxSlab.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUser.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUserConversation.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVideo.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreation.cs" />
+    <Compile Include="UserStatus.cs" />
+    <Compile Include="USP_ChildCatCityWiseRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_ChildCatRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_ItemCatCityWiseRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_ItemCatRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_MainCatCityWiseRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_MainCatRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_SubCatCityWiseRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_SubCatRpt_Result.cs">
+      <DependentUpon>JBNAPIEntityModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="JBNAPIEntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JBNAPIEntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="JBNAPIEntityModel.edmx.diagram">
+      <DependentUpon>JBNAPIEntityModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErrorLog.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JBNAPIEntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JBNAPIEntityModel.edmx</DependentUpon>
+      <LastGenOutput>JBNAPIEntityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="JBNAPIEntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JBNAPIEntityModel.edmx</DependentUpon>
+      <LastGenOutput>JBNAPIEntityModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

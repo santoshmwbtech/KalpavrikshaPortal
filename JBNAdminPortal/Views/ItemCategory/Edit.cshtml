@@ -1,0 +1,121 @@
+﻿@model JBNClassLibrary.ItemCategory
+
+<div class="col-12 grid-margin">
+    <div class="card card-outline-primary">
+        <div class="card-body">
+            <h4 class="card-title">Update Item Category</h4>
+            @using (Ajax.BeginForm("Edit", "ItemCategory", null, new AjaxOptions
+            {
+                OnSuccess = "onEditSuccess_Ajax",
+                OnFailure = "onFailure_Ajax",
+                HttpMethod = "post",
+                LoadingElementId = "progress",
+            }, new { @class = "form-sample" }))
+            {
+                @Html.AntiForgeryToken()
+                <p class="card-description">
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Item (Product) Name</label>
+                            @Html.EditorFor(model => model.ItemName, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(model => model.ID)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Child Category Name</label>
+                            @Html.DropDownListFor(a => a.ChildCategoryId, (SelectList)ViewBag.ChildCategory, "Select Child Category", new { @class = "form-control dropdowns", @onchange = "ddlChildCategoryChanged()" })
+                            @Html.ValidationMessageFor(model => model.ChildCategoryId, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(a => a.ChildCategoryName)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Sub Category</label>
+                            @Html.EditorFor(model => model.SubCategoryName, new { htmlAttributes = new { @class = "form-control", disabled = "disabled", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.SubCategoryName, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(model => model.SubCategoryId)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Main Category</label>
+                            @Html.EditorFor(model => model.MainCategoryName, new { htmlAttributes = new { @class = "form-control", disabled = "disabled", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.MainCategoryName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Reffered By or Reason </label>
+                            @Html.EditorFor(model => model.ItemRefferedByOrReason, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ItemRefferedByOrReason, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Approved By </label>
+                            @Html.EditorFor(model => model.ItemApprovedBy, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ItemApprovedBy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    @{
+                        if (Model.IsMasterItemProduct == false)
+                        {
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Product Images </label> <br />
+                                    @if (!string.IsNullOrEmpty(Model.ItemImage1))
+                                    {
+                                        @*<a href='@Url.Content(Model.ItemImage1)' class="js-img-viwer">
+                                            <img src='@Url.Content(Model.ItemImage1)' alt="product_image1" class="img-responsive js-img-viwer" height="100" width="100" />
+                                        </a>*@
+                                        <a data-fancybox="gallery" href='@Url.Content(Model.ItemImage1)'><img src='@Url.Content(Model.ItemImage1)' height="100" width="100" alt="image"></a>
+                                    }
+                                    else
+                                    {
+                                        <img src="~/images/no_image_available.jpg" alt="product_image1" class="img-responsive" height="100" />
+                                    }
+                                    @if (!string.IsNullOrEmpty(Model.ItemImage2))
+                                    {
+                                        @*<a href='@Url.Content(Model.ItemImage2)' class="js-img-viwer">
+                                            <img src='@Url.Content(Model.ItemImage2)' alt="product_image2" class="img-responsive js-img-viwer" height="100" width="100" />
+                                        </a>*@
+                                        <a data-fancybox="gallery" href='@Url.Content(Model.ItemImage2)'><img src='@Url.Content(Model.ItemImage2)' height="100" width="100" alt="image"></a>
+                                    }
+                                    else
+                                    {
+                                        <img src="~/images/no_image_available.jpg" alt="product_image2" class="img-responsive" height="100" />
+                                    }
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="clearfix"></div>
+                <div class="text-center">
+                    @if (Session["MenuMaster"] != null)
+                    {
+                        var MenuMaster = (List<JBNClassLibrary.FormPermissionItem>)Session["MenuMaster"];
+                        if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "itemcategory" && m.IsEdit == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <button type="submit" class="btn btn-primary ">Update</button>
+                        }
+                    }
+                    <a href="javascript:void(0)" onclick="btnCancel_Click()" class="btn btn-danger">Cancel</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+
+
+

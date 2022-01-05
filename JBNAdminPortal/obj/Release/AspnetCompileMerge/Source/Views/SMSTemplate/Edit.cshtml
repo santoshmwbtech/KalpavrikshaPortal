@@ -1,0 +1,45 @@
+﻿@model JBNClassLibrary.Templates
+
+<h4 class="card-title">Update SMS Template Details</h4>
+@using (Ajax.BeginForm("Save", "SMSTemplate", null, new AjaxOptions
+{
+    UpdateTargetId = "divList",
+    OnBegin = "onBegin_Ajax",
+    OnComplete = "onSaveCompleteCreate_Ajax",
+    OnSuccess = "onCreateSuccess_Ajax",
+    OnFailure = "onFailure_Ajax",
+    HttpMethod = "post",
+    LoadingElementId = "progress"
+
+}, new { @class = "form-sample" }))
+{
+    @Html.AntiForgeryToken()
+    <p class="card-description font-weight-bolder">
+        Role Creation
+    </p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Template Name :</label>
+                @Html.HiddenFor(model => model.ID)
+                @Html.EditorFor(model => model.TemplateName, new { htmlAttributes = new { @class = "form-control ", @placeholder = "Template Name", @maxlength = "50", @autocomplete = "off", @onkeypress = "return isCharacter(event)" } })
+                @Html.ValidationMessageFor(model => model.TemplateName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Message : </label>
+                @Html.EditorFor(model => model.TemplateBody, new { htmlAttributes = new { @class = "form-control", @placeholder = "Message", @autocomplete = "off", @onkeypress = "return isCharacter(event)" } })
+                @Html.ValidationMessageFor(model => model.TemplateBody, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary ">Update</button>
+    </div>
+}
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>

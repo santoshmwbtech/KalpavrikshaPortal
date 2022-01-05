@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ac0b39f1a566471487b1345bf580deb0" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdminSetting" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisement" Width="1.5" PointX="8.25" PointY="89.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementArea" Width="1.5" PointX="6" PointY="100.625" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementCity" Width="1.5" PointX="8.25" PointY="121.375" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementDistrict" Width="1.5" PointX="8.25" PointY="97.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementHoliday" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementMain" Width="1.5" PointX="6" PointY="88" />
+        <EntityTypeShape EntityType="jbnbetaModel.tbladvertisementPayment" Width="1.5" PointX="8.25" PointY="102.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementState" Width="1.5" PointX="8.25" PointY="115.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementTimeSlot" Width="1.5" PointX="3" PointY="85" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementType" Width="1.5" PointX="3.75" PointY="106.25" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAspNetUser" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblBrand" Width="1.5" PointX="3" PointY="101.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblBusinessDemand" Width="1.5" PointX="3" PointY="66.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblBusinessType" Width="1.5" PointX="3" PointY="70.25" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblBusinessTypewithCust" Width="1.5" PointX="8.25" PointY="70.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblCategoryHistory" Width="1.5" PointX="3" PointY="96.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblCategoryProduct" Width="1.5" PointX="3" PointY="131.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblCategoryProductWithCust" Width="1.5" PointX="8.25" PointY="132.5" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblChildCategory" Width="1.5" PointX="5.25" PointY="126.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblChildCategoryProductWithCust" Width="1.5" PointX="2.75" PointY="5.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblCompany" Width="1.5" PointX="3" PointY="167.625" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblCustomerDetail" Width="1.5" PointX="3" PointY="36" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblCustomerStatusHistory" Width="1.5" PointX="3" PointY="92.25" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblDeleteChat" Width="1.5" PointX="10.5" PointY="64.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblDeleteConversation" Width="1.5" PointX="13.5" PointY="70.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblDeleteEnquiry" Width="1.5" PointX="10.5" PointY="70.25" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblDistrict" Width="1.5" PointX="5.25" PointY="113.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblEmailFooter" Width="1.5" PointX="4.75" PointY="5.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblFavoriteConversation" Width="1.5" PointX="7.5" PointY="66.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblFormPermission" Width="1.5" PointX="5.25" PointY="80.375" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblFormPermissionItem" Width="1.5" PointX="13.5" PointY="74.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblHistory" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblItemCategory" Width="1.5" PointX="7.5" PointY="107" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblPayment" Width="1.5" PointX="11.25" PointY="91.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblProfessionalRequirement" Width="1.5" PointX="3" PointY="74" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblPromo" Width="1.5" PointX="3" PointY="171.625" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblPushNotification" Width="1.5" PointX="5.25" PointY="43.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblQuestion" Width="1.5" PointX="3" PointY="149" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblselectedDealer" Width="1.5" PointX="5.25" PointY="67.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSelectedDealerBusinessType" Width="1.5" PointX="13.5" PointY="65.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblselectedDealerDetail" Width="1.5" PointX="7.5" PointY="74.375" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSMSTemplate" Width="1.5" PointX="3" PointY="136.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblState" Width="1.5" PointX="5.25" PointY="118.375" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblStateWithCity" Width="1.5" PointX="10.5" PointY="101.5" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSubCategory" Width="1.5" PointX="3" PointY="175.5" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSubCategoryProductWithCust" Width="1.5" PointX="5.25" PointY="132.5" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSysMainMenu" Width="1.5" PointX="3" PointY="163.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSysRole" Width="1.5" PointX="3" PointY="62.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblSysSubMenu" Width="1.5" PointX="8.25" PointY="126.5" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblTairTypeOfCity" Width="1.5" PointX="3" PointY="159.25" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblTairTypeOfDistrict" Width="1.5" PointX="3" PointY="141" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblTairTypeOfState" Width="1.5" PointX="3" PointY="144.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblTAndC" Width="1.5" PointX="3" PointY="54.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblUser" Width="1.5" PointX="0.75" PointY="86.125" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblUserConversation" Width="1.5" PointX="10.5" PointY="74.375" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblVideo" Width="1.5" PointX="3" PointY="58.625" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblTaxSlab" Width="1.5" PointX="3" PointY="118.875" />
+        <EntityTypeShape EntityType="jbnbetaModel.ProductsView" Width="1.5" PointX="8.75" PointY="0.75" />
+        <AssociationConnector Association="jbnbetaModel.FK_AdTimeSlotID" />
+        <AssociationConnector Association="jbnbetaModel.FK_AdvertisementMainID" />
+        <AssociationConnector Association="jbnbetaModel.FK_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisement_AdvertisementAreaID" />
+        <AssociationConnector Association="jbnbetaModel.FK_TypeOfAdvertisementID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementCity_AdvertisementMainID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementCity_StateWithCityID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementCity_TairTypeOfCityID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementDistrict_AdvertisementMainID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementDistrict_DistrictID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementMain_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementMain_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementMain_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementMain_ProductID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementMain_TypeOfAdvertisementID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tbladvertisementPayment_AdvertisementMainID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tbladvertisementstate_AdvertisementMainID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblItemCategory_AdvertisementMainID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tbladvertisementstate_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tbladvertisementstate_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tbladvertisementstate_StateID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tbladvertisementstate_TairTypeOfStateID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementTimeSlot_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementTimeSlot_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBrand_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBrand_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessDemand_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessDemand_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealer_BusinessDemandID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessType_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessType_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessTypewithCust_BusinessTypeID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSelectedDealerBusinessTypes_BusinessTypeID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessTypewithCust_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessTypewithCust_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessTypewithCust_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryHistory_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryHistory_ProductID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProduct_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProduct_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProductWithCust_CategoryProductID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSubCategoryProductWithCust_CategoryProductID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProductWithCust_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProductWithCust_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblChildCategory_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblChildCategory_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblChildCategory_SubCategoryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblItemCategory_ChildCategoryID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCompany_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCompany_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCustomerStatusHistory_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteChat_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteChat_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteChat_ReceiverID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteConversation_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteConversation_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteConversation_ReceiverID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteEnquiry_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteEnquiry_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFavoriteConversation_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFavoriteConversation_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFavoriteConversation_ReceiverID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblPayment_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblPayment_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblPushNotifications_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealer_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealer_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSelectedDealerBusinessTypes_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSelectedDealerBusinessTypes_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealerDetails_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealerDetails_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSubCategoryProductWithCust_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSubCategoryProductWithCust_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblUserConversations_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblUserConversations_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCustomerStatusHistory_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCustomerStatusHistory_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteChat_ChatID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteChat_QueryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteConversation_QueryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDeleteEnquiry_QueryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDistrict_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDistrict_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDistrict_StateID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblDistrict_TairTypeOfDistrictID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblStateWithCity_DistrictID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFavoriteConversation_QueryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFormPermission_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFormPermission_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFormPermission_RoleID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFormPermissionItem_FormPermissionID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblFormPermissionItem_RoleID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblItemCategory_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblItemCategory_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealer_ProductID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblPayment_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblProfessionalRequirements_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblProfessionalRequirements_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealer_ProfessionalRequirementID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblPromo_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblPromo_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblQuestions_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblQuestions_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealer_CityId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSelectedDealerBusinessTypes_QueryID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealerDetails_QueryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblUserConversations_QueryId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblselectedDealerDetails_CityId" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSMSTemplate_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSMSTemplate_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblState_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblState_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblState_TairTypeID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblStateWithCity_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblStateWithCity_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSubCategory_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSubCategory_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_SysMainMenuSubMenu" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysMainMenu_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysMainMenu_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysSubMenu_CategoryProductID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysRole_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysRole_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblUser_RoleID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysSubMenu_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblSysSubMenu_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTairTypeOfCity_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTairTypeOfCity_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTairTypeOfDistrict_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTairTypeOfDistrict_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTairTypeOfState_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTairTypeOfState_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTAndC_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTAndC_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTaxSlab_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblTaxSlab_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblVideos_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblVideos_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessTypewithCust_CreatedBy1" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessTypewithCust_ModifiedBy1" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProductWithCust_CreatedBy1" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblCategoryProductWithCust_ModifiedBy1" />
+        <EntityTypeShape EntityType="jbnbetaModel.CityView" Width="1.5" PointX="3.375" PointY="9.75" />
+        <AssociationConnector Association="jbnbetaModel.FK_CreatedBy1" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblAdvertisementMain_CreatedBy1" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdTimeSlot" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementCitySlot" Width="1.5" PointX="9.75" PointY="7.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementDistrictSlot" Width="1.5" PointX="5.75" PointY="10.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementNationSlot" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementStateSlot" Width="1.5" PointX="0.75" PointY="11.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblBusinessDemandwithCust" Width="1.5" PointX="5.625" PointY="51.25" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblPurposeOfBusiness" Width="1.5" PointX="3.375" PointY="80.75" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessDemandwithCust_BusinessDemandID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessDemandwithCust_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessDemandwithCust_CustID" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblBusinessDemandwithCust_ModifiedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblUser_CreatedBy" />
+        <AssociationConnector Association="jbnbetaModel.FK_tblUser_ModifiedBy" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementDiscount" Width="1.5" PointX="12.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

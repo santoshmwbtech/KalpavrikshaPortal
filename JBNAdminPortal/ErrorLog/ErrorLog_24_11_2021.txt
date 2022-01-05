@@ -1,0 +1,8 @@
+Ô*******************Start**************
+Date & Time : 24/11/2021 11:37:24
+Message : An error occurred while updating the entries. See the inner exception for details.
+Source : EntityFramework
+InnerException : An error occurred while updating the entries. See the inner exception for details.
+StackTrace :    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JBNClassLibrary.DLChildCategory.SaveChildCategory(childcategory ChildCatDetail, Int32 UserID) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\ChildCategory.cs:line 246
+*******************End**************

@@ -1,0 +1,11 @@
+Timestamp: 30-05-2020 12:27:11Message: {
+  "CustID": 1,
+  "MailSubject": "App Crashing",
+  "MailBody": "App Crashing",
+  "FirmName": "",
+  "EmailID": "",
+  "MobileNumber": "",
+  "CityName": "",
+  "MailAttachment": null
+}Category: Priority: -1Severity: Information
+----------------------------------

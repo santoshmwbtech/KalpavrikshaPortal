@@ -1,0 +1,228 @@
+﻿@model JBNClassLibrary.childcategory
+@{
+    ViewBag.Title = "Approve Child Category";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Child Category
+                        </h4>
+
+                        @using (Ajax.BeginForm("ApproveChildCategory", "ApproveCategories", null, new AjaxOptions
+                        {
+                            OnSuccess = "onChildSuccess_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }))
+                        {
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.HiddenFor(model => model.ID)
+                                        <label>Child Category Name</label>
+                                        @Html.EditorFor(model => model.ChildCategoryName, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                                        @Html.ValidationMessageFor(model => model.ChildCategoryName, "", new { @class = "text-danger" })
+                                        @Html.HiddenFor(model => model.ChildCategoryId)
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Sub Category Name</label>
+                                        @Html.DropDownListFor(a => a.SubCategoryId, (SelectList)ViewBag.SubCategory, "Select Sub Category", new { @class = "form-control dropdowns", @onchange = "subCategoryChanged(this)" })
+                                        @Html.ValidationMessageFor(model => model.SubCategoryId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Main Category</label>
+                                        @Html.EditorFor(model => model.MainCategoryName, new { htmlAttributes = new { @class = "form-control", disabled = "disabled", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.MainCategoryName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Reffered By or Reason </label>
+                                        @Html.EditorFor(model => model.RefferedByOrReason, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                                        @Html.ValidationMessageFor(model => model.RefferedByOrReason, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Approved By </label>
+                                        @Html.EditorFor(model => model.ApprovedBy, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                                        @Html.ValidationMessageFor(model => model.ApprovedBy, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Created By </label>
+                                        @Html.EditorFor(model => model.CreatedByName, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Approve</button>
+                                <a href="#" class="btn btn-danger" onclick="btnReject(@Model.ChildCategoryId)">Reject</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card card-outline-success">
+                    <div class="card-body">
+                        <h4 class="card-title">Product History</h4>
+                        <div class="table-responsive pt-3">
+                            <table class="table table-bordered dataGrid">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Old ChildCategory Name
+                                        </th>
+                                        <th>
+                                            Old SubCategory Name
+                                        </th>
+                                        <th>
+                                            Old MainCategory name
+                                        </th>
+                                        <th>
+                                            Updated On
+                                        </th>
+                                        <th>
+                                            Updated By
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        if (Model.histories.Count() > 0)
+                                        {
+                                            foreach (var item in Model.histories)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @item.OldProductName
+                                                    </td>
+                                                    <td>
+                                                        @item.OldSubCategory
+                                                    </td>
+                                                    <td>
+                                                        @item.OldMainCategory
+                                                    </td>
+                                                    <td>
+                                                        @item.CreationDate
+                                                    </td>
+                                                    <td>
+                                                        @item.CreatedUser
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onChildSuccess_Ajax(data) {
+        if (data == "Success") {
+            swal({
+                title: "Success!",
+                text: "Category approved successfully!!",
+                type: "success",
+                icon: "success",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Dashboard")';
+            });
+        }
+        else if (data == "SessionExpired") {
+            swal({
+                title: "Warning!",
+                text: "Your Session Expired, Login again..",
+                type: "warning",
+                icon: "warning",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Login")';
+            });
+        }
+        else {
+            swal({
+                title: "Error",
+                text: data,
+                type: "error",
+                icon: "error",
+            }).then(function () {
+                window.location = '@Url.Action("Index", "Dashboard")';
+            });
+        }
+    }
+</script>
+
+<script>
+    function btnReject(ChildCategoryID) {
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to activate this product!",
+            icon: "warning",
+            buttons: [
+                'No, cancel it!',
+                'Yes, I am sure!'
+            ],
+            dangerMode: true,
+        }).then(function (isConfirm) {
+            if (isConfirm) {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("RejectChildCategory", "ApproveCategories")',
+                    dataType: "json",
+                    contentType: "application/json",
+                    data: '{CategoryID: ' + JSON.stringify(ChildCategoryID) + '}',
+                    success: function (res) {
+                        if (res == "success") {
+                            swal({
+                                title: 'Rejected!',
+                                text: 'Product rejected!',
+                                icon: 'success'
+                            }).then(function () {
+                                window.location = '@Url.Action("Index", "Dashboard")';
+                            });
+                        }
+                        else {
+                            swal({
+                                title: 'Error!',
+                                text: 'Please contact administrator!',
+                                icon: 'error'
+                            }).then(function () {
+                                window.location = '@Url.Action("Index", "Dashboard")';
+                            });
+                        }
+                    }
+                });
+
+            } else {
+                swal("Cancelled", "You have clicked on cancel :)", "error");
+            }
+        })
+    }
+</script>

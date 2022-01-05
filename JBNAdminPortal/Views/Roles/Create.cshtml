@@ -1,0 +1,43 @@
+﻿@model  JBNClassLibrary.DLRoleCreation
+
+@using (Ajax.BeginForm("Save", "Roles", null, new AjaxOptions
+{
+    UpdateTargetId = "divList",
+    OnBegin = "onBegin_Ajax",
+    OnComplete = "onSaveCompleteCreate_Ajax",
+    OnSuccess = "onCreateSuccess_Ajax",
+    OnFailure = "onFailure_Ajax",
+    HttpMethod = "post",
+    LoadingElementId = "progress"
+
+}, new { @class = "form-sample" }))
+{
+    @Html.AntiForgeryToken()
+    <p class="card-description font-weight-bolder ">
+        Role Creation
+    </p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Role Name :</label>
+                @Html.EditorFor(model => model.RoleName, new { htmlAttributes = new { @class = "form-control ", @placeholder = "Role Name", @maxlength = "50", @autocomplete = "off", @onkeypress = "return isCharacter(event)" } })
+                @Html.ValidationMessageFor(model => model.RoleName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Role Description : </label>
+                @Html.EditorFor(model => model.RoleDescription, new { htmlAttributes = new { @class = "form-control", @maxlength = "128", @placeholder = "Role Description", @autocomplete = "off", @onkeypress = "return isCharacter(event)" } })
+                @Html.ValidationMessageFor(model => model.RoleDescription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+}
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>

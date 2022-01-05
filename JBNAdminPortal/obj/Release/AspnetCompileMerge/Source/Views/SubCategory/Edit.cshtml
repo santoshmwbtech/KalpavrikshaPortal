@@ -1,0 +1,73 @@
+﻿@model JBNClassLibrary.SubCat
+
+<div class="col-12 grid-margin">
+    <div class="card card-outline-success">
+        <div class="card-body">
+            <h4 class="card-title">Update Sub Category</h4>
+            @using (Ajax.BeginForm("Edit", "SubCategory", null, new AjaxOptions
+            {
+                OnSuccess = "onEditSuccess_Ajax",
+                OnFailure = "onFailure_Ajax",
+                HttpMethod = "post",
+                LoadingElementId = "progress"
+            }, new { @class = "form-sample" }))
+            {
+                @Html.AntiForgeryToken()
+                <p class="card-description">
+
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Sub Category Name</label>
+                            @Html.EditorFor(model => model.SubCategoryName, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.SubCategoryName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Main Category</label>
+                            <div class="input-group">
+                                @Html.DropDownListFor(model => model.CategoryProductID, (SelectList)ViewBag.CategoryProducts, "Select Main Category", new { @class = "form-control dropdowns" })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.CategoryProductID, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(model => model.ID)
+                            @*@Html.HiddenFor(model => model.CategoryProductID)*@
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Reffered By or Reason </label>
+                            @Html.EditorFor(model => model.RefferedByOrReason, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.RefferedByOrReason, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Approved By </label>
+                            @Html.EditorFor(model => model.ApprovedBy, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ApprovedBy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="text-center">
+                    @if (Session["MenuMaster"] != null)
+                    {
+                        var MenuMaster = (List<JBNClassLibrary.FormPermissionItem>)Session["MenuMaster"];
+                        if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "subcategory" && m.IsEdit == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <button type="submit" class="btn btn-primary ">Update</button>
+                        }
+                    }
+                    <a href="javascript:void(0)" onclick="btnCancel_Click()" class="btn btn-danger">Cancel</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+

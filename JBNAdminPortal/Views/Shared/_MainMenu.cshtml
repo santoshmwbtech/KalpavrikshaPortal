@@ -1,0 +1,275 @@
+﻿<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href='@Url.Action("Index", "Dashboard")'>
+                <i class="ti-shield menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </li>
+
+        @if (Session["MenuMaster"] != null)
+        {
+            var MenuMaster = (List<JBNClassLibrary.FormPermissionItem>)Session["MenuMaster"];
+
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-Masters" aria-expanded="false" aria-controls="ui-Masters">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Masters</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-Masters">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "roles" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "Roles")'>Roles Master</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "formpermissions" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "FormPermissions")'>Access Rights </a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "webusers" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "WebUsers")'>Web Users </a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "emailfooter" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "EmailFooter")'>Email Footers </a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "admatrixmaster" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "AdMatrixMaster")'>Advertisement Matrix</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-Settings" aria-expanded="false" aria-controls="ui-Settings">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Settings</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-Settings">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "itemcategory" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ConfigurationSettings", new { route = "create" })'>Configuration Settings</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-Templates" aria-expanded="false" aria-controls="ui-Templates">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Templates</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-Templates">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "smstemplate" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "SMSTemplate")'>SMS Templates</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-Create" aria-expanded="false" aria-controls="ui-Create">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Create</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-Create">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "itemcategory" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ItemCategory", new { route = "create" })'>Item Category</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "childcategory" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ChildCategory", new { route = "create" })'>Child Category</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "subcategory" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "SubCategory", new { route = "create" })'>Sub Category</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "maincategory" && m.IsCreate == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CategoryProducts", new { route = "create" })'>Main Category</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-View" aria-expanded="false" aria-controls="ui-View">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">View / Edit</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-View">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "appusers" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "AppUsers")' title="View App User">App Users </a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "itemcategory" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ItemCategory", new { route = "view" })'>Item Categories</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "childcategory" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ChildCategory", new { route = "view" })'>Child Categories</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "subcategory" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "SubCategory", new { route = "view" })'>Sub Categories</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "maincategory" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CategoryProducts", new { route = "view" })'>Main Categories</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-ads" aria-expanded="false" aria-controls="ui-ads">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Advertisements</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-ads">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "advertisements" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "Advertisements")'>Pending Advertisements</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "adbasicreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "BasicAdReport")'>All Ads Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "approvedadreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ApprovedAdReport")'>Approved Advertisements Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "revenuereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "YearlyBillingRpt")'>Revenue Report</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Promotions</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-basic">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "promotions" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "BusinessTypeWiseRpt")'>Promotions</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "citywisedetailedpromotion" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CityWiseDetailedRpt")'>CityWise Detailed Promotion</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-activity" aria-expanded="false" aria-controls="ui-activity">
+                    <i class="ti-files menu-icon"></i>
+                    <span class="menu-title">Reports</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-activity">
+                    <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "useractivityreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ActivityReport")'>User Activity Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "launchpadreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "LaunchpadReport")'>Launchpad Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "performancereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "PerformanceReport")'>Performance Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "customerincompleterpt" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CustomerIncompleteRpt")'>Customer Incomplete Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "businesstypereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "BusinessTypeWiseRpt")'>BusinessType / Category Report</a></li>
+                        }
+                        @*category statewise report*@
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "maincategorystatewisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "MainCatRpt")'>MainCategoryStateWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "subcategorystatewisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "SubCatRpt")'>SubCategoryStateWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "childcategorystatewisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ChildCatRpt")'>ChildCategoryStateWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "itemcategorystatewisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ItemCatRpt")'>ItemCategoryStateWise Report</a></li>
+                        }
+                        @*category statewise report*@
+
+                        @*category citywise report*@
+                        @*@if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "maincategorycitywisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "MainCatCityWiseRpt")'>MainCategoryCityWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "subcategorycitywisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "SubCatCityWiseRpt")'>SubCategoryCityWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "childcategorycitywisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ChildCatCityWiseRpt")'>ChildCategoryCityWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "itemcategorycitywisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "ItemCatCityWiseRpt")'>ItemCategoryCityWise Report</a></li>
+                        }*@
+                        @*category citywise report*@
+
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "statewisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "StateWiseRpt")'>StateWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "citywisereport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CityWiseReport")'>CityWise Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "enquiries" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "Enquiries")'>Enquiries Report</a></li>
+                        }
+
+                        @*@if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "subcategoryreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "SubCategoryRpt")'>SubCategoryWise Report</a></li>
+                        }*@
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "categoriesreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CategoryReport")'>Categories Report</a></li>
+                        }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "userhistoryreport" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "UserHistoryReport")'>User History Report</a></li>
+                        }
+                    </ul>
+                </div>
+            </li>
+        }
+    </ul>
+</nav>

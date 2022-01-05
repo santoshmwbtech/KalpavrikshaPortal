@@ -1,0 +1,85 @@
+﻿@model JBNClassLibrary.ItemCategory
+
+<div class="col-12 grid-margin">
+    <div class="card card-outline-primary">
+        <div class="card-body">
+            <h4 class="card-title">Create Item Category</h4>
+            @using (Ajax.BeginForm("Create", "ItemCategory", null, new AjaxOptions
+            {
+                OnSuccess = "onCreateSuccess_Ajax",
+                OnFailure = "onFailure_Ajax",
+                HttpMethod = "post",
+                LoadingElementId = "progress",
+            }, new { @class = "form-sample", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                <p class="card-description">
+
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Item (Product) Name</label>
+                            @Html.EditorFor(model => model.ItemName, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Child Category Name</label>
+                            @Html.DropDownListFor(a => a.ChildCategoryId, (SelectList)ViewBag.ChildCategory, "Select Child Category", new { @class = "form-control dropdowns", @onchange = "ddlChildCategoryChanged()" })
+                            @Html.ValidationMessageFor(model => model.ChildCategoryId, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(a => a.ChildCategoryName)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Sub Category</label>
+                            @Html.EditorFor(model => model.SubCategoryName, new { htmlAttributes = new { @class = "form-control", disabled = "disabled", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.SubCategoryName, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(model => model.SubCategoryId)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Main Category</label>
+                            @Html.EditorFor(model => model.MainCategoryName, new { htmlAttributes = new { @class = "form-control", disabled = "disabled", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.MainCategoryName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Reffered By or Reason </label>
+                            @Html.EditorFor(model => model.ItemRefferedByOrReason, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ItemRefferedByOrReason, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Approved By </label>
+                            @Html.EditorFor(model => model.ItemApprovedBy, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isCharacter(event)", @autocomplete = "off" } })
+                            @Html.ValidationMessageFor(model => model.ItemApprovedBy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Product Images </label>
+                            @Html.TextBoxFor(model => model.ProductImages, "", new { @class = "form-control fileimput", @type = "file", @multiple = "multiple" })
+                            @Html.ValidationMessageFor(model => model.ProductImages, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Create </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $.validator.unobtrusive.parse(document);
+</script>
+

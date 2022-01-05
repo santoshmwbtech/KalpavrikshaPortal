@@ -1,0 +1,155 @@
+﻿@model JBNClassLibrary.AllCategories
+
+@{
+    ViewBag.Title = "Category Report";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Category Report</h4>
+                        <p class="card-description">
+
+                        </p>
+
+                        @using (Ajax.BeginForm("SearchByCategories", "CategoryReport", null, new AjaxOptions
+                        {
+                            UpdateTargetId = "divList",
+                            OnBegin = "onBegin_Ajax",
+                            OnComplete = "onSearchCompleteCreate_Ajax",
+                            OnSuccess = "onSearchSuccess_Ajax",
+                            //OnFailure = "onFailure_Ajax",
+                            HttpMethod = "post",
+                            LoadingElementId = "progress"
+                        }, new { @class = "form-sample" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Category</label>
+                                        @Html.DropDownListFor(a => a.CategoryProductID, (SelectList)ViewBag.CategoryList, "Select Category", new { @class = "form-control dropdowns", @onchange = "MainCategoryChanged(this)" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Sub Category</label>
+                                        <select id="SubCategoryID" name="SubCategoryID" class="form-control dropdowns" onchange="SubCategoryChanged(this)">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Child Category</label>
+                                        <select id="ItemID" name="ItemID" class="form-control dropdowns">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Item (Product) Name</label>
+                                        @Html.EditorFor(a => a.ItemName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Product Name", @autocomplete = "off" } })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mr-2">Search</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card card-outline-success">
+                    <div class="card-body" id="divList">
+                        @Html.Action("CategoryList")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            <span>Loading, Please Wait...</span> <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onSearchCompleteCreate_Ajax() {
+
+    }
+    function onSearchSuccess_Ajax() {
+        $('.dataGrid').dataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'csv', 'excel', 'pdf'
+            ]
+        });
+    }
+    function onBegin_Ajax(data) {
+    }
+    function onFailure_Ajax() {
+        swal("Error", "Please try again later", "error");
+    }
+    function Ajax_Edit_Failure(xhr, statusDescription) {
+        swal(xhr.statusDescription);
+    }
+    function onEditSuccess() {
+    }
+</script>
+
+<script type="text/javascript">
+    function MainCategoryChanged(element) {
+        var mainCategoryID = $(element).val();
+        if (mainCategoryID != null && mainCategoryID != "") {
+            $("#progress").show();
+            $.ajax({
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                type: 'POST',
+                data: "{ 'CategoryProductID': '" + mainCategoryID + "'}",
+                url: '@Url.Action("GetSubCategories", "CategoryReport")',
+                success: function (data) {
+                    $("#SubCategoryID").empty();
+                    $("#SubCategoryID").append('<option value="0">Select SubCategory</option>');
+                    $.each(data, function (index, value) {
+                        $("#SubCategoryID").append('<option value="' + value.SubCategoryID + '">' + value.SubCategoryName + '</option>');
+                    });
+                    $("#progress").hide();
+                },
+                error: function (response) {
+                    swal(response.error);
+                }
+            });
+        }
+    }
+    function SubCategoryChanged(element) {
+        var subCategoryID = $(element).val();
+        $("#progress").show();
+        $.ajax({
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            data: "{ 'SubCategoryID': '" + subCategoryID + "'}",
+            url: '@Url.Action("GetChildCategories", "CategoryReport")',
+            success: function (data) {
+                $("#ItemID").empty();
+                $("#ItemID").append('<option value="0">Select ChildCategory</option>');
+                $.each(data, function (index, value) {
+                    $("#ItemID").append('<option value="' + value.ItemID + '">' + value.ItemName + '</option>');
+                });
+                $("#progress").hide();
+            },
+            error: function (response) {
+                swal(response.error);
+            }
+        });
+    }
+</script>

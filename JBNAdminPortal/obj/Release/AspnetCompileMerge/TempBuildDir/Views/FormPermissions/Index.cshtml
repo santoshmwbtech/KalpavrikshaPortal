@@ -1,0 +1,139 @@
+﻿@model JBNClassLibrary.FormPermission
+
+@{
+    ViewBag.Title = "Form Permissions";
+}
+
+<div class="main-panel" id="mainDiv">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    @using (Ajax.BeginForm("Save", "FormPermissions", null, new AjaxOptions
+                    {
+                        UpdateTargetId = "dvList",
+                        OnSuccess = "onCreateSuccess_Ajax",
+                        HttpMethod = "post",
+                        LoadingElementId = "progress"
+                    }, new { @class = "form-sample", @id = "frm-example1" }))
+                    {
+                        <div class="card-body">
+                            <h2 class="card-title">Form Permissions</h2>
+                            <div class="row">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Select Role</label>
+                                        @Html.DropDownListFor(a => a.RoleID, (SelectList)ViewBag.Roles, "Select Role", new { @class = "form-control dropdowns", @onchange = "ddlRoleChanged()" })
+                                        @Html.ValidationMessageFor(a => a.RoleID, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+
+                                </div>
+                            </div>
+                            <h4 class="card-title">
+                                Menu List
+                            </h4>
+                            <div id="dvList">
+                                @Html.Action("FormPermissionItemList")
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="progress" class="modal">
+    <div class="center" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8;">
+        <p style="position: absolute; color: White; top: 50%; left: 45%;">
+            Loading, please wait... <img src="~/images/loading.gif" height="100" width="100" />
+        </p>
+    </div>
+</div>
+
+<script>
+    function onCreateSuccess_Ajax() {
+        swal({
+            title: "Success!",
+            text: "Form Permission Saved Successfully",
+            type: "success",
+            icon: "success",
+        }).then(function () {
+            $('#RoleID').val(null).trigger('change');
+            loadItems();
+        });
+    }
+</script>
+
+<script>
+    function ddlRoleChanged() {
+        var RoleID = $('#RoleID').val();
+        if (RoleID != null || RoleID != 0 || RoleID != '') {
+            $.ajax({
+            type: 'POST',
+            dataType: 'HTML',
+            data: '{RoleID: ' + RoleID + '}',
+            contentType: 'application/json',
+            url: '@Url.Action("LoadFormPermissionItems", "FormPermissions")',
+                success: function (data) {
+                    $("#dvList").empty();
+                    $("#dvList").html(data);
+                    loadItems();
+                },
+                error: function () {
+                    //swal("Error loading data! Please try again.");
+                }
+            });
+        }
+    }
+</script>
+<script>
+    function loadItems() {
+        $(".dataGrid").dataTable().fnDestroy();
+        var table = $('.dataGrid').DataTable({
+            pageLength: 5,
+            searching: false
+        });
+
+        $('.chkall').click(function () {
+            $(':checkbox', table.rows().nodes()).prop('checked', this.checked);
+        });
+
+        $(".chkselect").click(function () {
+            if (!this.checked) {
+                $(".chkall").attr('checked', false);
+            }
+            else if ($(".chkselect").length == $(".chkselect:checked").length) {
+                $(".chkall").attr('checked', true);
+            }
+        });
+
+        $('#frm-example1').on('submit', function (e) {
+            $(".dataGrid").dataTable().fnDestroy();
+            //var form = this;
+
+            //var params = table.$('input,select,textarea').serializeArray();
+
+            //// Iterate over all form elements
+            //$.each(params, function () {
+            //    // If element doesn't exist in DOM
+            //    if (!$.contains(document, form[this.name])) {
+            //        // Create a hidden element
+            //        $(form).append(
+            //            $('<input>')
+            //                .attr('type', 'hidden')
+            //                .attr('name', this.name)
+            //                .val(this.value)
+            //        );
+            //    }
+            //});
+        });
+    }
+    $(document).ready(function () {
+        loadItems();
+    });
+</script>

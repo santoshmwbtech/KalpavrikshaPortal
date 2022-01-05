@@ -1,0 +1,117 @@
+﻿@model JBNClassLibrary.DLEnquiries.CustomerConversations
+
+@{
+    ViewBag.Title = "Customer Conversations";
+}
+
+<link href="~/Content/chat.css" rel="stylesheet" />
+<style>
+    .form-control {
+        border: none !important;
+    }
+</style>
+
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Enquiry Details</h4>
+                        <form class="form-sample">
+                            <p class="card-description">
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Product Name</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Enquiry Date</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(model => model.CreatedDate, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Enquiry Sent By</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(model => model.FirmName, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Replied Customer Name</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(model => model.SenderFirmName, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Enquiry City</label>
+                                        <div class="col-sm-9">
+                                            @Html.EditorFor(model => model.VillageLocalityname, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Enquiry State</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check">
+                                                @Html.EditorFor(model => model.EnquiryState, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-comment"></span> Conversation
+                                </div>
+                                <div class="panel-body body-panel">
+
+                                    @if (Request.QueryString["QueryID"] != null && Request.QueryString["CustID"] != null && Request.QueryString["SenderID"] != null && Request.QueryString["EnquiryType"] != null)
+                                    {
+                                        @Html.Action("Conversations", new { QueryID = Request.QueryString["QueryID"].ToString(), CustID = Request.QueryString["CustID"].ToString(), SenderID = Request.QueryString["SenderID"].ToString(), EnquiryType = Request.QueryString["EnquiryType"].ToString() })
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Begin emoji-picker JavaScript -->
+<script src="~/Scripts/config.js"></script>
+<script src="~/Scripts/util.js"></script>
+<script src="~/Scripts/jquery.emojiarea.js"></script>
+<script src="~/Scripts/emoji-picker.js"></script>
+<!-- End emoji-picker JavaScript -->

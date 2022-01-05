@@ -1,0 +1,1 @@
+Date & Time : 04/01/2022 16:18:05[Request] [ {"multicast_id":1915078591376935915,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1641293286152330%1d70b93c1d70b93c"}]}]

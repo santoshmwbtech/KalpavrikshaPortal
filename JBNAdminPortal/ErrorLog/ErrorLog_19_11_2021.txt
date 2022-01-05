@@ -1,0 +1,33 @@
+†*******************Start**************
+Date & Time : 19/11/2021 18:59:36
+Message : The cast to value type 'System.Int32' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.
+Source : EntityFramework
+StackTrace :    at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at JBNClassLibrary.DLStateCityReport.GetCityReport(StateCityRpt stateCityRpt) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLStateCityReport.cs:line 235
+*******************End**************
+
+alRead)
+   at System.Data.SqlClient.TdsParserStateObject.TryReadInt32(Int32& value)
+   at System.Data.SqlClient.TdsParser.TryReadSqlValueInternal(SqlBuffer value, Byte tdsType, Int32 length, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TryReadSqlValue(SqlBuffer value, SqlMetaDataPriv md, Int32 length, TdsParserStateObject stateObj, SqlCommandColumnEncryptionSetting columnEncryptionOverride, String columnName)
+   at System.Data.SqlClient.SqlDataReader.TryReadColumnData()
+   at System.Data.SqlClient.SqlDataReader.TryReadColumnInternal(Int32 i, Boolean readHeaderOnly)
+   at System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   at System.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at JBNClassLibrary.DLAllCategoryReport.GetItemCategoryList() in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLMainCatRpt.cs:line 538
+*******************End**************
+haWebPortal\JBNClassLibrary\DLMainCatRpt.cs:line 538
+*******************End**************
+le`1 source)
+   at JBNClassLibrary.DLActivityReport.CustomerActivityReport(ActivityReport activityReport) in E:\SVNFolderOct\KalpavrikshaWebPortal\JBNClassLibrary\DLActivityReport.cs:line 73
+*******************End**************

@@ -1,0 +1,2 @@
+Timestamp: 03/20/20 13:35:47Message: {"QueryId":0,"CustIDS":[{"CustID":1},{"CustID":2}],"CustID":3,"CityId":587,"ProductID":31,"BusinessTypeIds":[{"BusinessTypeID":1},{"BusinessTypeID":2}],"BusinessDemand":"Sent to 1 and 2 From 3","TypeOfUse":"Home","Requirements":"Sent to 1 and 2 From 3","ProductPhoto":"","ProductPhoto2":null}Category: Priority: -1Severity: Information
+----------------------------------
