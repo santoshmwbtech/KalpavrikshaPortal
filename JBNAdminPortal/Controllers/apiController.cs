@@ -22,7 +22,7 @@ namespace JBNAdminPortal.Controllers
             return new ViewAsPdf("ProformaInvoice", proformaInvoice)
             {
                 PageSize = Size.A4,
-                FileName = "ProformaInvoice.pdf"
+                FileName = "ProformaInvoice_ "+ proformaInvoice.main.AdvertisementName +".pdf"
             };
         }
         //public ActionResult SavePDF(int? AdvertisementMainID)

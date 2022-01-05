@@ -11,7 +11,18 @@ namespace JBNAdminPortal.Controllers
         // GET: UpdateUser
         public ActionResult Index()
         {
-            return View();
+            if (Session["UserID"] != null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        }
+        public ActionResult UserList()
+        {
+            return PartialView();
         }
     }
 }
