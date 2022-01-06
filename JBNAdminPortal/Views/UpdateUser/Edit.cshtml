@@ -39,7 +39,7 @@
 
                     @*START*@
 
-                    <div class="col-md-6">
+                    @*<div class="col-md-6">
                         <div class="form-group">
                             <label>Business Type</label>
                             <div class="input-group">
@@ -47,16 +47,7 @@
                                 @Html.ValidationMessageFor(model => model.BusinessTypeList, "", new { @class = "text-danger" })
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Product</label>
-                            <div class="input-group">
-                                @Html.DropDownListFor(a => a.SubcategoryList, (SelectList)ViewBag.SubCategory, new { @class = "form-control listbox", @multiple = "multiple" })
-                                @Html.ValidationMessageFor(model => model.SubcategoryList, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
+                    </div>*@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Interested Area Limit To do Business</label>
@@ -100,6 +91,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Product</label>
+                            <div class="input-group">
+                                @Html.DropDownListFor(a => a.SubcategoryList, (SelectList)ViewBag.SubCategory, new { @class = "form-control listbox", @multiple = "multiple" })
+                                @Html.ValidationMessageFor(model => model.SubcategoryList, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="clearfix"></div>

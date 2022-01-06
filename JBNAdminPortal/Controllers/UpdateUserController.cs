@@ -35,5 +35,10 @@ namespace JBNAdminPortal.Controllers
             var customerDetails = dLCustomerIncompleteRpt.GetCustomerDetails(CustID);
             return PartialView(customerDetails);
         }
+        [HttpGet]
+        public JsonResult GetProducts(int? btID)
+        {
+            return Json(dLCustomerIncompleteRpt.GetProducts(btID).ToList(), JsonRequestBehavior.AllowGet);
+        }
     }
 }

@@ -31,6 +31,7 @@
     padding: 0;
     width: 100%;
     z-index: 1900;
+    margin-top:300px;
 }
 
     .multiselect-container .multiselect-reset .input-group {

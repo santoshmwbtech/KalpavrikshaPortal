@@ -13,7 +13,7 @@
                             Update Users
                         </h4>
                         <div class="row" id="divCreate">
-                            
+
                         </div>
                         <div id="dvAdsList">
                             @Html.Action("UserList")
@@ -54,6 +54,37 @@
             $(element).multiselect("clearSelection");
             $(element).val("6");
             $(element).multiselect("refresh");
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetProducts", "UpdateUser")',
+                dataType: "json",
+                data: { btID: btID },
+                success: function (data) {
+                    $("#SubcategoryList").html('');
+                    var s = '<option value="-1">Select Products</option>';
+                    for (var i = 0; i < data.length; i++) {
+                        s += '<option value="' + data[i].ID + '">' + data[i].ChildCategoryName + '</option>';
+                    }
+                    $("#SubcategoryList").html(s);
+                }
+            });
+        }
+        else {
+            btID = "0";
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetProducts", "UpdateUser")',
+                dataType: "json",
+                data: { btID: btID },
+                success: function (data) {
+                    $("#SubcategoryList").html('');
+                    var s = '<option value="-1">Select Products</option>';
+                    for (var i = 0; i < data.length; i++) {
+                        s += '<option value="' + data[i].ID + '">' + data[i].ChildCategoryName + '</option>';
+                    }
+                    $("#SubcategoryList").html(s);
+                }
+            });
         }
     }
 </script>

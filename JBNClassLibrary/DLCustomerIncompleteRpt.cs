@@ -355,15 +355,16 @@ namespace JBNClassLibrary
                 using (mwbtDealerEntities dbContext = new mwbtDealerEntities())
                 {
                     List<SubCat> subCatList = new List<SubCat>();
-                    subCatList = (from subcat in dbContext.tblSubCategories
-                                  where subcat.IsActive
+                    subCatList = (from subcat in dbContext.ProductsViews
                                   select new SubCat
                                   {
-                                      ID = subcat.ID,
-                                      SubCategoryName = subcat.SubCategoryName
+                                      MainCategoryName = subcat.MainCategoryName,
+                                      ID = subcat.SubCategoryID,
+                                      SubCategoryName = subcat.ChildCategoryName + " (" + subcat.SubCategoryName + ")",
                                   }).Distinct().ToList();
 
-                    return subCatList;
+                    subCatList = subCatList.Where(d => !d.MainCategoryName.ToLower().Contains("professionals")).ToList();
+                    return subCatList.OrderBy(d => d.SubCategoryName).ToList();
                 }
             }
             catch (Exception ex)
@@ -386,8 +387,9 @@ namespace JBNClassLibrary
 
                     List<CustomerIncompleteRpt> customerList = new List<CustomerIncompleteRpt>();
                     customerList = (from c in dbContext.tblCustomerDetails
+                                    join bt in dbContext.tblBusinessTypewithCusts on c.ID equals bt.CustID
                                     where c.IsActive == true && c.IsRegistered.HasValue && c.IsRegistered.Value == 1
-                                    && !customersByCategory.Contains(c.ID)
+                                    && !customersByCategory.Contains(c.ID) && bt.BusinessTypeID != 6
                                     select new CustomerIncompleteRpt
                                     {
                                         DeviceID = c.DeviceID,
@@ -480,6 +482,40 @@ namespace JBNClassLibrary
             {
                 Helper.LogError(ex);
                 return "Error!! Please contact administrator";
+            }
+        }
+
+        public List<childcategory> GetProducts(int? btID)
+        {
+            try
+            {
+                using (mwbtDealerEntities dbContext = new mwbtDealerEntities())
+                {
+                    List<childcategory> subCatList = new List<childcategory>();
+                    subCatList = (from pView in dbContext.ProductsViews
+                                  select new childcategory
+                                  {
+                                      ID = pView.SubCategoryID,
+                                      MainCategoryName = pView.MainCategoryName,
+                                      SubCategoryName = pView.ChildCategoryName + " (" + pView.SubCategoryName + ")",
+                                  }).Distinct().ToList();
+
+                    if(btID.HasValue && btID.Value == 6)
+                    {
+                        subCatList.FindAll(x => x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
+                    }
+                    else
+                    {
+                        subCatList.FindAll(x => !x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
+                    }
+
+                    return subCatList;
+                }
+            }
+            catch (Exception ex)
+            {
+                Helper.LogError(ex.Message, ex.Source, ex.InnerException, ex.StackTrace);
+                return null;
             }
         }
     }
