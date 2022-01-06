@@ -127,6 +127,10 @@
                         {
                             <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "CategoryProducts", new { route = "view" })'>Main Categories</a></li>
                         }
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "updateuser" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "UpdateUser")'>Update Users</a></li>
+                        }
                     </ul>
                 </div>
             </li>

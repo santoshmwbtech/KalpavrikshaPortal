@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JBNClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,8 @@ namespace JBNAdminPortal.Controllers
 {
     public class UpdateUserController : Controller
     {
+        DLCustomerIncompleteRpt dLCustomerIncompleteRpt = new DLCustomerIncompleteRpt();
+        JBNDBClass dLMain = new JBNDBClass();
         // GET: UpdateUser
         public ActionResult Index()
         {
@@ -22,7 +25,15 @@ namespace JBNAdminPortal.Controllers
         }
         public ActionResult UserList()
         {
-            return PartialView();
+            var customerList = dLCustomerIncompleteRpt.GetUsers();
+            return PartialView(customerList);
+        }
+        public ActionResult Edit(int? CustID)
+        {
+            ViewBag.BusinessType = new SelectList(dLMain.GetBusinessTypes(), "BusinessTypeID", "BusinessTypeName");
+            ViewBag.SubCategory = new SelectList(dLCustomerIncompleteRpt.GetAllSubCategories(), "ID", "SubCategoryName");
+            var customerDetails = dLCustomerIncompleteRpt.GetCustomerDetails(CustID);
+            return PartialView(customerDetails);
         }
     }
 }

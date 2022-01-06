@@ -20,7 +20,7 @@ namespace JBNAdminPortal.Controllers
             if (Session["UserID"] != null)
             {
                 ViewBag.AdTypes = new SelectList(dLAdvertisements.GetAdvertisementTypes(), "ID", "Type");
-                ViewBag.StateList = new SelectList(dLAdvertisements.GetAdStates(), "ID", "StateName");
+                ViewBag.StateList = new SelectList(dLAdvertisements.GetAdStates(), "StateID", "StateName");
                 ViewBag.CityList = new SelectList(dLAdvertisements.GetAdCities(), "StateWithCityID", "VillageLocalityName");
                 return View();
             }

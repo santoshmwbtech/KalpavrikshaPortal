@@ -27,7 +27,7 @@ namespace JBNAdminPortal.Controllers
                 ViewBag.Products = new SelectList(dLAdvertisements.GetAdProducts(), "ItemName", "ItemName");
                 ViewBag.Years = new SelectList(dLAdsReport.GetYears(), "AdYear", "AdYear");
                 ViewBag.Months = new SelectList(dLAdsReport.Months, "Value", "Text");
-                ViewBag.StateList = new SelectList(dLAdvertisements.GetAdStates(), "ID", "StateName");
+                ViewBag.StateList = new SelectList(dLAdvertisements.GetAdStates(), "StateID", "StateName");
                 ViewBag.DistrictList = new SelectList(dLAdvertisements.GetAdDistricts(), "DistrictID", "DistrictName");
                 ViewBag.CityList = new SelectList(dLAdvertisements.GetAdCities(), "StatewithCityID", "VillageLocalityName");
                 return View();

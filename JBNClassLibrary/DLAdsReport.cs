@@ -592,10 +592,10 @@ namespace JBNClassLibrary
                                                  TypeOfAdvertisementID = a.TypeOfAdvertisementID,
                                                  FromDate = a.FromDate,
                                                  AdvertisementName = a.AdvertisementName,
-                                                 IsPaymentPaid = a.PaymentStatus == null ? false : a.PaymentStatus,
+                                                 IsPaymentPaid = a.PaymentStatus,
                                                  FinalPrice = a.FinalPrice,
                                                  TaxAmount = a.TaxAmount,
-                                                 IsApproved = a.IsApproved == null ? false : a.IsApproved,
+                                                 IsApproved = a.IsApproved,
                                                  advertisementStates = (from ast in dbContext.tblAdvertisementStates
                                                                         where ast.AdvertisementMainID == a.ID // a.AdvertisementMainID
                                                                         select new AdvertisementStates

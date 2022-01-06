@@ -1,0 +1,120 @@
+﻿@model JBNClassLibrary.CustomerIncompleteRpt
+
+<div class="col-12 grid-margin">
+    <div class="card card-outline-primary">
+        <div class="card-body">
+            <h4 class="card-title">Update User Details</h4>
+            @using (Ajax.BeginForm("Update", "UpdateUser", null, new AjaxOptions
+            {
+                OnSuccess = "onUpdateSuccess_Ajax",
+                HttpMethod = "post",
+                LoadingElementId = "progress"
+            }, new { @class = "form-sample" }))
+            {
+                @Html.AntiForgeryToken()
+                <p class="card-description">
+
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Firm Name</label>
+                            @Html.HiddenFor(model => model.CustID)
+                            @Html.EditorFor(model => model.FirmName, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Owner Name</label>
+                            @Html.EditorFor(model => model.OwnerName, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.OwnerName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    @*START*@
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Business Type</label>
+                            <div class="input-group">
+                                @Html.DropDownListFor(a => a.BusinessTypeList, (SelectList)ViewBag.BusinessType, new { @class = "form-control listbox", @multiple = "multiple", @onchange = "btChanged(this)" })
+                                @Html.ValidationMessageFor(model => model.BusinessTypeList, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Product</label>
+                            <div class="input-group">
+                                @Html.DropDownListFor(a => a.SubcategoryList, (SelectList)ViewBag.SubCategory, new { @class = "form-control listbox", @multiple = "multiple" })
+                                @Html.ValidationMessageFor(model => model.SubcategoryList, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Interested Area Limit To do Business</label>
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <div class="form-check">
+                                                @Html.CheckBoxFor(m => m.City) City
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <div class="form-check">
+                                                @Html.CheckBoxFor(m => m.City) District
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(m => m.State) State
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(m => m.National) National
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="text-center">
+                    @if (Session["MenuMaster"] != null)
+                    {
+                        var MenuMaster = (List<JBNClassLibrary.FormPermissionItem>)Session["MenuMaster"];
+                        if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "updateuser" && m.IsEdit == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <button type="submit" class="btn btn-primary ">Update</button>
+                        }
+                    }
+                    <a href="javascript:void(0)" onclick="btnCancel_Click()" class="btn btn-danger">Cancel</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

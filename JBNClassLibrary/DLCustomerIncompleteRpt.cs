@@ -373,6 +373,45 @@ namespace JBNClassLibrary
             }
         }
 
+        public List<CustomerIncompleteRpt> GetUsers()
+        {
+            try
+            {
+                using (dbContext = new mwbtDealerEntities())
+                {
+                    if (dbContext.Database.Connection.State == System.Data.ConnectionState.Closed)
+                        dbContext.Database.Connection.Open();
+
+                    var customersByCategory = dbContext.tblCategoryProductWithCusts.Select(c => c.CustID).Distinct().ToList();
+
+                    List<CustomerIncompleteRpt> customerList = new List<CustomerIncompleteRpt>();
+                    customerList = (from c in dbContext.tblCustomerDetails
+                                    where c.IsActive == true && c.IsRegistered.HasValue && c.IsRegistered.Value == 1
+                                    && !customersByCategory.Contains(c.ID)
+                                    select new CustomerIncompleteRpt
+                                    {
+                                        DeviceID = c.DeviceID,
+                                        CustID = c.ID,
+                                        OwnerName = c.CustName,
+                                        FirmName = c.FirmName,
+                                        MobileNumber = c.MobileNumber,
+                                        EmailID = c.EmailID,
+                                        CityID = c.City,
+                                        StateID = c.State,
+                                        CityName = (dbContext.tblStateWithCities.Where(sc => sc.ID == c.City)).FirstOrDefault().VillageLocalityName,
+                                        StateName = (dbContext.tblStates.Where(sc => sc.ID == c.State)).FirstOrDefault().StateName,
+                                    }).ToList();
+
+                    return customerList;
+                }
+            }
+            catch (Exception ex)
+            {
+                Helper.LogError(ex.Message, ex.Source, ex.InnerException, ex.StackTrace);
+                return new List<CustomerIncompleteRpt>();
+            }
+        }
+
         public string Promotion(PromoWithCustomerIncompleteRpt promo, List<Attachment> MailAttachments, string ImageURL, int UserID)
         {
             try

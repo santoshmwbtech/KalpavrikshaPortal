@@ -12,8 +12,9 @@
                         <h4 class="card-title">
                             Update Users
                         </h4>
-
-                        
+                        <div class="row" id="divCreate">
+                            
+                        </div>
                         <div id="dvAdsList">
                             @Html.Action("UserList")
                         </div>
@@ -41,5 +42,18 @@
     }
     function onFailure_Ajax() {
         swal("Error", "Please try again later", "error");
+    }
+    function onEditSuccess() {
+        multiSelect();
+    }
+</script>
+<script>
+    function btChanged(element) {
+        var btID = $(element).val();
+        if (btID.includes("6")) {
+            $(element).multiselect("clearSelection");
+            $(element).val("6");
+            $(element).multiselect("refresh");
+        }
     }
 </script>
