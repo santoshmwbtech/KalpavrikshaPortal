@@ -40,28 +40,27 @@
                     @*START*@
 
                     <div class="col-md-6">
-                        @*<div class="form-group">
-                                <label>Business Type</label>
+                        <div class="form-group">
+                                <label>Business Types</label>
                                 <div class="input-group">
-                                    @Html.DropDownListFor(a => a.BusinessTypeList, (SelectList)ViewBag.BusinessType, new { @class = "form-control listbox", @multiple = "multiple", @onchange = "btChanged(this)" })
-                                    @Html.ValidationMessageFor(model => model.BusinessTypeList, "", new { @class = "text-danger" })
+                                    <table>
+                                        @for (int i = 0; i < Model.BusinessTypes.Count(); i++)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.CheckBoxFor(m => m.BusinessTypes[i].Checked, new { @class = "chkBt" })
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(m => m.BusinessTypes[i].BusinessTypeName)
+                                                    @Html.HiddenFor(m => m.BusinessTypes[i].ID)
+                                                    @Html.HiddenFor(m => m.BusinessTypes[i].BusinessTypeName)
+                                                </td>
+                                            </tr>
+                                        }
+                                    </table>
                                 </div>
-                            </div>*@
-                        <table>
-                            @for (int i = 0; i < Model.BusinessTypes.Count(); i++)
-                            {
-                                <tr>
-                                    <td>
-                                        @Html.CheckBoxFor(m => m.BusinessTypes[i].Checked)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(m => m.BusinessTypes[i].BusinessTypeName)
-                                        @Html.HiddenFor(m => m.BusinessTypes[i].ID)
-                                        @Html.HiddenFor(m => m.BusinessTypes[i].BusinessTypeName)
-                                    </td>
-                                </tr>
-                            }
-                        </table>
+                            </div>
+                        
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
@@ -104,6 +103,31 @@
 
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Business Demands</label>
+                            <table>
+                                @{
+                                    if (Model.BusinessDemands != null && Model.BusinessDemands.Count() > 0)
+                                    {
+                                        for (int i = 0; i < Model.BusinessDemands.Count(); i++)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.CheckBoxFor(m => m.BusinessDemands[i].IsChecked, new { @class = "chkBd" })
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(m => m.BusinessDemands[i].Demand)
+                                                    @Html.HiddenFor(m => m.BusinessDemands[i].ID)
+                                                    @Html.HiddenFor(m => m.BusinessDemands[i].Demand)
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                }
+                            </table>
                         </div>
                     </div>
                     <div class="col-md-12">

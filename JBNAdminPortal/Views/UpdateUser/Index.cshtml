@@ -45,6 +45,16 @@
     }
     function onEditSuccess() {
         multiSelect();
+        activateCheckBoxCode();
+    }
+    function onUpdateSuccess_Ajax(data) {
+        swal(data);
+        $("#divCreate").empty();
+        $("#dvAdsList").load('@Url.Action("UserList", "UpdateUser")');
+        setTimeout(function () {
+            $(".dataGrid").dataTable().fnDestroy();
+            loadDataTableWithButtons();
+        }, 1000);
     }
 </script>
 <script>
@@ -87,4 +97,24 @@
             });
         }
     }
+    function activateCheckBoxCode() {
+        $('#chkBt').change(function () {
+            if (this.checked) {
+                var text = this.value;
+                alert(text);
+                /*$(this).prop("checked", returnVal);*/
+            }
+        });
+    }
+    $(function () {
+        $('.chkBt').on('click', function () {
+            alert();
+            if ($(this).is(':checked')) {
+                alert("yes");
+            }
+            else {
+                alert("no");
+            }
+        });
+    });
 </script>

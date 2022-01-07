@@ -43,7 +43,7 @@ namespace JBNAdminPortal.Controllers
         [HttpPost]
         public JsonResult Update(CustomerIncompleteRpt customerIncompleteRpt)
         {
-            return Json("success");
+            return Json(dLCustomerIncompleteRpt.UpdateCustomerProduct(customerIncompleteRpt));
         }
     }
 }
