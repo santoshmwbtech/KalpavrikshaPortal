@@ -39,15 +39,30 @@
 
                     @*START*@
 
-                    @*<div class="col-md-6">
-                        <div class="form-group">
-                            <label>Business Type</label>
-                            <div class="input-group">
-                                @Html.DropDownListFor(a => a.BusinessTypeList, (SelectList)ViewBag.BusinessType, new { @class = "form-control listbox", @multiple = "multiple", @onchange = "btChanged(this)" })
-                                @Html.ValidationMessageFor(model => model.BusinessTypeList, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>*@
+                    <div class="col-md-6">
+                        @*<div class="form-group">
+                                <label>Business Type</label>
+                                <div class="input-group">
+                                    @Html.DropDownListFor(a => a.BusinessTypeList, (SelectList)ViewBag.BusinessType, new { @class = "form-control listbox", @multiple = "multiple", @onchange = "btChanged(this)" })
+                                    @Html.ValidationMessageFor(model => model.BusinessTypeList, "", new { @class = "text-danger" })
+                                </div>
+                            </div>*@
+                        <table>
+                            @for (int i = 0; i < Model.BusinessTypes.Count(); i++)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.CheckBoxFor(m => m.BusinessTypes[i].Checked)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(m => m.BusinessTypes[i].BusinessTypeName)
+                                        @Html.HiddenFor(m => m.BusinessTypes[i].ID)
+                                        @Html.HiddenFor(m => m.BusinessTypes[i].BusinessTypeName)
+                                    </td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Interested Area Limit To do Business</label>

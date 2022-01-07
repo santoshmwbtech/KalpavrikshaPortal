@@ -31,7 +31,7 @@ namespace JBNAdminPortal.Controllers
         public ActionResult Edit(int? CustID)
         {
             ViewBag.BusinessType = new SelectList(dLMain.GetBusinessTypes(), "BusinessTypeID", "BusinessTypeName");
-            ViewBag.SubCategory = new SelectList(dLCustomerIncompleteRpt.GetAllSubCategories(), "ID", "SubCategoryName");
+            ViewBag.SubCategory = new SelectList(dLCustomerIncompleteRpt.GetProducts(CustID), "ID", "SubCategoryName");
             var customerDetails = dLCustomerIncompleteRpt.GetCustomerDetails(CustID);
             return PartialView(customerDetails);
         }
@@ -39,6 +39,11 @@ namespace JBNAdminPortal.Controllers
         public JsonResult GetProducts(int? btID)
         {
             return Json(dLCustomerIncompleteRpt.GetProducts(btID).ToList(), JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
+        public JsonResult Update(CustomerIncompleteRpt customerIncompleteRpt)
+        {
+            return Json("success");
         }
     }
 }

@@ -39,6 +39,7 @@ namespace JBNClassLibrary
         public bool State { get; set; }
         public bool National { get; set; }
         public string DeviceID { get; set; }
+        public List<BusinessTypes> BusinessTypes { get; set; }
     }
     public class PromoWithCustomerIncompleteRpt
     {
@@ -138,6 +139,14 @@ namespace JBNClassLibrary
                                            CityName = (dbContext.tblStateWithCities.Where(sc => sc.ID == c.City)).FirstOrDefault().VillageLocalityName,
                                            StateName = (dbContext.tblStates.Where(sc => sc.ID == c.State)).FirstOrDefault().StateName,
                                        }).FirstOrDefault();
+
+                    customerDetails.BusinessTypes = (from b in dbContext.tblBusinessTypes
+                                                     select new BusinessTypes
+                                                     {
+                                                         ID = b.ID,
+                                                         BusinessTypeName = b.Type,
+                                                         Checked = dbContext.tblBusinessTypewithCusts.Where(bt => bt.CustID == customerDetails.CustID).Any(btc => btc.BusinessTypeID == b.ID)
+                                                     }).ToList();
 
                     return customerDetails;
                 }
@@ -387,9 +396,10 @@ namespace JBNClassLibrary
 
                     List<CustomerIncompleteRpt> customerList = new List<CustomerIncompleteRpt>();
                     customerList = (from c in dbContext.tblCustomerDetails
-                                    join bt in dbContext.tblBusinessTypewithCusts on c.ID equals bt.CustID
+                                    //join bt in dbContext.tblBusinessTypewithCusts on c.ID equals bt.CustID
                                     where c.IsActive == true && c.IsRegistered.HasValue && c.IsRegistered.Value == 1
-                                    && !customersByCategory.Contains(c.ID) && bt.BusinessTypeID != 6
+                                    && !customersByCategory.Contains(c.ID) 
+                                    //&& bt.BusinessTypeID != 6
                                     select new CustomerIncompleteRpt
                                     {
                                         DeviceID = c.DeviceID,
@@ -403,7 +413,6 @@ namespace JBNClassLibrary
                                         CityName = (dbContext.tblStateWithCities.Where(sc => sc.ID == c.City)).FirstOrDefault().VillageLocalityName,
                                         StateName = (dbContext.tblStates.Where(sc => sc.ID == c.State)).FirstOrDefault().StateName,
                                     }).ToList();
-
                     return customerList;
                 }
             }
@@ -485,7 +494,7 @@ namespace JBNClassLibrary
             }
         }
 
-        public List<childcategory> GetProducts(int? btID)
+        public List<childcategory> GetProducts(int? CustID)
         {
             try
             {
@@ -500,13 +509,15 @@ namespace JBNClassLibrary
                                       SubCategoryName = pView.ChildCategoryName + " (" + pView.SubCategoryName + ")",
                                   }).Distinct().ToList();
 
-                    if(btID.HasValue && btID.Value == 6)
+                    var businessTypes = dbContext.tblBusinessTypewithCusts.Where(b => b.CustID == CustID).ToList();
+
+                    if (businessTypes.Any(b => b.BusinessTypeID == 6))
                     {
-                        subCatList.FindAll(x => x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
+                        subCatList = subCatList.FindAll(x => x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
                     }
                     else
                     {
-                        subCatList.FindAll(x => !x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
+                        subCatList = subCatList.FindAll(x => !x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
                     }
 
                     return subCatList;
