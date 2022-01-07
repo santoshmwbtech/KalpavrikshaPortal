@@ -36,10 +36,12 @@ namespace JBNClassLibrary
         public string Area { get; set; }
         public string Pincode { get; set; }
         public bool City { get; set; }
+        public bool District { get; set; }
         public bool State { get; set; }
         public bool National { get; set; }
         public string DeviceID { get; set; }
         public List<BusinessTypes> BusinessTypes { get; set; }
+        public List<BusinessDemand> BusinessDemands { get; set; }
     }
     public class PromoWithCustomerIncompleteRpt
     {
@@ -138,6 +140,10 @@ namespace JBNClassLibrary
                                            StateID = c.State,
                                            CityName = (dbContext.tblStateWithCities.Where(sc => sc.ID == c.City)).FirstOrDefault().VillageLocalityName,
                                            StateName = (dbContext.tblStates.Where(sc => sc.ID == c.State)).FirstOrDefault().StateName,
+                                           State = c.InterstState == null ? false : c.InterstState.Value,
+                                           City = c.InterstCity == null ? false : c.InterstCity.Value,
+                                           District = c.InterstDistrict,
+                                           National = c.InterstCountry == null ? false : c.InterstCountry.Value,
                                        }).FirstOrDefault();
 
                     customerDetails.BusinessTypes = (from b in dbContext.tblBusinessTypes
@@ -147,6 +153,16 @@ namespace JBNClassLibrary
                                                          BusinessTypeName = b.Type,
                                                          Checked = dbContext.tblBusinessTypewithCusts.Where(bt => bt.CustID == customerDetails.CustID).Any(btc => btc.BusinessTypeID == b.ID)
                                                      }).ToList();
+                    if (!customerDetails.BusinessTypes.Where(b => b.ID == 6).FirstOrDefault().Checked)
+                    {
+                        customerDetails.BusinessDemands = (from b in dbContext.tblBusinessDemands
+                                                           select new BusinessDemand
+                                                           {
+                                                               Demand = b.Demand,
+                                                               ID = b.ID,
+                                                               IsChecked = b.ID == 3 ? false : true
+                                                           }).ToList();
+                    }
 
                     return customerDetails;
                 }
@@ -396,9 +412,9 @@ namespace JBNClassLibrary
 
                     List<CustomerIncompleteRpt> customerList = new List<CustomerIncompleteRpt>();
                     customerList = (from c in dbContext.tblCustomerDetails
-                                    //join bt in dbContext.tblBusinessTypewithCusts on c.ID equals bt.CustID
+                                        //join bt in dbContext.tblBusinessTypewithCusts on c.ID equals bt.CustID
                                     where c.IsActive == true && c.IsRegistered.HasValue && c.IsRegistered.Value == 1
-                                    && !customersByCategory.Contains(c.ID) 
+                                    && !customersByCategory.Contains(c.ID)
                                     //&& bt.BusinessTypeID != 6
                                     select new CustomerIncompleteRpt
                                     {
@@ -506,19 +522,19 @@ namespace JBNClassLibrary
                                   {
                                       ID = pView.SubCategoryID,
                                       MainCategoryName = pView.MainCategoryName,
-                                      SubCategoryName = pView.ChildCategoryName + " (" + pView.SubCategoryName + ")",
+                                      SubCategoryName = pView.SubCategoryName + " (" + pView.MainCategoryName + ")",
                                   }).Distinct().ToList();
 
-                    var businessTypes = dbContext.tblBusinessTypewithCusts.Where(b => b.CustID == CustID).ToList();
+                    //var businessTypes = dbContext.tblBusinessTypewithCusts.Where(b => b.CustID == CustID).ToList();
 
-                    if (businessTypes.Any(b => b.BusinessTypeID == 6))
-                    {
-                        subCatList = subCatList.FindAll(x => x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
-                    }
-                    else
-                    {
-                        subCatList = subCatList.FindAll(x => !x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
-                    }
+                    //if (businessTypes.Any(b => b.BusinessTypeID == 6))
+                    //{
+                    //    subCatList = subCatList.FindAll(x => x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
+                    //}
+                    //else
+                    //{
+                    //    subCatList = subCatList.FindAll(x => !x.MainCategoryName.ToLower().Contains("professionals")).Distinct().ToList();
+                    //}
 
                     return subCatList;
                 }
@@ -527,6 +543,113 @@ namespace JBNClassLibrary
             {
                 Helper.LogError(ex.Message, ex.Source, ex.InnerException, ex.StackTrace);
                 return null;
+            }
+        }
+        public string UpdateCustomerProduct(CustomerIncompleteRpt incompleteRpt)
+        {
+            try
+            {
+                using (dbContext = new mwbtDealerEntities())
+                {
+                    if (dbContext.Database.Connection.State == System.Data.ConnectionState.Closed)
+                        dbContext.Database.Connection.Open();
+
+                    using (var dbcxtransaction = dbContext.Database.BeginTransaction())
+                    {
+                        var user = (from u in dbContext.tblCustomerDetails.AsNoTracking()
+                                    where u.ID == incompleteRpt.CustID
+                                    select u).FirstOrDefault();
+
+                        if (user == null)
+                        {
+                            return "User Not Found!!";
+                        }
+
+                        tblCustomerDetail tblCustomerDetails = new tblCustomerDetail();
+                        DateTime DateTimeNow = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, INDIAN_ZONE);
+                        tblCustomerDetails.ID = incompleteRpt.CustID;
+                        tblCustomerDetails.ModifiedBy = incompleteRpt.CustID;
+                        tblCustomerDetails.ModifiedDate = DateTimeNow;
+                        dbContext.tblCustomerDetails.Attach(tblCustomerDetails);
+                        dbContext.Entry(tblCustomerDetails).Property(c => c.ModifiedDate).IsModified = true;
+                        dbContext.Entry(tblCustomerDetails).Property(c => c.ModifiedBy).IsModified = true;
+
+                        //Insert BT
+
+                        foreach (var businessType in incompleteRpt.BusinessTypes)
+                        {
+                            if (businessType.Checked)
+                            {
+                                var tblBusinessTypewithCust = new tblBusinessTypewithCust();
+                                tblBusinessTypewithCust.CustID = incompleteRpt.CustID;
+                                tblBusinessTypewithCust.BusinessTypeID = businessType.ID;
+                                tblBusinessTypewithCust.CreatedDate = DateTimeNow;
+                                tblBusinessTypewithCust.CreatedBy = incompleteRpt.CustID;
+                                dbContext.tblBusinessTypewithCusts.Add(tblBusinessTypewithCust);
+                            }
+                        }
+
+                        if(!incompleteRpt.BusinessTypes.Where(b => b.ID == 6).Select(b => b.Checked).FirstOrDefault())
+                        {
+                            if (incompleteRpt.BusinessDemands != null && incompleteRpt.BusinessDemands.Count > 0)
+                            {
+                                foreach (var businedDemand in incompleteRpt.BusinessDemands)
+                                {
+                                    if (businedDemand.IsChecked)
+                                    {
+                                        tblBusinessDemandwithCust businessDemandwithCust = new tblBusinessDemandwithCust();
+                                        businessDemandwithCust.CustID = incompleteRpt.CustID;
+                                        businessDemandwithCust.BusinessDemandID = businedDemand.ID;
+                                        businessDemandwithCust.CreatedDate = DateTimeNow;
+                                        businessDemandwithCust.CreatedBy = incompleteRpt.CustID;
+                                        dbContext.tblBusinessDemandwithCusts.Add(businessDemandwithCust);
+                                    }
+                                }
+                            }
+                        }
+
+                        var categoryProducts = (from c in dbContext.tblCategoryProducts
+                                                join s in dbContext.tblSubCategories on c.ID equals s.CategoryProductID
+                                                where incompleteRpt.SubcategoryList.Contains(s.ID)
+                                                select new SubCat
+                                                {
+                                                    CategoryProductID = c.ID,
+                                                    ID = s.ID,
+                                                    SubCategoryName = s.SubCategoryName,
+                                                }).Distinct().ToList();
+
+                        var distinctCategories = categoryProducts.GroupBy(p => p.CategoryProductID).Select(g => g.First()).ToList();
+
+                        foreach (var categoryProduct in distinctCategories)
+                        {
+                            var tblCategoryProductWithCust = new tblCategoryProductWithCust();
+                            tblCategoryProductWithCust.CustID = incompleteRpt.CustID;
+                            tblCategoryProductWithCust.CategoryProductID = categoryProduct.ID;
+                            tblCategoryProductWithCust.CreatedBy = incompleteRpt.CustID;
+                            tblCategoryProductWithCust.CreatedDate = DateTimeNow;
+                            dbContext.tblCategoryProductWithCusts.Add(tblCategoryProductWithCust);
+                        }
+                        foreach (var subCategory in incompleteRpt.SubcategoryList)
+                        {
+                            var tblSubCategoryProductWithCust = new tblSubCategoryProductWithCust();
+                            tblSubCategoryProductWithCust.CustID = incompleteRpt.CustID;
+                            tblSubCategoryProductWithCust.CategoryProductID = distinctCategories.Where(d => d.ID == subCategory).Select(d => d.CategoryProductID).FirstOrDefault();
+                            tblSubCategoryProductWithCust.SubCategoryId = subCategory;
+                            tblSubCategoryProductWithCust.CreatedBy = incompleteRpt.CustID;
+                            tblSubCategoryProductWithCust.CreatedDate = DateTimeNow;
+                            dbContext.tblSubCategoryProductWithCusts.Add(tblSubCategoryProductWithCust);
+                        }
+
+                        dbContext.SaveChanges();
+                        dbcxtransaction.Commit();
+                        return "Customer Details updated";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Helper.LogError(ex.Message, ex.Source, ex.InnerException, ex.StackTrace);
+                return ex.Message;
             }
         }
     }
