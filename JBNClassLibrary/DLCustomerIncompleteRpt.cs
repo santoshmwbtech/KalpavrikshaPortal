@@ -575,7 +575,7 @@ namespace JBNClassLibrary
                         dbContext.Entry(tblCustomerDetails).Property(c => c.ModifiedBy).IsModified = true;
 
                         //Insert BT
-
+                        dbContext.tblBusinessTypewithCusts.RemoveRange(dbContext.tblBusinessTypewithCusts.Where(x => x.CustID == incompleteRpt.CustID));
                         foreach (var businessType in incompleteRpt.BusinessTypes)
                         {
                             if (businessType.Checked)
@@ -624,7 +624,7 @@ namespace JBNClassLibrary
                         {
                             var tblCategoryProductWithCust = new tblCategoryProductWithCust();
                             tblCategoryProductWithCust.CustID = incompleteRpt.CustID;
-                            tblCategoryProductWithCust.CategoryProductID = categoryProduct.ID;
+                            tblCategoryProductWithCust.CategoryProductID = categoryProduct.CategoryProductID;
                             tblCategoryProductWithCust.CreatedBy = incompleteRpt.CustID;
                             tblCategoryProductWithCust.CreatedDate = DateTimeNow;
                             dbContext.tblCategoryProductWithCusts.Add(tblCategoryProductWithCust);
@@ -633,7 +633,7 @@ namespace JBNClassLibrary
                         {
                             var tblSubCategoryProductWithCust = new tblSubCategoryProductWithCust();
                             tblSubCategoryProductWithCust.CustID = incompleteRpt.CustID;
-                            tblSubCategoryProductWithCust.CategoryProductID = distinctCategories.Where(d => d.ID == subCategory).Select(d => d.CategoryProductID).FirstOrDefault();
+                            tblSubCategoryProductWithCust.CategoryProductID = categoryProducts.Where(d => d.ID == subCategory).Select(d => d.CategoryProductID).FirstOrDefault();
                             tblSubCategoryProductWithCust.SubCategoryId = subCategory;
                             tblSubCategoryProductWithCust.CreatedBy = incompleteRpt.CustID;
                             tblSubCategoryProductWithCust.CreatedDate = DateTimeNow;
