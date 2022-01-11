@@ -153,16 +153,13 @@ namespace JBNClassLibrary
                                                          BusinessTypeName = b.Type,
                                                          Checked = dbContext.tblBusinessTypewithCusts.Where(bt => bt.CustID == customerDetails.CustID).Any(btc => btc.BusinessTypeID == b.ID)
                                                      }).ToList();
-                    if (!customerDetails.BusinessTypes.Where(b => b.ID == 6).FirstOrDefault().Checked)
-                    {
-                        customerDetails.BusinessDemands = (from b in dbContext.tblBusinessDemands
-                                                           select new BusinessDemand
-                                                           {
-                                                               Demand = b.Demand,
-                                                               ID = b.ID,
-                                                               IsChecked = b.ID == 3 ? false : true
-                                                           }).ToList();
-                    }
+                    customerDetails.BusinessDemands = (from b in dbContext.tblBusinessDemands
+                                                       select new BusinessDemand
+                                                       {
+                                                           Demand = b.Demand,
+                                                           ID = b.ID,
+                                                           IsChecked = b.ID == 3 ? false : true
+                                                       }).ToList();
 
                     return customerDetails;
                 }

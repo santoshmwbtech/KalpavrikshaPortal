@@ -1374,7 +1374,7 @@ namespace JBNClassLibrary
                                 TotalIntervals = a.TotalRotations,
                             }).FirstOrDefault();
 
-                    main.TotalDays = (Convert.ToDateTime(main.ToDate.Value) - Convert.ToDateTime(main.FromDate.Value)).Days == 0 ? 1 : (Convert.ToDateTime(main.ToDate.Value) - Convert.ToDateTime(main.FromDate.Value)).Days;
+                    main.TotalDays = (Convert.ToDateTime(main.ToDate.Value).AddDays(1) - Convert.ToDateTime(main.FromDate.Value)).Days == 0 ? 1 : (Convert.ToDateTime(main.ToDate.Value).AddDays(1) - Convert.ToDateTime(main.FromDate.Value)).Days;
 
                     proformaInvoice = (from a in dbContext.tblAdvertisementMains
                                        join aarea in dbContext.tblAdvertisementAreas on a.AdvertisementAreaID equals aarea.ID
@@ -1419,7 +1419,7 @@ namespace JBNClassLibrary
                                                           PinCode = cm.PinCode
                                                       }).FirstOrDefault(),
                                            advertisementStates = (from s in dbContext.tblAdvertisementStates
-                                                                  join st in dbContext.tblStates on s.StateID equals st.StateID
+                                                                  join st in dbContext.tblStates on s.StateID equals st.ID
                                                                   join tts in dbContext.tblTairTypeOfStates on st.TairTypeID equals tts.ID
                                                                   where s.AdvertisementMainID.Value == a.ID
                                                                   select new AdvertisementStates
@@ -1429,7 +1429,7 @@ namespace JBNClassLibrary
                                                                       TairTypeOfStateMatrix = tts.TairTypeOfStateMatrix
                                                                   }).ToList(),
                                            advertisementDistricts = (from d in dbContext.tblAdvertisementDistricts
-                                                                     join dd in dbContext.tblDistricts on d.DistrictID equals dd.DistrictID
+                                                                     join dd in dbContext.tblDistricts on d.DistrictID equals dd.ID
                                                                      join ttd in dbContext.tblTairTypeOfDistricts on dd.TairTypeOfDistrictID equals ttd.ID
                                                                      where d.AdvertisementMainID.Value == a.ID
                                                                      select new AdvertisementDistricts
@@ -1439,7 +1439,7 @@ namespace JBNClassLibrary
                                                                          TairTypeOfDistrictMatrix = ttd.TairTypeOfDistrictMatrix
                                                                      }).ToList(),
                                            advertisementCities = (from c in dbContext.tblAdvertisementCities
-                                                                  join ct in dbContext.tblStateWithCities on c.StateWithCityID equals ct.StatewithCityID
+                                                                  join ct in dbContext.tblStateWithCities on c.StateWithCityID equals ct.ID
                                                                   join ttc in dbContext.tblTairTypeOfCities on ct.TairTypeOfCityID equals ttc.ID
                                                                   where c.AdvertisementMainID.Value == a.ID
                                                                   select new AdvertisementCities
@@ -1448,7 +1448,9 @@ namespace JBNClassLibrary
                                                                       VillageLocalityName = c.VillageLocalityName,
                                                                       TairTypeOfCityMatrix = ttc.TairTypeOfCityMatrix
                                                                   }).ToList(),
-
+                                           TotalCities = a.TotalCities,
+                                           TotalDistricts = a.TotalDistricts,
+                                           TotalStates = a.TotalStates,
                                        }).FirstOrDefault();
 
                     List<AdvertisementTimeSlot> TimeSlots = (from at in dbContext.tblAdTimeSlots
@@ -1463,12 +1465,12 @@ namespace JBNClassLibrary
                                                              }).Distinct().ToList();
                     proformaInvoice.TimeSlots = TimeSlots;
 
-                    if (proformaInvoice.advertisementStates != null)
-                        proformaInvoice.TotalStates = proformaInvoice.advertisementStates.Count();
-                    if (proformaInvoice.advertisementDistricts != null)
-                        proformaInvoice.TotalDistricts = proformaInvoice.advertisementDistricts.Count();
-                    if (proformaInvoice.advertisementCities != null)
-                        proformaInvoice.TotalCities = proformaInvoice.advertisementCities.Count();
+                    //if (proformaInvoice.advertisementStates != null)
+                    //    proformaInvoice.TotalStates = proformaInvoice.advertisementStates.Count();
+                    //if (proformaInvoice.advertisementDistricts != null)
+                    //    proformaInvoice.TotalDistricts = proformaInvoice.advertisementDistricts.Count();
+                    //if (proformaInvoice.advertisementCities != null)
+                    //    proformaInvoice.TotalCities = proformaInvoice.advertisementCities.Count();
 
                     if (proformaInvoice.advertisementStates != null && proformaInvoice.advertisementStates.Count() > 0)
                         proformaInvoice.StateMatrix = proformaInvoice.advertisementStates.Select(s => s.TairTypeOfStateMatrix).Sum();

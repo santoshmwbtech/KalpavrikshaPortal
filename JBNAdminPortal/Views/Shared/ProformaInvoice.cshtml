@@ -118,63 +118,63 @@
                                 <thead>
                                     <tr>
                                         <td><strong>Item</strong></td>
+                                        <td class=""></td>
                                         <td class="text-center"><strong>Description</strong></td>
-                                        <td class="text-right"><strong>Price</strong></td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Product</td>
+                                        <td class=""></td>
                                         <td class="text-center">@Model.ProductName</td>
-                                        <td class="text-right">@Model.CategoryMatrix</td>
                                     </tr>
                                     <tr>
                                         <td>Advertisement Area</td>
+                                        <td class=""></td>
                                         <td class="text-center">@Model.AdvertisementAreaName</td>
-                                        <td class="text-right">@Model.AdAreaMatrix</td>
                                     </tr>
                                     <tr>
                                         <td>Advertisement Type</td>
+                                        <td class=""></td>
                                         <td class="text-center">@Model.AdvertisementType</td>
-                                        <td class="text-right">@Model.AdTypeMatrix</td>
                                     </tr>
                                     <tr>
                                         <td>Total Days</td>
+                                        <td class=""></td>
                                         <td class="text-center">@Model.main.TotalDays</td>
-                                        <td class="text-right">@Model.main.TotalDays</td>
                                     </tr>
 
                                     @{
-                                        if (Model.main.TotalStates != 0)
+                                        if (Model.TotalStates != 0)
                                         {
                                             <tr>
                                                 <td>Total States</td>
+                                                <td class=""></td>
                                                 <td class="text-center">@Model.TotalStates</td>
-                                                <td class="text-right">@Model.TotalStates</td>
                                             </tr>
                                         }
                                         if (Model.TotalDistricts != 0)
                                         {
                                             <tr>
                                                 <td>Total Districts</td>
+                                                <td class=""></td>
                                                 <td class="text-center">@Model.TotalDistricts</td>
-                                                <td class="text-right">@Model.TotalDistricts</td>
                                             </tr>
                                         }
-                                        if (Model.main.TotalCities != 0)
+                                        if (Model.TotalCities != 0)
                                         {
                                             <tr>
                                                 <td>Total Cities</td>
+                                                <td class=""></td>
                                                 <td class="text-center">@Model.TotalCities</td>
-                                                <td class="text-right">@Model.TotalCities</td>
                                             </tr>
                                         }
                                         if (Model.AdvertisementType.ToLower() != "fullpagead")
                                         {
                                             <tr>
                                                 <td>Total Rotations</td>
+                                                <td class=""></td>
                                                 <td class="text-center">@Model.main.TotalIntervals</td>
-                                                <td class="text-right">@Model.main.TotalIntervals</td>
                                             </tr>
                                         }
                                     }
@@ -185,11 +185,9 @@
                                             {
                                                 <tr>
                                                     <td>Time Slot</td>
+                                                    <td class=""></td>
                                                     <td class="text-center">
                                                         @item.TimeSlotName
-                                                    </td>
-                                                    <td class="text-right">
-                                                        @item.TimeSlotMatrix
                                                     </td>
                                                 </tr>
                                             }
@@ -234,7 +232,7 @@
                                     <tr>
                                         <td class="no-line"></td>
                                         <td class="no-line text-center"><strong>Grand Total</strong></td>
-                                        <td class="no-line text-right">@Model.main.FinalPrice</td>
+                                        <th class="no-line text-right">@Model.main.FinalPrice</th>
                                     </tr>
                                 </tbody>
                             </table>
@@ -260,7 +258,6 @@
                                             <thead>
                                                 <tr>
                                                     <td><strong>State Name</strong></td>
-                                                    <td class="text-right"><strong>Price</strong></td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -272,9 +269,6 @@
                                                             <tr>
                                                                 <td>
                                                                     @item.StateName
-                                                                </td>
-                                                                <td class="text-right">
-                                                                    @item.TairTypeOfStateMatrix
                                                                 </td>
                                                             </tr>
                                                         }
@@ -291,7 +285,6 @@
                                             <thead>
                                                 <tr>
                                                     <td><strong>District Name</strong></td>
-                                                    <td class="text-right"><strong>Price</strong></td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -303,9 +296,6 @@
                                                             <tr>
                                                                 <td>
                                                                     @item.DistrictName
-                                                                </td>
-                                                                <td class="text-right">
-                                                                    @item.TairTypeOfDistrictMatrix
                                                                 </td>
                                                             </tr>
                                                         }
@@ -322,7 +312,6 @@
                                             <thead>
                                                 <tr>
                                                     <td><strong>City Name</strong></td>
-                                                    <td class="text-right"><strong>Price</strong></td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -334,9 +323,6 @@
                                                             <tr>
                                                                 <td>
                                                                     @item.VillageLocalityName
-                                                                </td>
-                                                                <td class="text-right">
-                                                                    @item.TairTypeOfCityMatrix
                                                                 </td>
                                                             </tr>
                                                         }
