@@ -12,6 +12,8 @@ namespace JBNAdminPortal.Controllers
         // GET: Login
         public ActionResult Index()
         {
+            DLAdvertisements dLAdvertisements = new DLAdvertisements();
+            dLAdvertisements.SendNotifications();
             return View();
         }
         [HttpPost]

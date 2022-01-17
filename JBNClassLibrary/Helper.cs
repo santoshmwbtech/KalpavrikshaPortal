@@ -766,6 +766,11 @@ namespace JBNWebAPI.Logger
             return input.Any(c => c <= MaxAnsiCode);
         }
 
-        
+        public System.Timers.Timer SetTimer
+        {
+            get { return Helper.mSetTimer; }
+            set { Helper.mSetTimer = value; }
+        }
+
     }
 }
