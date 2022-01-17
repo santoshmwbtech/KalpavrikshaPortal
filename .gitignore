@@ -33,3 +33,6 @@ bld/
 /[Rr]eleases/
 /[Bb]in
 /[Oo]bj
+/JBNWebAPI
+/.csproj
+/.csproj.user
