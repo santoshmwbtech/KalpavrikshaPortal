@@ -145,7 +145,7 @@
                                     </tr>
 
                                     @{
-                                        if (Model.TotalStates != 0)
+                                        if (Model.TotalStates > 1)
                                         {
                                             <tr>
                                                 <td>Total States</td>
@@ -153,7 +153,7 @@
                                                 <td class="text-center">@Model.TotalStates</td>
                                             </tr>
                                         }
-                                        if (Model.TotalDistricts != 0)
+                                        if (Model.TotalDistricts > 1)
                                         {
                                             <tr>
                                                 <td>Total Districts</td>
@@ -161,7 +161,7 @@
                                                 <td class="text-center">@Model.TotalDistricts</td>
                                             </tr>
                                         }
-                                        if (Model.TotalCities != 0)
+                                        if (Model.TotalCities > 1)
                                         {
                                             <tr>
                                                 <td>Total Cities</td>
