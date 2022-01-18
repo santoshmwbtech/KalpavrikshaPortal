@@ -73,6 +73,7 @@ namespace JBNClassLibrary
         public Nullable<int> TotalStates { get; set; }
         public Nullable<int> TotalDistricts { get; set; }
         public Nullable<int> TotalCities { get; set; }
+        public Nullable<int> CategoryProductID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblAdvertisement> tblAdvertisements { get; set; }

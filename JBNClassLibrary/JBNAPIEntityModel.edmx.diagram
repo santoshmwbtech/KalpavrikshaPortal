@@ -223,6 +223,7 @@
         <AssociationConnector Association="jbnbetaModel.FK_tblUser_CreatedBy" />
         <AssociationConnector Association="jbnbetaModel.FK_tblUser_ModifiedBy" />
         <EntityTypeShape EntityType="jbnbetaModel.tblAdvertisementDiscount" Width="1.5" PointX="12.375" PointY="5.75" />
+        <EntityTypeShape EntityType="jbnbetaModel.tblAdTracker" Width="1.5" PointX="8.375" PointY="12.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

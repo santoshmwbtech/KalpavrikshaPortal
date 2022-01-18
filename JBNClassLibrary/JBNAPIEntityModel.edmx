@@ -21,6 +21,7 @@
           <Property Name="CreatedDate" Type="datetime" Nullable="false" />
           <Property Name="ModifiedBy" Type="int" />
           <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="ContentExpiryinHrs" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="tblAdTimeSlots">
           <Key>
@@ -34,6 +35,31 @@
           <Property Name="CreatedBy" Type="int" Nullable="false" />
           <Property Name="ModifiedBy" Type="int" />
           <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblAdTracker">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdvertisementMainId" Type="int" />
+          <Property Name="NationId" Type="int" />
+          <Property Name="StateId" Type="int" />
+          <Property Name="DistrictId" Type="int" />
+          <Property Name="CityId" Type="int" />
+          <Property Name="SlotNumber" Type="int" />
+          <Property Name="CategoryID" Type="int" />
+          <Property Name="AdStartDate" Type="datetime" />
+          <Property Name="Iterations" Type="int" />
+          <Property Name="AdType" Type="varchar" MaxLength="500" />
+          <Property Name="TimeSlotID" Type="int" />
+          <Property Name="Slots" Type="varchar(max)" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="IsLastEntryState" Type="bit" Nullable="false" />
+          <Property Name="IsLastEntryDistrict" Type="bit" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="tblAdvertisement">
           <Key>
@@ -240,6 +266,7 @@
           <Property Name="TotalStates" Type="int" />
           <Property Name="TotalDistricts" Type="int" />
           <Property Name="TotalCities" Type="int" />
+          <Property Name="CategoryProductID" Type="int" />
         </EntityType>
         <EntityType Name="tblAdvertisementNationSlot">
           <Key>
@@ -786,6 +813,7 @@
           <Property Name="CreatedDate" Type="datetime" Nullable="false" />
           <Property Name="ModifiedBy" Type="int" />
           <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="PromoAd" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="tblPurposeOfBusiness">
           <Key>
@@ -815,7 +843,7 @@
           <Property Name="ModifiedDate" Type="datetime" />
           <Property Name="IsRead" Type="bit" Nullable="false" />
           <Property Name="QueryID" Type="int" />
-          <Property Name="NotificationType" Type="varchar" MaxLength="20" />
+          <Property Name="NotificationType" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tblQuestions">
           <Key>
@@ -1075,7 +1103,7 @@
           <Property Name="ModifiedBy" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Kalpavriksha_DEV.dbo.tblTaxSlab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'KalpavrikshaDevV1.dbo.tblTaxSlab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tblTaxSlab">
           <Key>
             <PropertyRef Name="ID" />
@@ -1142,7 +1170,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.tblTaxSlab' does not have a p
           <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Kalpavriksha_DEV.dbo.CityView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'KalpavrikshaDevV1.dbo.CityView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="CityView">
           <Key>
             <PropertyRef Name="ID" />
@@ -1163,7 +1191,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.CityView' does not have a pri
           <Property Name="CreatedBy" Type="int" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="ProductsView">
           <Key>
             <PropertyRef Name="ItemID" />
@@ -1381,18 +1409,6 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
             </Principal>
             <Dependent Role="tblAdvertisementState">
               <PropertyRef Name="AdvertisementMainID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_tbladvertisementstate_CreatedBy">
-          <End Role="tblUser" Type="Self.tblUser" Multiplicity="1" />
-          <End Role="tblAdvertisementState" Type="Self.tblAdvertisementState" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tblUser">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="tblAdvertisementState">
-              <PropertyRef Name="CreatedBy" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -2901,6 +2917,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
         <EntityContainer Name="jbnbetaModelStoreContainer">
           <EntitySet Name="tblAdminSettings" EntityType="Self.tblAdminSettings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblAdTimeSlots" EntityType="Self.tblAdTimeSlots" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblAdTracker" EntityType="Self.tblAdTracker" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblAdvertisement" EntityType="Self.tblAdvertisement" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblAdvertisementArea" EntityType="Self.tblAdvertisementArea" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblAdvertisementCity" EntityType="Self.tblAdvertisementCity" Schema="dbo" store:Type="Tables" />
@@ -3068,10 +3085,6 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           </AssociationSet>
           <AssociationSet Name="FK_tbladvertisementstate_AdvertisementMainID" Association="Self.FK_tbladvertisementstate_AdvertisementMainID">
             <End Role="tblAdvertisementMain" EntitySet="tblAdvertisementMain" />
-            <End Role="tblAdvertisementState" EntitySet="tblAdvertisementState" />
-          </AssociationSet>
-          <AssociationSet Name="FK_tbladvertisementstate_CreatedBy" Association="Self.FK_tbladvertisementstate_CreatedBy">
-            <End Role="tblUser" EntitySet="tblUser" />
             <End Role="tblAdvertisementState" EntitySet="tblAdvertisementState" />
           </AssociationSet>
           <AssociationSet Name="FK_tbladvertisementstate_ModifiedBy" Association="Self.FK_tbladvertisementstate_ModifiedBy">
@@ -4258,6 +4271,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
             <End Role="tblPurposeOfBusiness" EntitySet="tblPurposeOfBusinesses" />
           </AssociationSet>
           <EntitySet Name="tblAdvertisementDiscounts" EntityType="jbnbetaModel.tblAdvertisementDiscount" />
+          <EntitySet Name="tblAdTrackers" EntityType="jbnbetaModel.tblAdTracker" />
           </EntityContainer>
         <ComplexType Name="USP_MainCatCityWiseRpt_Result">
           <Property Type="Int32" Name="City" Nullable="true" />
@@ -4321,6 +4335,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ModifiedBy" Type="Int32" />
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="ContentExpiryinHrs" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="tblAdvertisement">
           <Key>
@@ -4497,6 +4512,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <Property Name="TotalStates" Type="Int32" />
           <Property Name="TotalDistricts" Type="Int32" />
           <Property Name="TotalCities" Type="Int32" />
+          <Property Name="CategoryProductID" Type="Int32" />
         </EntityType>
         <EntityType Name="tbladvertisementPayment">
           <Key>
@@ -5117,6 +5133,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
           <NavigationProperty Name="tblUser" Relationship="jbnbetaModel.FK_tblPromo_CreatedBy" FromRole="tblPromo" ToRole="tblUser" />
           <NavigationProperty Name="tblUser1" Relationship="jbnbetaModel.FK_tblPromo_ModifiedBy" FromRole="tblPromo" ToRole="tblUser" />
+          <Property Name="PromoAd" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="tblPushNotification">
           <Key>
@@ -5136,7 +5153,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <NavigationProperty Name="tblCustomerDetail" Relationship="jbnbetaModel.FK_tblPushNotifications_CustID" FromRole="tblPushNotification" ToRole="tblCustomerDetail" />
           <Property Name="IsRead" Type="Boolean" Nullable="false" />
           <Property Name="QueryID" Type="Int32" />
-          <Property Name="NotificationType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NotificationType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tblQuestion">
           <Key>
@@ -7557,6 +7574,31 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <Property Name="DiscountAmount" Type="Double" />
           <Property Name="DiscountPer" Type="Double" />
         </EntityType>
+        <EntityType Name="tblAdTracker">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdvertisementMainId" Type="Int32" />
+          <Property Name="NationId" Type="Int32" />
+          <Property Name="StateId" Type="Int32" />
+          <Property Name="DistrictId" Type="Int32" />
+          <Property Name="CityId" Type="Int32" />
+          <Property Name="SlotNumber" Type="Int32" />
+          <Property Name="CategoryID" Type="Int32" />
+          <Property Name="AdStartDate" Type="DateTime" Precision="3" />
+          <Property Name="Iterations" Type="Int32" />
+          <Property Name="AdType" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="TimeSlotID" Type="Int32" />
+          <Property Name="Slots" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="IsLastEntryState" Type="Boolean" Nullable="false" />
+          <Property Name="IsLastEntryDistrict" Type="Boolean" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -7632,6 +7674,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <EntitySetMapping Name="tblAdminSettings">
             <EntityTypeMapping TypeName="jbnbetaModel.tblAdminSetting">
               <MappingFragment StoreEntitySet="tblAdminSettings">
+                <ScalarProperty Name="ContentExpiryinHrs" ColumnName="ContentExpiryinHrs" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
@@ -7754,6 +7797,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <EntitySetMapping Name="tblAdvertisementMains">
             <EntityTypeMapping TypeName="jbnbetaModel.tblAdvertisementMain">
               <MappingFragment StoreEntitySet="tblAdvertisementMain">
+                <ScalarProperty Name="CategoryProductID" ColumnName="CategoryProductID" />
                 <ScalarProperty Name="TotalCities" ColumnName="TotalCities" />
                 <ScalarProperty Name="TotalDistricts" ColumnName="TotalDistricts" />
                 <ScalarProperty Name="TotalStates" ColumnName="TotalStates" />
@@ -8321,6 +8365,7 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
           <EntitySetMapping Name="tblPromoes">
             <EntityTypeMapping TypeName="jbnbetaModel.tblPromo">
               <MappingFragment StoreEntitySet="tblPromo">
+                <ScalarProperty Name="PromoAd" ColumnName="PromoAd" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
@@ -8909,6 +8954,32 @@ warning 6002: The table/view 'Kalpavriksha_DEV.dbo.ProductsView' does not have a
                 <ScalarProperty Name="Discount" ColumnName="Discount" />
                 <ScalarProperty Name="PricingSlabName" ColumnName="PricingSlabName" />
                 <ScalarProperty Name="PricingSlabID" ColumnName="PricingSlabID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblAdTrackers">
+            <EntityTypeMapping TypeName="jbnbetaModel.tblAdTracker">
+              <MappingFragment StoreEntitySet="tblAdTracker">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsLastEntryDistrict" ColumnName="IsLastEntryDistrict" />
+                <ScalarProperty Name="IsLastEntryState" ColumnName="IsLastEntryState" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Slots" ColumnName="Slots" />
+                <ScalarProperty Name="TimeSlotID" ColumnName="TimeSlotID" />
+                <ScalarProperty Name="AdType" ColumnName="AdType" />
+                <ScalarProperty Name="Iterations" ColumnName="Iterations" />
+                <ScalarProperty Name="AdStartDate" ColumnName="AdStartDate" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="SlotNumber" ColumnName="SlotNumber" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+                <ScalarProperty Name="NationId" ColumnName="NationId" />
+                <ScalarProperty Name="AdvertisementMainId" ColumnName="AdvertisementMainId" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

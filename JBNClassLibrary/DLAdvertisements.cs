@@ -3044,6 +3044,8 @@ namespace JBNClassLibrary
                                           where !a.IsCancelled && !a.IsApproved && !a.PaymentStatus && !a.IsRejected
                                           select new AdvertisementMain
                                           {
+                                              AdvertisementMainID = a.ID,
+                                              CustID = a.CustID,
                                               AdvertisementName = a.AdvertisementName,
                                               BookingExpiryDate = a.BookingExpiryDate,
                                               IsPaymentPaid = a.PaymentStatus,
@@ -3054,7 +3056,7 @@ namespace JBNClassLibrary
                                               FirmName = c.FirmName
                                           }).ToList();
                         var contentPendingAds = pendingAds.Where(a => !a.IsApproved.Value && !a.IsPaymentPaid.Value && a.BookingExpiryDate.HasValue && a.BookingExpiryDate > currentDate).ToList();
-                        var paymentPendingAds = pendingAds.Where(a => a.IsApproved.HasValue && a.IsApproved.Value && !a.IsPaymentPaid.HasValue && !a.IsPaymentPaid.Value).ToList();
+                        var paymentPendingAds = pendingAds.Where(a => a.IsApproved.HasValue && a.IsApproved.Value && !a.IsPaymentPaid.Value && a.ContentApprovedDate.HasValue).ToList();
 
                         //Send Notifications for Content Upload
                         foreach(var contentPendingAd in contentPendingAds)
@@ -3091,7 +3093,7 @@ namespace JBNClassLibrary
                             Helper.SendNotification(contentPendingAd.DeviceID, notification);
                             jBNDBClass.SavePushNotifications(contentPendingAd.CustID.Value, pushNotification, 1);
                         }
-
+                        List<int> paymentExpiringAdIds = new List<int>();
                         //Send Notifications for Content Upload
                         foreach (var paymentPendingAd in paymentPendingAds)
                         {
@@ -3129,9 +3131,51 @@ namespace JBNClassLibrary
                                 Helper.SendNotification(paymentPendingAd.DeviceID, notification);
                                 jBNDBClass.SavePushNotifications(paymentPendingAd.CustID.Value, pushNotification, 1);
                             }
-                            
-                            
+                            else
+                            {
+                                paymentExpiringAdIds.Add(paymentPendingAd.AdvertisementMainID);
+                            }
                         }
+                        #region Content Expired
+                        var expiredAds = dbContext.tblAdvertisementMains.Where(a => a.BookingExpiryDate <= currentDate);
+                        foreach (var expiredAd in expiredAds)
+                        {
+                            expiredAd.IsActive = false;
+                            expiredAd.IsRejected = true;
+                            expiredAd.Remarks = "Advertisement Expired";
+                        }
+                        dbContext.tblAdvertisementMains.AddRange(expiredAds);
+                        var adMainIds = expiredAds.Select(a => a.ID).ToList();
+                        var expiringAdTrackers = dbContext.tblAdTrackers.Where(d => adMainIds.Contains(d.ID));
+                        foreach (var expiringAdTracker in expiringAdTrackers)
+                        {
+                            expiringAdTracker.IsActive = false;
+                        }
+                        dbContext.tblAdTrackers.AddRange(expiringAdTrackers);
+                        #endregion
+
+                        #region Payment Expired
+                        if(paymentExpiringAdIds != null && paymentExpiringAdIds.Count() > 0)
+                        {
+                            var paymentExpiringAds = dbContext.tblAdvertisementMains.Where(a => paymentExpiringAdIds.Contains(a.ID));
+                            foreach (var paymentExpiringAd in paymentExpiringAds)
+                            {
+                                paymentExpiringAd.IsActive = false;
+                                paymentExpiringAd.IsRejected = true;
+                                paymentExpiringAd.Remarks = "Advertisement Expired";
+                            }
+                            dbContext.tblAdvertisementMains.AddRange(paymentExpiringAds);
+                            var paymentExpiringAdTrackers = dbContext.tblAdTrackers.Where(a => paymentExpiringAdIds.Contains(a.AdvertisementMainId.Value));
+                            foreach (var paymentExpiringAdTracker in paymentExpiringAdTrackers)
+                            {
+                                paymentExpiringAdTracker.IsActive = false;
+                            }
+                            dbContext.tblAdTrackers.AddRange(paymentExpiringAdTrackers);
+                        }
+                        #endregion
+
+                        dbContext.SaveChanges();
+                        dbcxtransaction.Commit();
                     }
                 }
             }

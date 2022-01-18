@@ -95,6 +95,7 @@ namespace JBNClassLibrary
         public virtual DbSet<tblBusinessDemandwithCust> tblBusinessDemandwithCusts { get; set; }
         public virtual DbSet<tblPurposeOfBusiness> tblPurposeOfBusinesses { get; set; }
         public virtual DbSet<tblAdvertisementDiscount> tblAdvertisementDiscounts { get; set; }
+        public virtual DbSet<tblAdTracker> tblAdTrackers { get; set; }
     
         public virtual ObjectResult<USP_MainCatCityWiseRpt_Result> USP_MainCatCityWiseRpt(Nullable<int> stateID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate)
         {
