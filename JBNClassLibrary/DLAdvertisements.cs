@@ -17,10 +17,12 @@ namespace JBNClassLibrary
 {
     public class DLAdvertisements
     {
+       
         mwbtDealerEntities dbContext = new mwbtDealerEntities();
         private static TimeZoneInfo INDIAN_ZONE = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
         int IsLogWrite = Convert.ToInt32(ConfigurationManager.AppSettings["IsLogWrite"].ToString());
         JBNDBClass jBNDBClass = new JBNDBClass();
+
         public List<ItemCategory> GetAllItems(string SearchText)
         {
             try
@@ -3041,7 +3043,7 @@ namespace JBNClassLibrary
                         var adminSetting = dbContext.tblAdminSettings.FirstOrDefault();
                         var pendingAds = (from a in dbContext.tblAdvertisementMains
                                           join c in dbContext.tblCustomerDetails on a.CustID equals c.ID
-                                          where !a.IsCancelled && !a.IsApproved && !a.PaymentStatus && !a.IsRejected
+                                          where !a.IsCancelled && !a.PaymentStatus && !a.IsRejected
                                           select new AdvertisementMain
                                           {
                                               AdvertisementMainID = a.ID,
@@ -3143,15 +3145,18 @@ namespace JBNClassLibrary
                             expiredAd.IsActive = false;
                             expiredAd.IsRejected = true;
                             expiredAd.Remarks = "Advertisement Expired";
+                            dbContext.tblAdvertisementMains.Add(expiredAd);
+                            dbContext.Entry(expiredAd).State = EntityState.Modified;
                         }
-                        dbContext.tblAdvertisementMains.AddRange(expiredAds);
+                        
                         var adMainIds = expiredAds.Select(a => a.ID).ToList();
                         var expiringAdTrackers = dbContext.tblAdTrackers.Where(d => adMainIds.Contains(d.ID));
                         foreach (var expiringAdTracker in expiringAdTrackers)
                         {
                             expiringAdTracker.IsActive = false;
-                        }
-                        dbContext.tblAdTrackers.AddRange(expiringAdTrackers);
+                            dbContext.tblAdTrackers.Add(expiringAdTracker);
+                            dbContext.Entry(expiringAdTracker).State = EntityState.Modified;
+                        }                        
                         #endregion
 
                         #region Payment Expired
@@ -3163,14 +3168,17 @@ namespace JBNClassLibrary
                                 paymentExpiringAd.IsActive = false;
                                 paymentExpiringAd.IsRejected = true;
                                 paymentExpiringAd.Remarks = "Advertisement Expired";
+                                dbContext.tblAdvertisementMains.Add(paymentExpiringAd);
+                                dbContext.Entry(paymentExpiringAd).State = EntityState.Modified;
                             }
-                            dbContext.tblAdvertisementMains.AddRange(paymentExpiringAds);
+                            
                             var paymentExpiringAdTrackers = dbContext.tblAdTrackers.Where(a => paymentExpiringAdIds.Contains(a.AdvertisementMainId.Value));
                             foreach (var paymentExpiringAdTracker in paymentExpiringAdTrackers)
                             {
                                 paymentExpiringAdTracker.IsActive = false;
+                                dbContext.tblAdTrackers.Add(paymentExpiringAdTracker);
+                                dbContext.Entry(paymentExpiringAdTracker).State = EntityState.Modified;
                             }
-                            dbContext.tblAdTrackers.AddRange(paymentExpiringAdTrackers);
                         }
                         #endregion
 
