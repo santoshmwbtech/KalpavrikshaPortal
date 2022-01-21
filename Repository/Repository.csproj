@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JBNClassLibrary\JBNClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\CCAWebPortal\MWBTCustomerCreation\WindowsService_SalesOrder\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

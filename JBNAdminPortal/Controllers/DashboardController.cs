@@ -1,7 +1,9 @@
 ﻿using JBNAdminPortal.Models;
 using JBNClassLibrary;
+using Repository.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using static JBNClassLibrary.CityWiseDetails;
 
@@ -9,13 +11,18 @@ namespace JBNAdminPortal.Controllers
 {
     public class DashboardController : Controller
     {
-        DashBoardData dal = new DashBoardData();
+        //DashBoardData dal = new DashBoardData();
+        private readonly IDashboardRepository _dashboardRepository;
+        public DashboardController(IDashboardRepository dashboardRepository)
+        {
+            _dashboardRepository = dashboardRepository;
+        }
         // GET: Dashboard
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
             if (Session["UserID"] != null)
             {
-                Dashboard dashboard = dal.GetCategoriesForApproval(Convert.ToInt32(Session["UserID"].ToString()));
+                Dashboard dashboard = await _dashboardRepository.GetCategoriesForApproval(Convert.ToInt32(Session["UserID"].ToString()));
                 return View(dashboard);
             }
             else
@@ -23,9 +30,9 @@ namespace JBNAdminPortal.Controllers
                 return RedirectToAction("Index", "Login");
             }
         }
-        public JsonResult GetDashboardData()
+        public async Task<JsonResult> GetDashboardData()
         {
-            return Json(dal.GetDashboardData());
+            return Json(await _dashboardRepository.GetDashboardData());
         }
 
         #region Not Using
