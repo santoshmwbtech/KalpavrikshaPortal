@@ -12,5 +12,6 @@ namespace Repository.Interfaces
         Task<object> GetDashboardData();
         Task<Dashboard> GetCategoriesForApproval(int UserID);
         Task<object> GetAllProductsData();
+
     }
 }
