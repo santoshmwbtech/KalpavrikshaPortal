@@ -489,6 +489,7 @@
           <Property Name="IsRejected" Type="bit" />
           <Property Name="ModifiedBy" Type="int" />
           <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="IsProfessional" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="tblCategoryProductWithCust">
           <Key>
@@ -893,6 +894,7 @@
           <Property Name="CreatedDate" Type="datetime" Nullable="false" />
           <Property Name="ModifiedBy" Type="int" />
           <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="TransactionType" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tblSelectedDealerBusinessTypes">
           <Key>
@@ -1103,7 +1105,7 @@
           <Property Name="ModifiedBy" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'KalpavrikshaDevV1.dbo.tblTaxSlab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'KalpavrikshaDevV2.dbo.tblTaxSlab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tblTaxSlab">
           <Key>
             <PropertyRef Name="ID" />
@@ -1170,19 +1172,20 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.tblTaxSlab' does not have a 
           <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'KalpavrikshaDevV1.dbo.CityView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'KalpavrikshaDevV2.dbo.CityView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="CityView">
           <Key>
             <PropertyRef Name="ID" />
             <PropertyRef Name="StateWithCityID" />
             <PropertyRef Name="StateID" />
+            
             <PropertyRef Name="CreatedDate" />
             <PropertyRef Name="CreatedBy" />
           </Key>
           <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="StateWithCityID" Type="int" Nullable="false" />
           <Property Name="StateID" Type="int" Nullable="false" />
-          <Property Name="VillageLocalityName" Type="nvarchar" MaxLength="1004" />
+          <Property Name="VillageLocalityName" Type="nvarchar" MaxLength="500" Nullable="false" />
           <Property Name="DistrictID" Type="int" />
           <Property Name="DistrictName" Type="varchar" MaxLength="500" />
           <Property Name="CreatedDate" Type="datetime" Nullable="false" />
@@ -1191,7 +1194,7 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.CityView' does not have a pr
           <Property Name="CreatedBy" Type="int" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'KalpavrikshaDevV2.dbo.ProductsView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="ProductsView">
           <Key>
             <PropertyRef Name="ItemID" />
@@ -4718,6 +4721,7 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have 
           <NavigationProperty Name="tblUser1" Relationship="jbnbetaModel.FK_tblCategoryProduct_ModifiedBy" FromRole="tblCategoryProduct" ToRole="tblUser" />
           <NavigationProperty Name="tblCategoryProductWithCusts" Relationship="jbnbetaModel.FK_tblCategoryProductWithCust_CategoryProductID" FromRole="tblCategoryProduct" ToRole="tblCategoryProductWithCust" />
           <NavigationProperty Name="tblSubCategoryProductWithCusts" Relationship="jbnbetaModel.FK_tblSubCategoryProductWithCust_CategoryProductID" FromRole="tblCategoryProduct" ToRole="tblSubCategoryProductWithCust" />
+          <Property Name="IsProfessional" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="tblCategoryProductWithCust">
           <Key>
@@ -5218,6 +5222,7 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have 
           <NavigationProperty Name="tblSelectedDealerBusinessTypes" Relationship="jbnbetaModel.FK_tblSelectedDealerBusinessTypes_QueryID" FromRole="tblselectedDealer" ToRole="tblSelectedDealerBusinessType" />
           <NavigationProperty Name="tblselectedDealerDetails" Relationship="jbnbetaModel.FK_tblselectedDealerDetails_QueryId" FromRole="tblselectedDealer" ToRole="tblselectedDealerDetail" />
           <NavigationProperty Name="tblUserConversations" Relationship="jbnbetaModel.FK_tblUserConversations_QueryId" FromRole="tblselectedDealer" ToRole="tblUserConversation" />
+          <Property Name="TransactionType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tblSelectedDealerBusinessType">
           <Key>
@@ -7309,7 +7314,7 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have 
           <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="StateWithCityID" Type="Int32" Nullable="false" />
           <Property Name="StateID" Type="Int32" Nullable="false" />
-          <Property Name="VillageLocalityName" Type="String" MaxLength="1004" FixedLength="false" Unicode="true" />
+          <Property Name="VillageLocalityName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DistrictID" Type="Int32" />
           <Property Name="DistrictName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
@@ -8018,6 +8023,7 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have 
           <EntitySetMapping Name="tblCategoryProducts">
             <EntityTypeMapping TypeName="jbnbetaModel.tblCategoryProduct">
               <MappingFragment StoreEntitySet="tblCategoryProduct">
+                <ScalarProperty Name="IsProfessional" ColumnName="IsProfessional" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
                 <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
@@ -8424,6 +8430,7 @@ warning 6002: The table/view 'KalpavrikshaDevV1.dbo.ProductsView' does not have 
           <EntitySetMapping Name="tblselectedDealers">
             <EntityTypeMapping TypeName="jbnbetaModel.tblselectedDealer">
               <MappingFragment StoreEntitySet="tblselectedDealer">
+                <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />

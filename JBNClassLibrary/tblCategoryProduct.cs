@@ -34,6 +34,7 @@ namespace JBNClassLibrary
         public Nullable<bool> IsRejected { get; set; }
         public Nullable<int> ModifiedBy { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
+        public bool IsProfessional { get; set; }
     
         public virtual tblUser tblUser { get; set; }
         public virtual tblUser tblUser1 { get; set; }

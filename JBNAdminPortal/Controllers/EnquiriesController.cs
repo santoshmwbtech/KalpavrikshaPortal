@@ -1,6 +1,8 @@
 ﻿using JBNAdminPortal.Models;
 using JBNClassLibrary;
+using Repository.Interfaces;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using static JBNClassLibrary.CityWiseDetails;
 using static JBNClassLibrary.DLEnquiries;
@@ -11,8 +13,14 @@ namespace JBNAdminPortal.Controllers
     {
         JBNClassLibrary.JBNDBClass DAL = new JBNClassLibrary.JBNDBClass();
         DLEnquiries EnquiriesDAL = new DLEnquiries();
+
+        private readonly IEnquiryRepository _enquiryRepository;
+        public EnquiriesController(IEnquiryRepository enquiryRepository)
+        {
+            _enquiryRepository = enquiryRepository;
+        }
         // GET: Enquiries
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
             if (Session["UserID"] != null)
             {
@@ -25,7 +33,7 @@ namespace JBNAdminPortal.Controllers
                 context.city = city;
                 ViewBag.StateList = new SelectList(DAL.GetStateList(), "ID", "StateName");
                 ViewBag.BusinessType = new SelectList(DAL.GetBusinessTypes(), "BusinessTypeID", "BusinessTypeName");
-                ViewBag.ItemCategories = new SelectList(EnquiriesDAL.GetItemCategories(), "ID", "ItemName");
+                ViewBag.ItemCategories = new SelectList(await _enquiryRepository.GetItemCategories(), "ID", "ItemName");
                 ViewBag.CustomerList = new SelectList(DAL.GetCustomerList(context), "CustID", "FirmName");
                 ViewBag.BusinessDemand = new SelectList(DAL.GetBusinessDemands(), "ID", "BusinessDemand");
                 ViewBag.EnquiryCities = new SelectList(EnquiriesDAL.GetEnquiryCities(), "StateWithCityID", "VillageLocalityName");
@@ -45,7 +53,7 @@ namespace JBNAdminPortal.Controllers
             enquiries.ProductID = 0;
             enquiries.StateID = 0;
             enquiries.CityID = 0;
-            EnquiryListWithTotals enquiryListWithTotals = EnquiriesDAL.GetEnquiries(enquiries);
+            EnquiryListWithTotals enquiryListWithTotals = _enquiryRepository.GetEnquiries(enquiries); //EnquiriesDAL.GetEnquiries(enquiries);
             return PartialView("EnquiryList", enquiryListWithTotals);
         }
 

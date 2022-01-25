@@ -177,6 +177,15 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.1\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.1\lib\net47\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mvc5, Version=1.4.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc5.1.4.0\lib\net45\Unity.Mvc5.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -195,8 +204,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\ActivityReportController.cs" />
     <Compile Include="Controllers\AdMatrixMasterController.cs" />
+    <Compile Include="Controllers\AdServiceController.cs" />
     <Compile Include="Controllers\AdvertisementDetailsController.cs" />
     <Compile Include="Controllers\AdvertisementsController.cs" />
     <Compile Include="Controllers\apiController.cs" />
@@ -1119,10 +1130,13 @@
     <Content Include="Views\Shared\ProformaInvoice.cshtml" />
     <Content Include="Views\createAds\Index.cshtml" />
     <Content Include="Views\UpdateUser\Index.cshtml" />
+    <Content Include="Views\UpdateUser\Edit.cshtml" />
+    <Content Include="Views\UpdateUser\UserList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="notificationImages\" />
+    <Folder Include="Views\AdService\" />
     <Folder Include="Views\api\" />
     <Folder Include="Views\Logout\" />
     <Folder Include="Views\MonthlyDetailedRpt\" />
@@ -1144,6 +1158,10 @@
     <ProjectReference Include="..\JBNClassLibrary\JBNClassLibrary.csproj">
       <Project>{bbbab624-b9c3-47f6-b4f7-6bbd36b82e03}</Project>
       <Name>JBNClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{1D95E583-D57D-421F-A722-E373A8D6164E}</Project>
+      <Name>Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
