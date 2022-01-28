@@ -3045,7 +3045,7 @@ namespace JBNClassLibrary
                         var pendingAds = (from a in advertisements
                                           join c in dbContext.tblCustomerDetails on a.CustID equals c.ID
                                           where !a.IsCancelled && !a.IsRejected
-                                          && DbFunctions.TruncateTime(a.ToDate.Value) >= currentDate
+                                          && DbFunctions.TruncateTime(a.ToDate.Value) >= currentDate.Date
                                           select new AdvertisementMain
                                           {
                                               AdvertisementMainID = a.ID,
@@ -3123,7 +3123,7 @@ namespace JBNClassLibrary
                             var paymentExpiryDate = paymentPendingAd.ContentApprovedDate.Value.AddHours(Convert.ToDouble(adminSetting.SetPaymentDueinHrs));
                             if(paymentExpiryDate > currentDate)
                             {
-                                if (paymentPendingAd.IsPaymentPaid.Value)
+                                if (!paymentPendingAd.IsPaymentPaid.Value)
                                 {
                                     StringBuilder bodySb = new StringBuilder();
                                     bodySb.Append("Dear ");
