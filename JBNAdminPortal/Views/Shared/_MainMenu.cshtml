@@ -169,6 +169,10 @@
                 </a>
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
+                        @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "promoteall" && m.IsView == true) || Session["RoleID"].ToString() == "1")
+                        {
+                            <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "Promotions")'>Promote All</a></li>
+                        }
                         @if (MenuMaster.Any(m => m.SubMenuName.ToLower() == "promotions" && m.IsView == true) || Session["RoleID"].ToString() == "1")
                         {
                             <li class="nav-item"> <a class="nav-link" href='@Url.Action("Index", "BusinessTypeWiseRpt")'>Promotions</a></li>

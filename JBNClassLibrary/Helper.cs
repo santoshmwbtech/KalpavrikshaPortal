@@ -11,6 +11,7 @@ using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 
 namespace JBNWebAPI.Logger
@@ -20,6 +21,7 @@ namespace JBNWebAPI.Logger
         static AppSettingsReader mConfigReader = new AppSettingsReader();
         static string ErrorMailBody = string.Empty;
         static System.Timers.Timer mSetTimer = new System.Timers.Timer();
+        private static TimeZoneInfo INDIAN_ZONE = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
         public static System.Configuration.AppSettingsReader ConfigReader
         {
             get { return mConfigReader; }
@@ -292,6 +294,46 @@ namespace JBNWebAPI.Logger
             {
                 throw ex;
                 //LogError(ex.Message, ex.Source, ex.StackTrace);
+            }
+        }
+
+        public static async Task SendMailAsync(string ToEmailID, string FromMailID, string BodyMessage, string MailSubject, string MailServerHOST, string MailPassword, string SendingPort, List<string> BccList = null, List<Attachment> MailAttachment = null)
+        {
+            using (var mail = new MailMessage())
+            {
+                mail.To.Add(ToEmailID);
+
+                if (BccList != null)
+                {
+                    foreach (var bccEmailID in BccList)
+                    {
+                        mail.Bcc.Add(bccEmailID);
+                    }
+                }
+
+                mail.From = new MailAddress(FromMailID, "Kalpavriksha Group");
+                mail.Subject = MailSubject;
+                mail.Body = BodyMessage;
+                mail.IsBodyHtml = true;
+
+                if (MailAttachment != null && MailAttachment.Count > 0)
+                {
+                    foreach (Attachment attach in MailAttachment)
+                    {
+                        mail.Attachments.Add(attach);
+                    }
+                }
+
+                mail.Priority = MailPriority.Normal;
+
+                using (SmtpClient smtp = new SmtpClient())
+                {
+                    smtp.Host = MailServerHOST;
+                    smtp.Port = Convert.ToInt16(SendingPort);
+                    smtp.EnableSsl = true;
+                    smtp.Credentials = new NetworkCredential(FromMailID, MailPassword);
+                    await smtp.SendMailAsync(mail);
+                }
             }
         }
 
@@ -748,6 +790,43 @@ namespace JBNWebAPI.Logger
             catch (Exception ex)
             {
                 Helper.LogError(ex.Message, ex.Source, ex.InnerException, ex.StackTrace, false);
+            }
+        }
+
+        public bool SavePushNotificationsList(int[] CustIDs, PushNotifications notification, int UserID)
+        {
+            try
+            {
+                using (mwbtDealerEntities dbContext = new mwbtDealerEntities())
+                {
+                    DateTime DateTimeNow = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, INDIAN_ZONE);
+
+                    //List<int> CustIDs = (from c in dbContext.tblCustomerDetails
+                    //                     where RegistrationIDs.Equals(c.DeviceID.ToString())
+                    //                     select c.CustID).ToList();
+
+                    foreach (int i in CustIDs)
+                    {
+                        tblPushNotification tblPushNotification = new tblPushNotification();
+                        tblPushNotification.CustID = i;
+                        tblPushNotification.Title = notification.Title;
+                        tblPushNotification.NotificationDate = notification.NotificationDate;
+                        tblPushNotification.PushNotification = notification.PushNotification;
+                        tblPushNotification.CreatedBy = UserID;
+                        tblPushNotification.CreatedDate = DateTimeNow;
+                        tblPushNotification.CategoryName = notification.CategoryName;
+                        tblPushNotification.ImageURL = notification.ImageURL;
+                        dbContext.tblPushNotifications.Add(tblPushNotification);
+                        dbContext.SaveChanges();
+                    }
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Helper.LogError(ex.Message, ex.Source, ex.InnerException, ex.StackTrace, false);
+                return false;
             }
         }
 

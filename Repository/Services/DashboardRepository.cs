@@ -163,7 +163,7 @@ namespace Repository.Services
                     StatesToday = CustomerTBL.Where(ct => ct.CreatedDate.Date == DateTimeNow.Date && ct.State != null).Select(c => c.State).Distinct().Count();
 
                     BlockedCustomers = CustomerTBL.Where(c => c.IsActive == false).Count();
-                    BlockedToday = CustomerTBL.Where(c => c.IsActive == false && c.UpdatedByDate.Value.Date == DateTimeNow.Date).Count();
+                    BlockedToday = CustomerTBL.Where(c => c.IsActive == false && c.ModifiedDate.Value.Date == DateTimeNow.Date).Count();
 
                     var MainCatTBL = (from c in dbContext.tblCategoryProductWithCusts
                                       join cp in dbContext.tblCategoryProducts on c.CategoryProductID equals cp.ID

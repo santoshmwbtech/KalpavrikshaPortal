@@ -39,7 +39,6 @@ namespace JBNAdminPortal.Controllers
                 ViewBag.EnquiryCities = new SelectList(EnquiriesDAL.GetEnquiryCities(), "StateWithCityID", "VillageLocalityName");
                 ViewBag.BusinessDemands = new SelectList(DAL.GetBusinessDemands(), "ID", "Demand");
                 ViewBag.EnquiryTypes = new SelectList(DAL.GetEnquiryTypes(), "EnquiryType", "EnquiryType");
-
                 return View();
             }
             else

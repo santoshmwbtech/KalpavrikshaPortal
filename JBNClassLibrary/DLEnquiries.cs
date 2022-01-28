@@ -61,6 +61,7 @@ namespace JBNClassLibrary
             public string IsAdvertisement { get; set; }
             public int ReplyCount { get; set; }
             public string TransactionType { get; set; }
+            public string DeviceID { get; set; }
         }
         public class CustomerEnquiries
         {

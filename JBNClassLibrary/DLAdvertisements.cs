@@ -3041,9 +3041,11 @@ namespace JBNClassLibrary
                     {
                         var currentDate = DateTime.Now;
                         var adminSetting = dbContext.tblAdminSettings.FirstOrDefault();
-                        var pendingAds = (from a in dbContext.tblAdvertisementMains
+                        var advertisements = dbContext.tblAdvertisementMains.Where(a => !a.IsCancelled && !a.IsRejected);
+                        var pendingAds = (from a in advertisements
                                           join c in dbContext.tblCustomerDetails on a.CustID equals c.ID
-                                          where !a.IsCancelled && !a.PaymentStatus && !a.IsRejected
+                                          where !a.IsCancelled && !a.IsRejected
+                                          && DbFunctions.TruncateTime(a.ToDate.Value) >= currentDate
                                           select new AdvertisementMain
                                           {
                                               AdvertisementMainID = a.ID,
@@ -3055,13 +3057,32 @@ namespace JBNClassLibrary
                                               ContentApprovedDate = a.ContentApprovedDate,
                                               DeviceID = c.DeviceID,
                                               MobileNumber = c.MobileNumber,
-                                              FirmName = c.FirmName
+                                              FirmName = c.FirmName,
+                                              AdImageURL = a.AdImageURL,
+                                              AdText = a.AdText,
                                           }).ToList();
-                        var contentPendingAds = pendingAds.Where(a => !a.IsApproved.Value && !a.IsPaymentPaid.Value && a.BookingExpiryDate.HasValue && a.BookingExpiryDate > currentDate).ToList();
-                        var paymentPendingAds = pendingAds.Where(a => a.IsApproved.HasValue && a.IsApproved.Value && !a.IsPaymentPaid.Value && a.ContentApprovedDate.HasValue).ToList();
+                        var contentPendingAds = pendingAds.Where(a => !a.IsApproved.Value && !a.IsPaymentPaid.Value && a.BookingExpiryDate.HasValue && a.BookingExpiryDate > currentDate && string.IsNullOrEmpty(a.AdText) && string.IsNullOrEmpty(a.AdImageURL)).ToList();
+                        //var paymentPendingAds = pendingAds.Where(a => a.IsApproved.HasValue && a.IsApproved.Value && !a.IsPaymentPaid.Value && a.ContentApprovedDate.HasValue).ToList();
+
+                        var paymentPendingAds = (from a in advertisements
+                                                 join c in dbContext.tblCustomerDetails on a.CustID equals c.ID
+                                                 where a.IsApproved && !a.PaymentStatus && a.ContentApprovedDate.HasValue
+                                                 select new AdvertisementMain
+                                                 {
+                                                     AdvertisementMainID = a.ID,
+                                                     CustID = a.CustID,
+                                                     AdvertisementName = a.AdvertisementName,
+                                                     BookingExpiryDate = a.BookingExpiryDate,
+                                                     IsPaymentPaid = dbContext.tblPayments.Where(p => p.AdvertisementMainID == a.ID).FirstOrDefault() == null ? false : true,
+                                                     IsApproved = a.IsApproved,
+                                                     ContentApprovedDate = a.ContentApprovedDate,
+                                                     DeviceID = c.DeviceID,
+                                                     MobileNumber = c.MobileNumber,
+                                                     FirmName = c.FirmName
+                                                 }).ToList();
 
                         //Send Notifications for Content Upload
-                        foreach(var contentPendingAd in contentPendingAds)
+                        foreach (var contentPendingAd in contentPendingAds)
                         {
                             StringBuilder bodySb = new StringBuilder();
                             bodySb.Append("Dear ");
@@ -3102,36 +3123,39 @@ namespace JBNClassLibrary
                             var paymentExpiryDate = paymentPendingAd.ContentApprovedDate.Value.AddHours(Convert.ToDouble(adminSetting.SetPaymentDueinHrs));
                             if(paymentExpiryDate > currentDate)
                             {
-                                StringBuilder bodySb = new StringBuilder();
-                                bodySb.Append("Dear ");
-                                bodySb.Append(paymentPendingAd.FirmName);
-                                bodySb.Append(",");
-                                bodySb.Append(" Content approved for ");
-                                bodySb.Append("Your advertisement - ");
-                                bodySb.Append(paymentPendingAd.AdvertisementName);
-                                bodySb.Append(". ");
-                                bodySb.Append("Please make payment before ");
-                                bodySb.Append(paymentExpiryDate);
-                                bodySb.Append(" to avoid rejection of your advertisement.");
-                                bodySb.Append("Thank You");
-                                Notification notification = new Notification
+                                if (paymentPendingAd.IsPaymentPaid.Value)
                                 {
-                                    Body = bodySb.ToString(),
-                                    CategoryName = string.Empty,
-                                    Image = string.Empty,
-                                    NotificationDate = currentDate,
-                                    Title = "Action required!!! Your Advertisement " + paymentPendingAd.AdvertisementName + " is Expiring soon",
-                                };
-                                PushNotifications pushNotification = new PushNotifications
-                                {
-                                    PushNotification = notification.Body,
-                                    CategoryName = notification.CategoryName,
-                                    NotificationDate = notification.NotificationDate,
-                                    Title = notification.Title,
-                                    NotificationDateStr = currentDate.ToString(),
-                                };
-                                Helper.SendNotification(paymentPendingAd.DeviceID, notification);
-                                jBNDBClass.SavePushNotifications(paymentPendingAd.CustID.Value, pushNotification, 1);
+                                    StringBuilder bodySb = new StringBuilder();
+                                    bodySb.Append("Dear ");
+                                    bodySb.Append(paymentPendingAd.FirmName);
+                                    bodySb.Append(",");
+                                    bodySb.Append(" Content approved for ");
+                                    bodySb.Append("Your advertisement - ");
+                                    bodySb.Append(paymentPendingAd.AdvertisementName);
+                                    bodySb.Append(". ");
+                                    bodySb.Append("Please make payment before ");
+                                    bodySb.Append(paymentExpiryDate);
+                                    bodySb.Append(" to avoid rejection of your advertisement.");
+                                    bodySb.Append("Thank You");
+                                    Notification notification = new Notification
+                                    {
+                                        Body = bodySb.ToString(),
+                                        CategoryName = string.Empty,
+                                        Image = string.Empty,
+                                        NotificationDate = currentDate,
+                                        Title = "Action required!!! Your Advertisement " + paymentPendingAd.AdvertisementName + " is Expiring soon",
+                                    };
+                                    PushNotifications pushNotification = new PushNotifications
+                                    {
+                                        PushNotification = notification.Body,
+                                        CategoryName = notification.CategoryName,
+                                        NotificationDate = notification.NotificationDate,
+                                        Title = notification.Title,
+                                        NotificationDateStr = currentDate.ToString(),
+                                    };
+                                    Helper.SendNotification(paymentPendingAd.DeviceID, notification);
+                                    jBNDBClass.SavePushNotifications(paymentPendingAd.CustID.Value, pushNotification, 1);
+                                }
                             }
                             else
                             {

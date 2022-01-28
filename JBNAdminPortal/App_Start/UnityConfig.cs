@@ -19,6 +19,7 @@ namespace JBNAdminPortal
             container.RegisterType<IUserRepository, UserRepository>();
             container.RegisterType<IDashboardRepository, DashboardRepository>();
             container.RegisterType<IEnquiryRepository, EnquiryRepository>();
+            container.RegisterType<IPromotionRepository, PromotionRepository>();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
