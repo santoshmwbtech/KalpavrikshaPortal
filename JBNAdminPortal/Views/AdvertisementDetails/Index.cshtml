@@ -77,6 +77,12 @@
                                         @Html.EditorFor(model => model.ToDateStr, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
                                     </div>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Total Price</label>
+                                        @Html.EditorFor(model => model.FinalPrice, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off", @readonly = "readonly" } })
+                                    </div>
+                                </div>
                                 @{
                                     if (Model.AdvertisementType.ToLower().Contains("textad"))
                                     {
@@ -193,6 +199,38 @@
                                         </ul>
                                     </div>
                                 </div>
+                                @{
+                                    if (Model.states != null && Model.states.Count() > 0)
+                                    {
+                                        string states = string.Join(",", Model.states.Select(s => s.StateName).ToList());
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>States</label>
+                                                <textarea class="form-control">@states</textarea>
+                                            </div>
+                                        </div>
+                                    }
+                                    else if (Model.cities != null && Model.cities.Count() > 0)
+                                    {
+                                        string cities = string.Join(",", Model.cities.Select(s => s.VillageLocalityName).ToList());
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Cities</label>
+                                                <textarea class="form-control">@cities</textarea>
+                                            </div>
+                                        </div>
+                                    }
+                                    else if (Model.districts != null && Model.districts.Count() > 0)
+                                    {
+                                        string districts = string.Join(",", Model.districts.Select(s => s.DistrictName).ToList());
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Districts</label>
+                                                <textarea class="form-control">@districts</textarea>
+                                            </div>
+                                        </div>
+                                    }
+                                }
                                 <div class="clearfix"></div>
                                 @{
                                     if (Model.IsApproved == true)

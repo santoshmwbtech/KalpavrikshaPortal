@@ -12,6 +12,8 @@
     <Reference Include="EntityFramework">
       <HintPath>..\..\CCAWebPortal\MWBTCustomerCreation\WindowsService_SalesOrder\bin\Debug\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
   </ItemGroup>
 
 </Project>

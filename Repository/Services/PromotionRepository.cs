@@ -90,8 +90,8 @@ namespace Repository.Services
                     }
                     else if (promotionsDTO.IsNotification == true)
                     {
-                        string[] Registration_Ids = customerList.Skip(500).Take(500).Where(c => !string.IsNullOrEmpty(c.DeviceID)).Select(c => c.DeviceID).ToArray();
-                        int[] Cust_Ids = customerList.Skip(500).Take(500).Select(c => c.CustID).ToArray();
+                        string[] Registration_Ids = customerList.Where(c => !string.IsNullOrEmpty(c.DeviceID)).Select(c => c.DeviceID).ToArray();
+                        int[] Cust_Ids = customerList.Select(c => c.CustID).ToArray();
                         Notification notification = new Notification { Title = promotionsDTO.Title, Body = promotionsDTO.Body, NotificationDate = DateTimeNow, Image = ImageURL };
 
                         int itemsSent = 0, skipCount = 0, takenCount = 0;

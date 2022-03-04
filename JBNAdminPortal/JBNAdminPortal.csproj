@@ -248,6 +248,7 @@
     <Compile Include="Controllers\MainCatRptController.cs" />
     <Compile Include="Controllers\MonthlyDetailedRptController.cs" />
     <Compile Include="Controllers\PerformanceReportController.cs" />
+    <Compile Include="Controllers\PromotionsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\ShareAPKController.cs" />
     <Compile Include="Controllers\SMSTemplateController.cs" />
@@ -1132,6 +1133,7 @@
     <Content Include="Views\UpdateUser\Index.cshtml" />
     <Content Include="Views\UpdateUser\Edit.cshtml" />
     <Content Include="Views\UpdateUser\UserList.cshtml" />
+    <Content Include="Views\Promotions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

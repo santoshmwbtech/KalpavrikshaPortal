@@ -2563,6 +2563,8 @@ namespace JBNClassLibrary
                                           cities = dbContext.tblAdvertisementCities.Where(ast => ast.AdvertisementMainID == a.ID).ToList(),
                                           ApprovalStatus = a.IsApproved == false ? "Pending" : "Approved",
                                           PaymentStatus = a.PaymentStatus == false ? "Pending" : "Approved",
+                                          FinalPrice = a.FinalPrice,
+                                          CreatedDateStr = a.CreatedDate.ToString(),
                                       }).AsEnumerable();
 
                     advertisements = advertisements.Where(a => a.ToDate.Value.Date >= DateTimeNow.Date).AsEnumerable();
@@ -2639,9 +2641,9 @@ namespace JBNClassLibrary
                                              IsRejected = a.IsRejected,
                                              InvoiceNumber = a.InvoiceNumber,
                                              ProformaInvoiceNumber = a.ProformaInvoiceNumber.ToString(),
-                                             cities = dbContext.tblAdvertisementCities.Where(ac => ac.AdvertisementMainID == a.ID).AsEnumerable(),
-                                             districts = dbContext.tblAdvertisementDistricts.Where(ac => ac.AdvertisementMainID == a.ID).AsEnumerable(),
-                                             states = dbContext.tblAdvertisementStates.Where(ac => ac.AdvertisementMainID == a.ID).AsEnumerable(),
+                                             cities = a.tblAdvertisementCities,
+                                             districts = a.tblAdvertisementDistricts,
+                                             states = a.tblAdvertisementStates,
                                              AdText = a.AdText,
                                              AdTimeSlots = dbContext.tblAdTimeSlots.Where(t => t.AdvertisementID == a.ID).ToList(),
                                              ProductName = cp.ItemName,
